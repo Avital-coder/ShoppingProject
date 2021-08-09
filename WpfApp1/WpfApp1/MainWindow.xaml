@@ -1,0 +1,84 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="Shopping" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        WindowState="Maximized"
+        Icon="/WpfApp;component/Images/LogoIcon.ico">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition  Width="0.1*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="0.1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="1" Background="#ffb6c5cf">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="50*"/>
+                <ColumnDefinition Width="0.1*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Right" Background="Transparent">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="1" Command="{Binding DisplayContactUsView}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}">
+                    <TextBlock Text="צור קשר"/>
+                </Button>
+
+                <Button Grid.Column="2" Command="{Binding DisplayAboutUsView}" VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}">
+                    <TextBlock Text="קצת עלינו"/>
+                </Button>
+
+                <Button Grid.Column="3" Command="{Binding DisplayLoginView}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}">
+                    <TextBlock Text="כניסה"/>
+                </Button>
+
+            </Grid>
+
+            <Grid Grid.Column="0" VerticalAlignment="Center"  Background="Transparent">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Command="{Binding GoBack}" Foreground="Black" Background="{x:Null}" Style="{StaticResource roundedCornersButton}">
+                    <materialDesign:PackIcon Grid.Column="0" Kind="Undo" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="25"/>
+                </Button >
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="3" Grid.Column="1" >
+
+            <ContentControl Content="{Binding Path=Currents.CurrentVM, Source={x:Static Application.Current}}"/>
+
+        </Grid>
+
+    </Grid>
+
+</Window>
