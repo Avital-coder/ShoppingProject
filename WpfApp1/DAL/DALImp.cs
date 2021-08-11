@@ -264,8 +264,8 @@ namespace DAL
             return result;
         }
 
-
-
+        public List<PurchaseItem> GetLastPurchase() { return null; }
+        public void DeletePurchaseFromUserFile(PurchaseItem p) { }
 
 
     }

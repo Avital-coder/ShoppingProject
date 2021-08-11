@@ -8,7 +8,7 @@ using BE;
 
 namespace BL
 {
-    public class BLImp
+    public class BLImp:IBL
     {
         public IDAL dal { get; set; }
         public BLImp(User user)

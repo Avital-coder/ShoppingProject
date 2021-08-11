@@ -1,2 +1,29 @@
 D:\פרויקט זורי\WpfApp1\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
 D:\פרויקט זורי\WpfApp1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\DAL.dll.config
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\DAL.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\DAL.pdb
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\BE.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\EntityFramework.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\IronBarCode.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\PdfSharp.Charting.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\PdfSharp.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\BE.pdb
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\EntityFramework.xml
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\IronBarCode.xml
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\PdfSharp.xml
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\PdfSharp.Charting.xml
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\de\PdfSharp.resources.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\de\PdfSharp.Charting.resources.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.dll
+C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.pdb

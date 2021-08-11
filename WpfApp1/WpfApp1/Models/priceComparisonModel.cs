@@ -9,12 +9,12 @@ using System.Windows;
 
 namespace WpfApp1.Models
 {
-    class priceComparisonModel
+    public class priceComparisonModel
     {
         IBL BL;
         public priceComparisonModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.currentUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
         
         public IEnumerable<string> GetPriceComparison(string ItemName)
@@ -36,13 +36,12 @@ namespace WpfApp1.Models
             return BL.GetAllItems(item => item.Name == ItemName);
         }
 
-        public Dictionary<string, double> GetPriceOptions(string[] Shops, IEnumerable<string> itemsList)
+        public IEnumerable<double> GetPriceOptions(string[] Shops, IEnumerable<string> itemsList)
         {
-            Dictionary<string, double> priceOptions = new Dictionary<string, double>();
-            //List<double> CartsSize = new List<double>();
-            foreach (var Shop in Shops)
+            List<double> priceOptions = new List<double>();
+            foreach (var shop in Shops)
             {
-                priceOptions.Add(Shop,BL.GetCartPriceByShopName(Shop, itemsList));
+                priceOptions.Add(BL.GetCartPriceByShopName(shop, itemsList));
             }
             return priceOptions;
         }

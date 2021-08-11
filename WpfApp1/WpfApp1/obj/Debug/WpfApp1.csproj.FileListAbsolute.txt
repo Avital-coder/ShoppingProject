@@ -7,3 +7,19 @@ D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\App.g.cs
 D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
 D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
 D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\WpfApp1.csprojAssemblyReference.cache
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\Contact.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\CreateCart.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\HistoryByCart.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\HistoryByItem.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\HistoryByShop.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\LastPurchase.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\LogIn.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\PriceComparison.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\SideBar.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\Views\SignUp.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref

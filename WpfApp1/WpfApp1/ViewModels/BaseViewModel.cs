@@ -63,7 +63,7 @@ namespace WpfApp1.ViewModels
             {
                 return new BaseCommand(delegate ()
                 {
-                    ((App)Application.Current).Currents.CurrentVM = new LoginVM();
+                    ((App)Application.Current).Currents.CurrentVM = new LogInViewModel();
                     ((App)Application.Current).Currents.GoBack.Clear();
                     ((App)Application.Current).Currents.LoggedUser = null;
                 });
@@ -73,7 +73,7 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new LastPurchaseVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new LastPurchaseViewModel(); });
             }
         }
 
@@ -81,14 +81,14 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryByShopVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryByShopViewModel(); });
             }
         }
         public ICommand HistoryByItem
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryByItemVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryByItemViewModel(); });
             }
         }
 
@@ -96,7 +96,7 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryBySCartVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryBySCartViewModel(); });
             }
         }
 
@@ -104,7 +104,7 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new PriceComparisonVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new PriceComparisonViewModel(); });
             }
         }
 
@@ -112,7 +112,7 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new CreateCartVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new CreateCartViewModel(); });
             }
         }
         #endregion

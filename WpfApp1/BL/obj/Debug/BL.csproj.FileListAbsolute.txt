@@ -1,1 +1,20 @@
 D:\פרויקט זורי\WpfApp1\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\BL.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\BL.pdb
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\BE.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\DAL.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Syncfusion.Pdf.Base.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\EntityFramework.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Syncfusion.Compression.Base.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Syncfusion.Licensing.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\BE.pdb
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\DAL.pdb
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\DAL.dll.config
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Syncfusion.Pdf.Base.xml
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\EntityFramework.xml
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Syncfusion.Compression.Base.xml
+C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.csprojAssemblyReference.cache
+C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.csproj.CoreCompileInputs.cache
+C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.pdb

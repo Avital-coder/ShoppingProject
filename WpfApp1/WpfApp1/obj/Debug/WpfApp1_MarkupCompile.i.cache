@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-D:\פרויקט זורי\WpfApp1\WpfApp1\App.xaml
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\App.xaml
 12-1837589896
 
-42147110705
-19-246891479
+4127876201
+21-1428225747
 MainWindow.xaml;Styles.xaml;Views\Contact.xaml;Views\CreateCart.xaml;Views\HistoryByCart.xaml;Views\HistoryByItem.xaml;Views\HistoryByShop.xaml;Views\LastPurchase.xaml;Views\LogIn.xaml;Views\PriceComparison.xaml;Views\SideBar.xaml;Views\SignUp.xaml;
 
 False

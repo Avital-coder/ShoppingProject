@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using WpfApp1.Others;
 using BE;
 using BL;
 
@@ -14,7 +15,7 @@ namespace WpfApp1.Models
         IBL BL;
         public CartCreationModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.LoggedUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
 
         public IEnumerable<string> GetItems()

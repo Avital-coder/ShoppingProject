@@ -14,7 +14,7 @@ namespace WpfApp1.Models
         IBL BL;
         public LogInModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.currentUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
 
         public bool Login(string Mail, string Password)
@@ -22,7 +22,7 @@ namespace WpfApp1.Models
             User user = BL.GetAllUsers(tempUser => tempUser.Mail == Mail && tempUser.Password == Password).FirstOrDefault();
             if (user != null)
             {
-                ((App)Application.Current).Currents.currentUser = user;
+                ((App)Application.Current).Currents.CurrentUser = user;
                 return true;
             }
             return false;

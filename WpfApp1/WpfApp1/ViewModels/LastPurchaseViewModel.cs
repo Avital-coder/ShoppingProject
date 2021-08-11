@@ -1,5 +1,4 @@
-﻿
-using BE;
+﻿using BE;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -144,7 +143,7 @@ namespace WpfApp1.ViewModels
 
         #endregion
         #region properties
-        public LastPurchaseM LastPurchaseM { get; set; }
+        public LastPurchaseModel LastPurchaseM { get; set; }
 
         public PurchaseItem addPurchaseItem { get; set; }
 

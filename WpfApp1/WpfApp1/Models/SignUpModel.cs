@@ -16,7 +16,7 @@ namespace WpfApp1.Models
 
         public SignUpModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.LoggedUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
 
 
