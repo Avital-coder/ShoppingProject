@@ -1,0 +1,9 @@
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\MainWindow.g.cs
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\Views\LastPurchase.g.cs
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\Views\LogIn.g.cs
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\Views\SideBar.g.cs
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\Views\SignUp.g.cs
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\App.g.cs
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.cache
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\WpfApp1_MarkupCompile.lref

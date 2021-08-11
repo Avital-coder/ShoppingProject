@@ -1,0 +1,5 @@
+D:\פרויקט זורי\WpfApp1\BE\bin\Debug\BE.dll
+D:\פרויקט זורי\WpfApp1\BE\bin\Debug\BE.pdb
+D:\פרויקט זורי\WpfApp1\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+D:\פרויקט זורי\WpfApp1\BE\obj\Debug\BE.dll
+D:\פרויקט זורי\WpfApp1\BE\obj\Debug\BE.pdb

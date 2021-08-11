@@ -1,0 +1,226 @@
+﻿<UserControl x:Class="WpfApp1.Views.SignupUC"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.Views"
+             xmlns:valid="clr-namespace:WpfApp1.Tools"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Background>
+        <ImageBrush Opacity="0.2" ImageSource="/WpfApp1;component/Images/backgroung.png" />
+    </UserControl.Background>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Style="{StaticResource textFont}" Grid.Row="1" Grid.ColumnSpan="3" Text="הרשמה למערכת"  FontSize="35" FontWeight="DemiBold"  Foreground="#42A5F5" HorizontalAlignment="Center" />
+
+        <Grid Grid.Column="1" Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Border Grid.Column="0" Style="{StaticResource roundedCornersBorder}" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="6*"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBox Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="15"
+                                 materialDesign:HintAssist.Hint="שם משפחה" 
+                                 HorizontalContentAlignment="Center" Validation.ErrorTemplate="{StaticResource validationTemplate}">
+                            <TextBox.Text>
+                                <Binding Path="LastName"  UpdateSourceTrigger="LostFocus"  Mode="TwoWay" ValidatesOnExceptions="True">
+                                    <Binding.ValidationRules>
+                                        <valid:ValidName/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+                    </Grid>
+                </Border>
+
+                <Border Grid.Column="1" Style="{StaticResource roundedCornersBorder}" >
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="6*"/>
+                            <ColumnDefinition Width="2.5*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBox Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="14"
+                            materialDesign:HintAssist.Hint="שם פרטי" 
+                         HorizontalContentAlignment="Center" Validation.ErrorTemplate="{StaticResource validationTemplate}" >
+                            <TextBox.Text>
+                                <Binding Path="FirstName"  UpdateSourceTrigger="LostFocus"  Mode="TwoWay" ValidatesOnExceptions="True">
+                                    <Binding.ValidationRules>
+                                        <valid:ValidName/>
+                                    </Binding.ValidationRules>
+                                </Binding>
+                            </TextBox.Text>
+                        </TextBox>
+
+                        <materialDesign:PackIcon Grid.Column="2" Kind="Account" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    </Grid>
+                </Border>
+            </Grid>
+
+            <Border Grid.Row="1" Style="{StaticResource roundedCornersBorder}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="14" 
+                                 materialDesign:HintAssist.Hint="תעודת זהות" 
+                                 HorizontalContentAlignment="Center" Validation.ErrorTemplate="{StaticResource validationTemplate}">
+                        <TextBox.Text>
+                            <Binding Path="Id"  UpdateSourceTrigger="LostFocus"  Mode="TwoWay" ValidatesOnExceptions="True">
+                                <Binding.ValidationRules>
+                                    <valid:ValidId/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <materialDesign:PackIcon Grid.Column="2" Kind="IdCardOutline" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+
+            <Border Grid.Row="2" Style="{StaticResource roundedCornersBorder}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBox  Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="14"
+                                 materialDesign:HintAssist.Hint="כתובת מייל"
+                                 HorizontalContentAlignment="Center" Validation.ErrorTemplate="{StaticResource validationTemplate}">
+                        <TextBox.Text>
+                            <Binding Path="Mail"  UpdateSourceTrigger="LostFocus"  Mode="TwoWay" ValidatesOnExceptions="True">
+                                <Binding.ValidationRules>
+                                    <valid:ValidEmail/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox.Text>
+                    </TextBox>
+                    <materialDesign:PackIcon Grid.Column="2" Kind="Gmail" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+            <Border Grid.Row="3" Style="{StaticResource roundedCornersBorder}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <PasswordBox x:Name="passwordBox" Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="14"
+                                 materialDesign:HintAssist.Hint="בחר סיסמה"
+                                 HorizontalContentAlignment="Center" />
+                    <materialDesign:PackIcon Grid.Column="2" Kind="VpnKey" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+
+            <Border Grid.Row="4" Style="{StaticResource roundedCornersBorder}" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="6*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <PasswordBox x:Name="passwordBox2" Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="14"
+                                 materialDesign:HintAssist.Hint="הקש שוב את הסיסמה"
+                                 HorizontalContentAlignment="Center" />
+
+
+                    <materialDesign:PackIcon Grid.Column="2" Kind="VpnKey" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+            </Border>
+
+
+            <Button Grid.Row="5" Command="{Binding SignUpCommand}"
+                Style="{StaticResource roundedCornersButton}">
+                <TextBlock Text="הירשם" />
+                <Button.CommandParameter>
+                    <MultiBinding Converter="{StaticResource SignupConverter}">
+                        <Binding ElementName="passwordBox"/>
+                        <Binding ElementName="passwordBox2"/>
+                    </MultiBinding>
+                </Button.CommandParameter>
+            </Button>
+
+        </Grid>
+        <Border Visibility="{Binding Path=ErrorMessageVisible, Mode=TwoWay}" Grid.RowSpan="5" Grid.ColumnSpan="3" Opacity="0.9" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="360" Style="{StaticResource roundedCornersBorder}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="0.1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="!שגיאה" FontSize="30" Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <TextBlock Text="{Binding MassageText, Mode=TwoWay}" FontSize="20" Grid.Row="3" Grid.ColumnSpan="3" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <Button Grid.Row="5" Grid.Column="1" Command="{Binding ErrorCommand}" Style="{StaticResource roundedCornersButton}">
+                    <TextBlock Text="אישור"/>
+                </Button>
+            </Grid>
+        </Border>
+
+        <Border Visibility="{Binding Path=SuccessMessageVisible, Mode=TwoWay}" Grid.RowSpan="5" Grid.ColumnSpan="3" Opacity="0.9" VerticalAlignment="Center" HorizontalAlignment="Center" Height="250" Width="360" Style="{StaticResource roundedCornersBorder}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="0.1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="0.1*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="!נוספת למערכת בהצלחה" FontSize="25" Grid.ColumnSpan="3" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" />
+                <Button Grid.Row="3" Grid.Column="1" Command="{Binding SuccessCommand}" Style="{StaticResource roundedCornersButton}">
+                    <TextBlock Text="אישור"/>
+                </Button>
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>

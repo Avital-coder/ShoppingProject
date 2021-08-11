@@ -9,15 +9,14 @@ using BL;
 
 namespace WpfApp1.Models
 {
-    class cartCreationModel
+    class CartCreationModel
     {
         IBL BL;
-        public cartCreationModel()
+        public CartCreationModel()
         {
             BL = new BLImp(((App)Application.Current).Currents.LoggedUser);
         }
 
-        #region getters
         public IEnumerable<string> GetItems()
         {
             return BL.GetAllItems().Select(item => item.Name).Distinct().OrderBy(item => item);
@@ -43,6 +42,11 @@ namespace WpfApp1.Models
 
             };
             return cheapestBranch;
+        }
+
+        public Dictionary<string, List<string>> GetBuyingOffer(List<string> itemsName)
+        {
+            return BL.AnalizeHistory(itemsName);
         }
 
         public void CreatePDF(List<object[]> items)

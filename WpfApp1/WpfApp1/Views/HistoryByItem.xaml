@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="WpfApp1.Views.HistoryByItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.Views" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Background>
+        <ImageBrush Opacity="0.18" ImageSource="/WpfApp1;component/Images/background.png" />
+    </UserControl.Background>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.3*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.9*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <local:SideBar Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="10" Panel.ZIndex="1"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="המוצרים שלך לאורך זמן" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Panel.ZIndex="0"/>
+        <StackPanel Grid.Row="0" Grid.Column="2">
+            <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock Text="כמות חודשים להצגת נתונים:" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Right" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <ComboBox ItemsSource="{Binding NumOfMonthsList}" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" SelectedItem="{Binding NumberOfMounths}"/>
+        </StackPanel>
+
+        <Grid Grid.Row="2" Grid.Column="5"  HorizontalAlignment="Center" VerticalAlignment="Top" Panel.ZIndex="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="7*"/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="בחר את המוצרים שברצונך להציג" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock/>
+            <ListView x:Name="listView"  Grid.Row="2" Grid.Column="3" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="RightToLeft">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Horizontal">
+                            <CheckBox HorizontalAlignment="Right" VerticalAlignment="Stretch" Command="{Binding ElementName=listView, Path=DataContext.UpdateGraphCommand}" CommandParameter="{Binding}"/>
+                            <TextBlock Text =" "/>
+                            <TextBlock Text="{Binding}" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+
+
+        <Grid Grid.Column="1" Grid.ColumnSpan="3" Grid.Row ="2" Background="White">
+            <lvc:CartesianChart Series="{Binding SeriesCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" LegendLocation="Right" >
+                <lvc:CartesianChart.AxisY>
+                    <lvc:Axis Title="Count" FontSize="14" LabelFormatter="{Binding YFormatter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
+                </lvc:CartesianChart.AxisY>
+                <lvc:CartesianChart.AxisX>
+                    <lvc:Axis Title="Month" FontSize="14" Labels="{Binding Labels, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
+                </lvc:CartesianChart.AxisX>
+            </lvc:CartesianChart>
+        </Grid>
+
+    </Grid>
+</UserControl>

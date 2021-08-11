@@ -1,0 +1,2 @@
+D:\פרויקט זורי\WpfApp1\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\פרויקט זורי\WpfApp1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
