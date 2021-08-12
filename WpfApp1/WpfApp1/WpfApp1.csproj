@@ -86,7 +86,24 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Commands\AddPurchaseItemCommand.cs" />
     <Compile Include="Commands\BaseCommand.cs" />
+    <Compile Include="Commands\ConfirmedItemCommand.cs" />
+    <Compile Include="Commands\DeleteItemCommand.cs" />
+    <Compile Include="Commands\LoginCommand.cs" />
+    <Compile Include="Commands\SignUpCommand.cs" />
+    <Compile Include="Commands\UpdateOfferCreateCardCommand.cs" />
+    <Compile Include="Commands\UpdateGraphCommand.cs" />
+    <Compile Include="Commands\UpdateGraphItemCommand.cs" />
+    <Compile Include="Commands\UpdateListCreateCardCommand.cs" />
+    <Compile Include="Commands\UpdatePriceComparisonListCommand.cs" />
+    <Compile Include="Convertors\ItemIdToBranchName.cs" />
+    <Compile Include="Convertors\ItemIdToDescription.cs" />
+    <Compile Include="Convertors\ItemIdToName.cs" />
+    <Compile Include="Convertors\ItemIdToPath.cs" />
+    <Compile Include="Convertors\ItemIdToPrice.cs" />
+    <Compile Include="Convertors\LoginConvertor.cs" />
+    <Compile Include="Convertors\SignUpConvertor.cs" />
     <Compile Include="Models\HistoryByCartModel.cs" />
     <Compile Include="Models\HistoryByItemModel.cs" />
     <Compile Include="Models\HistoryByShopModel.cs" />
@@ -106,7 +123,10 @@
     <Compile Include="ViewModels\HistoryByItemViewModel.cs" />
     <Compile Include="ViewModels\HistoryByShopViewModel.cs" />
     <Compile Include="ViewModels\LastPurchaseViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
     <Compile Include="ViewModels\PriceComparisonViewModel.cs" />
+    <Compile Include="ViewModels\SignUpViewModel.cs" />
     <Compile Include="Views\Contact.xaml.cs">
       <DependentUpon>Contact.xaml</DependentUpon>
     </Compile>
@@ -196,7 +216,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\CartCreationModel.cs" />
-    <Compile Include="Models\LogInModel.cs" />
+    <Compile Include="Models\LoginModel.cs" />
     <Compile Include="Models\priceComparisonModel.cs" />
     <Compile Include="Models\SignUpModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -235,9 +255,7 @@
       <Name>BL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Convertors\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Images\logo.ico" />
   </ItemGroup>

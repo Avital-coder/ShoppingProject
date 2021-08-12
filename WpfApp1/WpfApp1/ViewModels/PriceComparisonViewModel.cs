@@ -12,7 +12,7 @@ using WpfApp1.Commands;
 using WpfApp1.Models;
 using WpfApp1.ViewModels;
 
-namespace WpfApp.ViewModels
+namespace WpfApp1.ViewModels
 {
 
     public class PriceComparisonViewModel : BaseViewModel

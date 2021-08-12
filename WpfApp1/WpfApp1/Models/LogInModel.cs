@@ -9,10 +9,10 @@ using System.Windows;
 
 namespace WpfApp1.Models
 {
-    class LogInModel
+    class LoginModel
     {
         IBL BL;
-        public LogInModel()
+        public LoginModel()
         {
             BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
