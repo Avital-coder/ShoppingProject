@@ -19,7 +19,7 @@ namespace WpfApp1.ViewModels
             SeriesCollection = new SeriesCollection();
             HistoryBySCartM = new HistoryBySCartModel();
             YFormatter = value => value.ToString("C");
-            NumOfMonthsList = new ObservableCollection<string>(new Other.ListOfMonths().GetNumOfMonthsList());
+            NumOfMonthsList = new ObservableCollection<string>(new Others.ListOfMonths().GetNumOfMonthsList());
             updateGraph();
         }
         #region properties
@@ -32,7 +32,7 @@ namespace WpfApp1.ViewModels
             set
             {
                 numberOfMounths = value.Split(' ')[0];
-                Labels = new Other.GetMonthLabel().GetLabels(int.Parse(NumberOfMounths));
+                Labels = new Others.GetMonthLabel().GetLabels(int.Parse(NumberOfMounths));
                 updateGraph();
                 OnPropertyRaised("NumberOfMounths");
             }

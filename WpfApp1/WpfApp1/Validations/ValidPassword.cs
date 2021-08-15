@@ -8,7 +8,7 @@ using System.Windows.Controls;
 
 namespace WpfApp1.Validations
 {
-    class ValidPassword
+    public class ValidPassword
     {
         public bool IsValidPassword(string password)
         {

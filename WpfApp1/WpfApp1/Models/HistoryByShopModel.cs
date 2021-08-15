@@ -14,7 +14,7 @@ namespace WpfApp1.Models
         IBL BL;
         public HistoryByShopModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.LoggedUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
         #region getters
         public IEnumerable<double> GetHistoryByShop(string ShopName, string[] Mounths)

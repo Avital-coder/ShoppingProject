@@ -13,7 +13,7 @@ namespace WpfApp1.Models
         IBL BL;
         public HistoryBySCartModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.LoggedUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
         public IEnumerable<double> GetHistoryBySCart(string[] labels)
         {

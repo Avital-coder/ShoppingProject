@@ -14,7 +14,7 @@ namespace WpfApp1.Models
         IBL BL;
         public HistoryByItemModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.LoggedUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
         #region getters
         public IEnumerable<double> GetHistoryByItem(string ItemName, string[] Mounths)

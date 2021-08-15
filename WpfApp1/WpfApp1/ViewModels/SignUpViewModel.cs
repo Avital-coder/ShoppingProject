@@ -17,7 +17,7 @@ namespace WpfApp1.ViewModels
     class SignUpViewModel : BaseViewModel
     {
         public SignUpModel SignUpModel { get; set; }
-        public SignupViewModel()
+        public SignUpViewModel()
         {
             ErrorMessageVisible = Visibility.Hidden;
             SuccessMessageVisible = Visibility.Hidden;
@@ -44,7 +44,7 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new LoginViewModel(); ((App)Application.Current).Currents.GoBack.Clear(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new LoginViewModel(); /*((App)Application.Current).Currents.GoBack.Clear(); */});
             }
         }
         #endregion

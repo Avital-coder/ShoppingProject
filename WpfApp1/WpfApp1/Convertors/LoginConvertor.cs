@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace WpfApp1.Converters
+namespace WpfApp1.Convertors
 {
     class loginConvertor : IMultiValueConverter
     {

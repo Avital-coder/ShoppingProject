@@ -18,3 +18,21 @@ C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.csproj.CoreCompileInputs.c
 C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.csproj.CopyComplete
 C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.dll
 C:\Users\user\ShoppingProject\WpfApp1\BL\obj\Debug\BL.pdb
+D:\פרויקט זורי\WpfApp1\BL\obj\Debug\BL.csprojAssemblyReference.cache
+D:\פרויקט זורי\WpfApp1\BL\obj\Debug\BL.dll
+D:\פרויקט זורי\WpfApp1\BL\obj\Debug\BL.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\BL.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\BL.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\BE.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\DAL.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\EntityFramework.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Syncfusion.Compression.Base.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Syncfusion.Licensing.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\BE.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\DAL.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\DAL.dll.config
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\EntityFramework.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Syncfusion.Compression.Base.xml
+D:\פרויקט זורי\WpfApp1\BL\obj\Debug\BL.csproj.CopyComplete

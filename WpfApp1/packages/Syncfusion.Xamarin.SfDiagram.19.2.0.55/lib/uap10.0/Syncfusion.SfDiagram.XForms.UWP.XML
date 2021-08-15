@@ -1,0 +1,3360 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfDiagram.XForms.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService">
+            <summary>
+            Node Dependency Service.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.PointOnEllipseFromAngle(Windows.Foundation.Point,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Point on ellipse from angle.
+            </summary>
+            <param name="center">center value.</param>
+            <param name="radiusX">radius value X.</param>
+            <param name="radiusY">radius value Y.</param>
+            <param name="angle">angle value</param>
+            <returns>returns point.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.UpdateSfGraphics(System.Object,Syncfusion.SfDiagram.XForms.SfGraphics)">
+            <summary>
+            Update Graphics.
+            </summary>
+            <param name="nativeObject">Native object.</param>
+            <param name="graphics">Graphics value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.GetNativeSfGraphics(System.Object,Syncfusion.SfDiagram.XForms.SfGraphics)">
+            <summary>
+            Get native graphics.
+            </summary>
+            <param name="nativesfgraphics"> object native graphics.</param>
+            <param name="graphics">graphics value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.GetInConnectors(System.Object)">
+            <summary>
+            Get In connectors.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <returns>returns null.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.GetOutConnectors(System.Object)">
+            <summary>
+            Get out Connectors.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <returns>returns null.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.GetChildren(System.Object)">
+            <summary>
+            Get Children.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <returns>returns null.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.Syncfusion#SfDiagram#XForms#INodeDependencyService#UpdateSfGraphics(System.Object,System.String)">
+            <summary>
+            Update graphics.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="pathData">path data value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.ConvertHex(System.String)">
+            <summary>
+            Convert hex.
+            </summary>
+            <param name="hex">string hex.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.UpdateNativeSfPath(Syncfusion.SfDiagram.XForms.SfGraphicsPath,Windows.UI.Xaml.Media.GeometryGroup,System.String)">
+            <summary>
+            Update native path.
+            </summary>
+            <param name="graphicsPath">Graphics path.</param>
+            <param name="geometryGroup">Geometry path.</param>
+            <param name="pathtoString">Path to string.</param>
+            <returns>returns Path to string.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.GetNativeSfGraphicsPath(Syncfusion.SfDiagram.XForms.SfGraphicsPath)">
+            <summary>
+            Get native graphics path.
+            </summary>
+            <param name="formGraphicsPath">Graphics path.</param>
+            <returns>returns native graphics path.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeDependencyService.ConvertColorToHex(Xamarin.Forms.Color)">
+            <summary>
+            Convert Color To Hex.
+            </summary>
+            <param name="fillColor">fill color.</param>
+            <returns>returns hex.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.StencilDependencyService">
+            <summary>
+            Stencil dependency service.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilDependencyService.UpdateStencilView(System.Object)">
+            <summary>
+            Update stencil view.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.LayoutDependencyService">
+            <summary>
+            Layout dependency service.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutDependencyService.UpdateLayout(System.Object)">
+            <summary>
+            Update layout.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutDependencyService.UpdateLeftOrTop(System.Object)">
+            <summary>
+            Update left or top.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutDependencyService.UpdateRightOrBottom(System.Object)">
+            <summary>
+            Update right or bottom.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutDependencyService.GetRootNode(System.Object)">
+            <summary>
+            Get root node.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <returns>returns null.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.UserHandleDependencyService">
+            <summary>
+            User handle dependency service.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.UserHandleDependencyService.MoveBy(System.Object,Syncfusion.SfDiagram.XForms.UserHandle,System.Int32,System.Int32)">
+            <summary>
+            Move by method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="userhandle">user handle.</param>
+            <param name="x">integer value x.</param>
+            <param name="y">integer value y.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices">
+            <summary>
+            Diagram Dependency Service.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.zoomFactor">
+            <summary>
+            Zoom factor mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.currentZoom">
+            <summary>
+            Current zoom factor.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.nodemapping">
+            <summary>
+            Node mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.connectormapping">
+            <summary>
+            Connector mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.exportSetting">
+            <summary>
+            Export setting.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SetLayoutMargin">
+            <summary>
+            Set layout margin.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Load(System.Object,System.String)">
+            <summary>
+            Load method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="m_jsonstring">string value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,System.IO.Stream,Syncfusion.SfDiagram.XForms.ImageFormat)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="stream">stream value.</param>
+            <param name="imageformat">image format.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,Syncfusion.SfDiagram.XForms.ImageFormat)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="imageformat">image format.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,System.IO.Stream)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="stream">stream value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.BeginNodeLayout(System.Object)">
+            <summary>
+            Begin Node Layout.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ItemAdded(System.Object)">
+            <summary>
+            Item added.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Clear(System.Object)">
+            <summary>
+            Clear method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Undo(System.Object)">
+            <summary>
+            Undo method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Redo(System.Object)">
+            <summary>
+            Redo method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Cut(System.Object)">
+            <summary>
+            Cut method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Copy(System.Object)">
+            <summary>
+            Copy method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Paste(System.Object)">
+            <summary>
+            Paste method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Delete(System.Object)">
+            <summary>
+            Delete method.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.BringFront(System.Object)">
+            <summary>
+            Bring Front method.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SendBack(System.Object)">
+            <summary>
+            Send back method.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.BringForward(System.Object)">
+            <summary>
+            Bring Forward.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SendBackward(System.Object)">
+            <summary>
+            Send Backward.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ConnectorClicked(System.Object)">
+            <summary>
+            Connector Clicked.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.TextEdit(System.Object)">
+            <summary>
+            Text edit.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.NodeClicked(System.Object)">
+            <summary>
+            Node clicked.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.TextChanged(System.Object)">
+            <summary>
+            Text Changed.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsJson(System.Object)">
+            <summary>
+            Save as jason.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <returns>returns form diagram.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramObjectDeleted(System.Object)">
+            <summary>
+            Diagram Object Deleted.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.BeginNodeRender(System.Object)">
+            <summary>
+            Begin Node Render.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramObjectDropped(System.Object)">
+            <summary>
+            Diagram Object Dropped.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DragEnd(System.Object)">
+            <summary>
+            Drag event.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ResizeEnd(System.Object)">
+            <summary>
+            Resize End.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SymbolGroupExpandCollapse(System.Object)">
+            <summary>
+            Symbol Group Expand Collapse.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.RotateEnd(System.Object)">
+            <summary>
+            Rotate end.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramClicked(System.Object)">
+            <summary>
+            Diagram Clicked.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ItemLongPressed(System.Object)">
+            <summary>
+            Item Long Pressed.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Loaded(System.Object)">
+            <summary>
+            Loaded method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.UserHandleClicked(System.Object)">
+            <summary>
+            User Handle Clicked.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ShowSelectorHandle(System.Object,System.Boolean,Syncfusion.SfDiagram.XForms.SelectorPosition)">
+            <summary>
+            Show Selector Handle.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="visible">visible value.</param>
+            <param name="position">position value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.BringToView(System.Object,Syncfusion.SfDiagram.XForms.DiagramBaseItem)">
+            <summary>
+            Bring To View.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="obj">object value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SetSelection(System.Object,Syncfusion.SfDiagram.XForms.DiagramBaseItem)">
+            <summary>
+            Set Selection.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="baseItem">base item.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ClearSelection(System.Object)">
+            <summary>
+            Clear Selection.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetSelectedItems(System.Object)">
+            <summary>
+            Get Selected Items.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <returns>returns null.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetZoomFactor(System.Object)">
+            <summary>
+            Get Zoom Factor.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <returns>returns 1.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SetZoomFactor(System.Object,System.Single)">
+            <summary>
+            Set Zoom Factor.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="value">float value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetMinimumZoomFactor(System.Object)">
+            <summary>
+            Get Minimum Zoom Factor.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <returns>returns 1.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SetMinimumZoomFactor(System.Object,System.Single)">
+            <summary>
+            Set Minimum Zoom Factor.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="value">float value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ChangeLayoutStyleProperty(System.Object,System.String,System.Object)">
+            <summary>
+            Change Layout Style Property.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="propertyName">property Name.</param>
+            <param name="value">object value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.UpdateLayoutStyle(System.Object,Syncfusion.SfDiagram.XForms.LayoutStyle)">
+            <summary>
+            Update Layout Style.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="theme">theme value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramZoomEnd(System.Object)">
+            <summary>
+            Diagram Zoom End.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.EndNodeLayout(System.Object)">
+            <summary>
+            End Node Layout.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.LayoutNodeDropped(System.Object)">
+            <summary>
+            Layout Node Dropped.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Save as Image.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="left">left value.</param>
+            <param name="top">top value.</param>
+            <param name="right">right value.</param>
+            <param name="bottom">bottom value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,Syncfusion.SfDiagram.XForms.ImageFormat,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="imageforamt">image format.</param>
+            <param name="left">left value.</param>
+            <param name="top">top value.</param>
+            <param name="right">right value.</param>
+            <param name="bottom">bottom value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,System.IO.Stream,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="stream">stream value.</param>
+            <param name="left">left value.</param>
+            <param name="top">top value.</param>
+            <param name="right">right value.</param>
+            <param name="bottom">bottom value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,System.IO.Stream,Syncfusion.SfDiagram.XForms.ImageFormat,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+            <param name="stream">stream value.</param>
+            <param name="imageforamt">image format.</param>
+            <param name="left">left value.</param>
+            <param name="top">top value.</param>
+            <param name="right">right value.</param>
+            <param name="bottom">bottom value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetNodeByName(System.String)">
+            <summary>
+            Get Node By Name.
+            </summary>
+            <param name="id">string id.</param>
+            <returns>returns node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SetMargin(System.Object,System.Object)">
+            <summary>
+            Set margin.
+            </summary>
+            <param name="nativeDiagram">native Diagram.</param>
+            <param name="formsDiagram">forms Diagram.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveAsImage(System.Object,Windows.Storage.Streams.IRandomAccessStream)">
+            <summary>
+            Save as image.
+            </summary>
+            <param name="nativeObject">native object.</param>
+            <param name="randomStream">random stream.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SaveSilent(System.Object)">
+            <summary>
+            Save silent.
+            </summary>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.PageExporting(System.String,System.Object)">
+            <summary>
+            Page exporting.
+            </summary>
+            <param name="p">string value p.</param>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_GetLayoutInfo(System.Object,Syncfusion.UI.Xaml.Diagram.LayoutInfoArgs)">
+            <summary>
+            Get layout info.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.LayoutTypeMethod(Syncfusion.SfDiagram.XForms.BeginNodeLayoutEventArgs,Syncfusion.UI.Xaml.Diagram.LayoutInfoArgs)">
+            <summary>
+            Layout type method.
+            </summary>
+            <param name="beginNodeLayoutEventArgs">begin Node Layout Event Args.</param>
+            <param name="args">event args,</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_MouseUp(System.Object,Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs)">
+            <summary>
+            Mouse up method.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_ItemAdded(System.Object,Syncfusion.UI.Xaml.Diagram.ItemAddedEventArgs)">
+            <summary>
+            Item added.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.CreateFormsConnector(Syncfusion.SfDiagram.XForms.UWP.CustomConnector)">
+            <summary>
+            Create forms connector.
+            </summary>
+            <param name="item">item value.</param>
+            <returns>returns connector mapping.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.CreateFormsNode(Syncfusion.SfDiagram.XForms.UWP.CustomNode)">
+            <summary>
+            Create forms node.
+            </summary>
+            <param name="item">item value.</param>
+            <returns>returns node mapping.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ConvertColorToHex(Xamarin.Forms.Color)">
+            <summary>
+            Convert to hex.
+            </summary>
+            <param name="fillColor">fill color.</param>
+            <returns>returns hex.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetStyle(System.String,System.String,System.Double,System.Double,System.Single)">
+            <summary>
+            Get style.
+            </summary>
+            <param name="fill">fill value.</param>
+            <param name="strokecolor"> stroke color.</param>
+            <param name="strokewidth">stroke width.</param>
+            <param name="strokestyle">stroke style.</param>
+            <param name="opacity">opacity value.</param>
+            <returns>returns sty value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ConvertHex(System.String)">
+            <summary>
+            Convert hex.
+            </summary>
+            <param name="hex">string hex.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ConvertStringToFormsColor(System.String)">
+            <summary>
+            Convert to forms color.
+            </summary>
+            <param name="v">string value v.</param>
+            <returns>color from hex.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_AnnotationChanged(System.Object,Syncfusion.UI.Xaml.Diagram.ChangeEventArgs{System.Object,Syncfusion.UI.Xaml.Diagram.AnnotationChangedEventArgs})">
+            <summary>
+            Annotation changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Loaded method.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetFormsNode(Syncfusion.UI.Xaml.Diagram.SfDiagram,Syncfusion.SfDiagram.XForms.UWP.CustomNode)">
+            <summary>
+            Get forms node.
+            </summary>
+            <param name="sender">sender value.</param>
+            <param name="node">custom node.</param>
+            <returns>returns form node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetNode(System.Int32,Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get Node method.
+            </summary>
+            <param name="index">index value.</param>
+            <param name="diagram">diagram value.</param>
+            <returns>returns node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.ItemTappedEventMethod(System.Object)">
+            <summary>
+            Item Tapped Event Method.
+            </summary>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramDependencyServices_MouseDown(System.Object,Syncfusion.UI.Xaml.Diagram.MouseDownEventArgs)">
+            <summary>
+            Mouse down event.
+            </summary>
+            <param name="sender">diagram object.</param>
+            <param name="args">argument of the event.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramDependencyServices_MouseUp(System.Object,Syncfusion.UI.Xaml.Diagram.MouseUpEventArgs)">
+            <summary>
+            Mouse up event.
+            </summary>
+            <param name="sender">diagram object.</param>
+            <param name="args">argument of the event.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_ItemTappedEvent(System.Object,Syncfusion.UI.Xaml.Diagram.DiagramEventArgs)">
+            <summary>
+            Item tapped event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetFormsConnector(Syncfusion.UI.Xaml.Diagram.SfDiagram,Syncfusion.SfDiagram.XForms.UWP.CustomConnector)">
+            <summary>
+            Get Forms Connector.
+            </summary>
+            <param name="diagrams">Diagram value.</param>
+            <param name="connector">connector value.</param>
+            <returns>form connector.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.GetConnectorByName(System.String,Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get Connector By Name.
+            </summary>
+            <param name="name">name value.</param>
+            <param name="diagram">diagram value.</param>
+            <returns>returns connector.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_ItemDeleted(System.Object,Syncfusion.UI.Xaml.Diagram.DiagramEventArgs)">
+            <summary>
+            Item deleted.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_ItemDropEvent(System.Object,Syncfusion.UI.Xaml.Diagram.ItemDropEventArgs)">
+            <summary>
+            Item drop event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramDependencyService_ConnectorTargetChangedEvent(System.Object,Syncfusion.UI.Xaml.Diagram.ChangeEventArgs{System.Object,Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs})">
+            <summary>
+            Connector Target Changed Event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.DiagramDependencyService_ConnectorSourceChangedEvent(System.Object,Syncfusion.UI.Xaml.Diagram.ChangeEventArgs{System.Object,Syncfusion.UI.Xaml.Diagram.ConnectorChangedEventArgs})">
+            <summary>
+            Connector Source Changed Event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.SfDiagramDependencyServices_NodeChangedEvent(System.Object,Syncfusion.UI.Xaml.Diagram.ChangeEventArgs{System.Object,Syncfusion.UI.Xaml.Diagram.NodeChangedEventArgs})">
+            <summary>
+            Node Changed Event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Stencil_CollapseEvent(System.Object,Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs)">
+            <summary>
+            Stencil Collapse Event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DiagramDependencyServices.Stencil_ExpandEvent(System.Object,Syncfusion.UI.Xaml.Diagram.Stencil.SymbolGroupExpandCollapseEventArgs)">
+            <summary>
+            Stencil Expand Event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping">
+            <summary>
+            Annotation Mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.GetTemplateView(Xamarin.Forms.DataTemplate)">
+            <summary>
+            Get Template view.
+            </summary>
+            <param name="template">template value.</param>
+            <returns>returns native.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.OnAnnotationPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Annotation Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.GetNativeAnnotation(Syncfusion.SfDiagram.XForms.Annotation)">
+            <summary>
+            Get Native Annotation.
+            </summary>
+            <param name="formAnnotation">form annotation.</param>
+            <returns>returns native annotation.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.GetFormAnnotation(Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion)">
+            <summary>
+            Get Form Annotation.
+            </summary>
+            <param name="nativeAnnotation">native Annotation.</param>
+            <returns>returns form Annotation.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.OnFormAnnotationPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Annotation,Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion)">
+            <summary>
+            On Form Annotation Properties Changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formAnnotation">form annotation.</param>
+            <param name="nativeAnnotation">native annotation.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.ConvertToNative(Xamarin.Forms.View,Xamarin.Forms.VisualElement)">
+            <summary>
+            Convert to native.
+            </summary>
+            <param name="templateLayout">template layout.</param>
+            <param name="parent">parent value.</param>
+            <returns>returns renderer.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.GetDataTemplate(System.Text.StringBuilder)">
+            <summary>
+            Get data template.
+            </summary>
+            <param name="stringBuilder">string builder.</param>
+            <returns>returns string builder.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.OnAnnotationPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Annotation,Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion)">
+            <summary>
+            On Annotation Properties Changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formAnnotation">form annotation.</param>
+            <param name="nativeAnnotation">native annotation.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.AnnotationMapping.ConvertColorToHex(Xamarin.Forms.Color)">
+            <summary>
+            Convert color to hex.
+            </summary>
+            <param name="fillColor">fill color.</param>
+            <returns>returns hex.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion">
+            <summary>
+            Custom Annotation.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.fontFamily">
+            <summary>
+            Font family.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.foreground">
+            <summary>
+            Foreground brush.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.fontSize">
+            <summary>
+            Font size value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.fontcolor">
+            <summary>
+            Font color.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.FontFamily">
+            <summary>
+            Gets or sets font family.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.FontSize">
+            <summary>
+            Gets or sets font Size.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.FontColor">
+            <summary>
+            Gets or sets font Color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.Foreground">
+            <summary>
+            Gets or sets foreground.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.Dispose">
+            <summary>
+            Dispose method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.CustomAnnotion.ConvertStringToColor(System.String)">
+            <summary>
+            Convert string to color.
+            </summary>
+            <param name="hex">string hex.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.JsonData">
+            <summary>
+            Data value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DHeight">
+            <summary>
+            Gets or sets dHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DWidth">
+            <summary>
+            Gets or sets dWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DNodes">
+            <summary>
+            Gets or sets dNodes.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DConnectors">
+            <summary>
+            Gets or sets dConnectors.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DCollectionChanging">
+            <summary>
+            Gets or sets a value indicating whether dCollectionChanging.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DLayOutManager">
+            <summary>
+            Gets or sets dLayOutManager.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DMargin">
+            <summary>
+            Gets or sets dMargin.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DIsDataSourceUpdated">
+            <summary>
+            Gets or sets a value indicating whether dIsDataSourceUpdated.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DIsAddedToView">
+            <summary>
+            Gets or sets a value indicating whether dIsAddedToView.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DSelectedItem">
+            <summary>
+            Gets or sets dSelectedItem.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DShowSymbolPalette">
+            <summary>
+            Gets or sets a value indicating whether dShowSymbolPalette.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DBackgroundColor">
+            <summary>
+            Gets or sets dBackgroundColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DStencil">
+            <summary>
+            Gets or sets dStencil.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.JsonData.DPagesettings">
+            <summary>
+            Gets or sets Page settings.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.NodeProperty">
+            <summary>
+            Node Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NHeight">
+            <summary>
+            Gets or sets NHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NWidth">
+            <summary>
+            Gets or sets NWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NOffsetX">
+            <summary>
+            Gets or sets NOffsetX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NOffsetY">
+            <summary>
+            Gets or sets NOffsetY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NRotateAngle">
+            <summary>
+            Gets or sets NRotateAngle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NOpacity">
+            <summary>
+            Gets or sets NOpacity.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NShape">
+            <summary>
+            Gets or sets NShape.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NCornerRadius">
+            <summary>
+            Gets or sets NCornerRadius.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NContent">
+            <summary>
+            Gets or sets NContent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NName">
+            <summary>
+            Gets or sets NName.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NPivot">
+            <summary>
+            Gets or sets NPivot.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NPorts">
+            <summary>
+            Gets or sets NPorts.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NAnnotations">
+            <summary>
+            Gets or sets NAnnotations.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsExpanded">
+            <summary>
+            Gets or sets a value indicating whether NIsExpanded true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsRendered">
+            <summary>
+            Gets or sets a value indicating whether NIsRendered true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NSfGraphics">
+            <summary>
+            Gets or sets NIsRendered.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsTemplateAdded">
+            <summary>
+            Gets or sets a value indicating whether NIsTemplateAdded true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsSelected">
+            <summary>
+            Gets or sets a value indicating whether NIsSelected true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsUpdated">
+            <summary>
+            Gets or sets a value indicating whether NIsUpdated true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NSolidBrushColor">
+            <summary>
+            Gets or sets NSolidBrushColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NLinearBrushColor">
+            <summary>
+            Gets or sets NLinearBrushColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NLinearBrushColorPositions">
+            <summary>
+            Gets or sets NLinearBrushColorPositions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NLinearStartX">
+            <summary>
+            Gets or sets NLinearStartX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NLinearStartY">
+            <summary>
+            Gets or sets NLinearStartY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NLinearEndX">
+            <summary>
+            Gets or sets NLinearEndX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NLinearEndY">
+            <summary>
+            Gets or sets NLinearEndY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NBorderColor">
+            <summary>
+            Gets or sets NBorderColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NBorderWidth">
+            <summary>
+            Gets or sets NBorderWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NBorderStyle">
+            <summary>
+            Gets or sets NBorderStyle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NType">
+            <summary>
+            Gets or sets NType.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NPathData">
+            <summary>
+            Gets or sets NPathData.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsLocked">
+            <summary>
+            Gets or sets a value indicating whether nIsLocked true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsResizingEnabled">
+            <summary>
+            Gets or sets NIsResizingEnabled.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsRotationEnabled">
+            <summary>
+            Gets or sets NIsRotationEnabled.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsDraggingEnabled">
+            <summary>
+            Gets or sets NIsDraggingEnabled.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.NodeProperty.NIsTextEditingEnabled">
+            <summary>
+            Gets or sets NIsTextEditingEnabled.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.PortProperty">
+            <summary>
+            Port Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PNodeOffsetX">
+            <summary>
+            Gets or sets pNodeOffsetX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PNodeOffsetY">
+            <summary>
+            Gets or sets PNodeOffsetY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PUnitWidth">
+            <summary>
+            Gets or sets PUnitWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PUnitHeight">
+            <summary>
+            Gets or sets PUnitHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PShape">
+            <summary>
+            Gets or sets PShape.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PStyle">
+            <summary>
+            Gets or sets PStyle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.POffsetX">
+            <summary>
+            Gets or sets POffsetX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.POffsetY">
+            <summary>
+            Gets or sets POffsetY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PPortVisibility">
+            <summary>
+            Gets or sets a value indicating whether pPortVisibility true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PFillColor">
+            <summary>
+            Gets or sets PFillColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PBorderColor">
+            <summary>
+            Gets or sets PBorderColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PBorderWidth">
+            <summary>
+            Gets or sets PBorderWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PBorderStyle">
+            <summary>
+            Gets or sets PBorderStyle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PortProperty.PName">
+            <summary>
+            Gets or sets PName.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty">
+            <summary>
+            Annotation Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AContent">
+            <summary>
+            Gets or sets aContent.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AHorizontalAlignment">
+            <summary>
+            Gets or sets AHorizontalAlignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AVerticalAlignment">
+            <summary>
+            Gets or sets AVerticalAlignment.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AIsAligned">
+            <summary>
+            Gets or sets a value indicating whether aIsAligned true or false.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AFontFamily">
+            <summary>
+            Gets or sets AFontFamily.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AFontSize">
+            <summary>
+            Gets or sets AFontSize.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.ATextBrush">
+            <summary>
+            Gets or sets ATextBrush.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AOffsetX">
+            <summary>
+            Gets or sets AOffsetX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AOffsetY">
+            <summary>
+            Gets or sets AOffsetY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.AnnotationProperty.AAnnotationPositions">
+            <summary>
+            Gets or sets AAnnotationPositions.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty">
+            <summary>
+            Connector Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CName">
+            <summary>
+            Gets or sets cName.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CSourceNode">
+            <summary>
+            Gets or sets CSourceNode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CTargetNode">
+            <summary>
+            Gets or sets CTargetNode.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CSourceNodeName">
+            <summary>
+            Gets or sets CSourceNodeName.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CTargetNodeName">
+            <summary>
+            Gets or sets CTargetNodeName.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CSegmentType">
+            <summary>
+            Gets or sets CSegmentType.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CSourcePoint">
+            <summary>
+            Gets or sets CSourcePoint.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CTargetPoint">
+            <summary>
+            Gets or sets CTargetPoint.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CSourcePort">
+            <summary>
+            Gets or sets CSourcePort.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CTargetPort">
+            <summary>
+            Gets or sets CTargetPort.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CSourceDecorator">
+            <summary>
+            Gets or sets CSourceDecorator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CTargetDecorator">
+            <summary>
+            Gets or sets CTargetDecorator.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.COrthogonalPoints">
+            <summary>
+            Gets or sets COrthogonalPoints.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.Csegments">
+            <summary>
+            Gets or sets CSegments.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CStraightPoints">
+            <summary>
+            Gets or sets CStraightPoints.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CCurvePoints">
+            <summary>
+            Gets or sets CCurvePoints.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CInternalSourcePoint">
+            <summary>
+            Gets or sets CInternalSourcePoint.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CInternalTargetPoint">
+            <summary>
+            Gets or sets CInternalTargetPoint.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CAnnotations">
+            <summary>
+            Gets or sets CAnnotations.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CLineColor">
+            <summary>
+            Gets or sets CLineColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CLineWidth">
+            <summary>
+            Gets or sets CLineWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CType">
+            <summary>
+            Gets or sets CType.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CLineStyle">
+            <summary>
+            Gets or sets CLineStyle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.NOpacity">
+            <summary>
+            Gets or sets NOpacity.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CControlPoint1">
+            <summary>
+            Gets or sets CControlPoint1.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CControlPoint2">
+            <summary>
+            Gets or sets cControlPoint2.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ConnectorProperty.CIsControlPointAdded">
+            <summary>
+            Gets or sets a value indicating whether cIsControlPointAdded.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.PointProperty">
+            <summary>
+            Point Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PointProperty.PX">
+            <summary>
+            Gets or sets PX value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PointProperty.PY">
+            <summary>
+            Gets or sets PY value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.RectangleProperty">
+            <summary>
+            Rectangle Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectangleProperty.RX">
+            <summary>
+            Gets or sets RX Value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectangleProperty.RY">
+            <summary>
+            Gets or sets RY Value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectangleProperty.RWidth">
+            <summary>
+            Gets or sets RWidth value.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectangleProperty.RHeight">
+            <summary>
+            Gets or sets RHeight.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.DecoratorProperty">
+            <summary>
+            Decorator property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.DecoratorProperty.DDecoratorType">
+            <summary>
+            Gets or sets DDecoratorType.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.DecoratorProperty.DDecoratorSize">
+            <summary>
+            Gets or sets DDecoratorSize.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.DecoratorProperty.DFillColor">
+            <summary>
+            Gets or sets DFillColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.DecoratorProperty.DStrokeColor">
+            <summary>
+            Gets or sets DStrokeColor.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.DecoratorProperty.DStrokeWidth">
+            <summary>
+            Gets or sets DStrokeWidth.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.PageSettingsProperty">
+            <summary>
+            Page Settings Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PageSettingsProperty.DPageWidth">
+            <summary>
+            Gets or sets dPageWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PageSettingsProperty.DPageHeight">
+            <summary>
+            Gets or sets DPageHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PageSettingsProperty.DBackgroundColor">
+            <summary>
+            Gets or sets DBackgroundColor.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.SfGraphicsProperty">
+            <summary>
+            Graphics Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.SfGraphicsProperty.DGeometryGroup">
+            <summary>
+            Gets or sets DGeometryGroup.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.GeometryProperty">
+            <summary>
+            Geometry Property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty">
+            <summary>
+            Rectangle Geometry Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DBounds">
+            <summary>
+            Gets or sets dBounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DX">
+            <summary>
+            Gets or sets DX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DY">
+            <summary>
+            Gets or sets DY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DWidth">
+            <summary>
+            Gets or sets DWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DHeight">
+            <summary>
+            Gets or sets DHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DCornerWidth">
+            <summary>
+            Gets or sets DCornerWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DCornerHeight">
+            <summary>
+            Gets or sets DCornerHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectGeometryProperty.DPen">
+            <summary>
+            Gets or sets DPen.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.LineGeometryProperty">
+            <summary>
+            Line Geometry Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.LineGeometryProperty.LPoints">
+            <summary>
+            Gets or sets LPoints.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.LineGeometryProperty.LPen">
+            <summary>
+            Gets or sets LPen.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty">
+            <summary>
+            Arc Geometry Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty.DX">
+            <summary>
+            Gets or sets DX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty.DY">
+            <summary>
+            Gets or sets DY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty.DWidth">
+            <summary>
+            Gets or sets DWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty.DHeight">
+            <summary>
+            Gets or sets DHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty.DStartAngle">
+            <summary>
+            Gets or sets DStartAngle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty.DSweepAngle">
+            <summary>
+            Gets or sets DSweepAngle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcGeometryProperty.DPen">
+            <summary>
+            Gets or sets pen.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty">
+            <summary>
+            Bezier Geometry Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty.DX1">
+            <summary>
+            Gets or sets DX1.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty.DY1">
+            <summary>
+            Gets or sets DY1.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty.DX2">
+            <summary>
+            Gets or sets DX2.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty.DY2">
+            <summary>
+            Gets or sets DY2.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty.DX3">
+            <summary>
+            Gets or sets DX3.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty.DY3">
+            <summary>
+            Gets or sets DY3.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierGeometryProperty.DPen">
+            <summary>
+            Gets or sets dPen.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.EllipseGeometryProperty">
+            <summary>
+            Ellipse Geometry Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseGeometryProperty.DBounds">
+            <summary>
+            Gets or sets DBounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseGeometryProperty.DX">
+            <summary>
+            Gets or sets DX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseGeometryProperty.DY">
+            <summary>
+            Gets or sets DY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseGeometryProperty.DWidth">
+            <summary>
+            Gets or sets DWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseGeometryProperty.DHeight">
+            <summary>
+            Gets or sets DHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseGeometryProperty.DPen">
+            <summary>
+            Gets or sets DPen.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.PenProperty">
+            <summary>
+            Pen Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PenProperty.PStrokeWidth">
+            <summary>
+            Gets or sets PStrokeWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PenProperty.PStrokeBrush">
+            <summary>
+            Gets or sets PStrokeBrush.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.PenProperty.PBrush">
+            <summary>
+            Gets or sets PBrush.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.SfGraphicsPathProperty">
+            <summary>
+            Graphics Path Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.SfGraphicsPathProperty.DSegmentGroup">
+            <summary>
+            Gets or sets DSegment Group.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.SegmentProperty">
+            <summary>
+            Segment Property.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty">
+            <summary>
+            Rectangle Segment Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty.DBounds">
+            <summary>
+            Gets or sets DBounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty.DX">
+            <summary>
+            Gets or sets DX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty.DY">
+            <summary>
+            Gets or sets DY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty.DWidth">
+            <summary>
+            Gets or sets DWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty.DHeight">
+            <summary>
+            Gets or sets DHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty.DCornerWidth">
+            <summary>
+            Gets or sets DCornerWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.RectSegmentProperty.DCornerHeight">
+            <summary>
+            Gets or sets DCornerHeight.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.StartSegmentProperty">
+            <summary>
+            Start Segment Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.StartSegmentProperty.DX">
+            <summary>
+            Gets or sets DX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.StartSegmentProperty.DY">
+            <summary>
+            Gets or sets DY.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.LineSegmentProperty">
+            <summary>
+            Line Segment Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.LineSegmentProperty.LPoints">
+            <summary>
+            Gets or sets LPoints.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.ArcSegmentProperty">
+            <summary>
+            Arc Segment Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcSegmentProperty.DX">
+            <summary>
+            Gets or sets DX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcSegmentProperty.DY">
+            <summary>
+            Gets or sets DY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcSegmentProperty.DWidth">
+            <summary>
+            Gets or sets DWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcSegmentProperty.DHeight">
+            <summary>
+            Gets or sets DHeight.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcSegmentProperty.DStartAngle">
+            <summary>
+            Gets or sets DStartAngle.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.ArcSegmentProperty.DSweepAngle">
+            <summary>
+            Gets or sets DSweepAngle.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.BezierSegmentProperty">
+            <summary>
+            Bezier Segment Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierSegmentProperty.DX1">
+            <summary>
+            Gets or sets DX1.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierSegmentProperty.DY1">
+            <summary>
+            Gets or sets DY1.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierSegmentProperty.DX2">
+            <summary>
+            Gets or sets DX2.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierSegmentProperty.DY2">
+            <summary>
+            Gets or sets DY2.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierSegmentProperty.DX3">
+            <summary>
+            Gets or sets DX3.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.BezierSegmentProperty.DY3">
+            <summary>
+            Gets or sets DY3.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.EllipseSegmentProperty">
+            <summary>
+            Ellipse Segment Property.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseSegmentProperty.DBounds">
+            <summary>
+            Gets or sets DBounds.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseSegmentProperty.DX">
+            <summary>
+            Gets or sets DX.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseSegmentProperty.DY">
+            <summary>
+            Gets or sets DY.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseSegmentProperty.DWidth">
+            <summary>
+            Gets or sets DWidth.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.EllipseSegmentProperty.DHeight">
+            <summary>
+            Gets or sets DHeight.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson">
+            <summary>
+            Export class..
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetJsonData(Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get data.
+            </summary>
+            <param name="diagram">diagram value.</param>
+            <returns>returns string.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetPageSettings(Syncfusion.SfDiagram.XForms.PageSettings)">
+            <summary>
+            Get Page Settings.
+            </summary>
+            <param name="pagesettings">page settings.</param>
+            <returns>page settings Data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetConnectorCollection(Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get Connector Collection.
+            </summary>
+            <param name="diagram">diagram value.</param>
+            <returns>connector Collection.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetPoints(Xamarin.Forms.Point)">
+            <summary>
+            Get Points.
+            </summary>
+            <param name="point">point value.</param>
+            <returns>returns point data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetConnectorData(Syncfusion.SfDiagram.XForms.Connector)">
+            <summary>
+            Get Connector Data.
+            </summary>
+            <param name="connector">connector value.</param>
+            <returns>connector data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetDecoratorData(Syncfusion.SfDiagram.XForms.DecoratorStyle,Syncfusion.SfDiagram.XForms.DecoratorType)">
+            <summary>
+            Get decorator data.
+            </summary>
+            <param name="decorator">decorator value.</param>
+            <param name="type">type value.</param>
+            <returns>decorator data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetConnectorAnnotationCollection(Syncfusion.SfDiagram.XForms.Connector)">
+            <summary>
+            Get Connector Annotation Collection.
+            </summary>
+            <param name="connector">connector value.</param>
+            <returns>annotation collection.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetPointsCollection(System.Collections.ObjectModel.ObservableCollection{Xamarin.Forms.Point})">
+            <summary>
+            Get points collection.
+            </summary>
+            <param name="points">points value.</param>
+            <returns>points data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetPortIndex(Syncfusion.SfDiagram.XForms.Port)">
+            <summary>
+            Get port index.
+            </summary>
+            <param name="port">port value.</param>
+            <returns>return index.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetNodeCollection(Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get node collection.
+            </summary>
+            <param name="diagram">diagram value.</param>
+            <returns>return node collection.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetNodeData(Syncfusion.SfDiagram.XForms.Node)">
+            <summary>
+            Get node data.
+            </summary>
+            <param name="node">node value.</param>
+            <returns>returns node data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetNodeAnnotationCollection(Syncfusion.SfDiagram.XForms.Node)">
+            <summary>
+            Get Node Annotation Collection.
+            </summary>
+            <param name="node">node value.</param>
+            <returns>annotation Collection.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetAnnotationData(Syncfusion.SfDiagram.XForms.Annotation)">
+            <summary>
+            Get Annotation Data.
+            </summary>
+            <param name="annotation">annotation value.</param>
+            <returns>Annotation data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetPortCollection(Syncfusion.SfDiagram.XForms.Node)">
+            <summary>
+            Get Port Collection.
+            </summary>
+            <param name="node">node value.</param>
+            <returns>port collection.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetPortData(Syncfusion.SfDiagram.XForms.Port)">
+            <summary>
+            Get port data.
+            </summary>
+            <param name="port">port value.</param>
+            <returns>port data.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ExportAsJson.GetColorString(Xamarin.Forms.Color)">
+            <summary>
+            Get color string.
+            </summary>
+            <param name="color">color value.</param>
+            <returns>returns color value.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.DecoratorHelper">
+            <summary>
+            Decorator Helper.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.DecoratorHelper.geometryDictionary">
+            <summary>
+            Geometry dictionary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DecoratorHelper.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Syncfusion.SfDiagram.XForms.UWP.DecoratorHelper"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DecoratorHelper.ToGeometry(Syncfusion.SfDiagram.XForms.DecoratorType)">
+            <summary>
+            To Geometry.
+            </summary>
+            <param name="source">source value.</param>
+            <returns>returns string or null.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping">
+            <summary>
+            Connector Mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.annotationMapping">
+            <summary>
+            Annotation mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.OnConnectorPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Connector Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.GetNativeConnector(Syncfusion.SfDiagram.XForms.Connector)">
+            <summary>
+            Get native Connector.
+            </summary>
+            <param name="formConnector">form connector.</param>
+            <returns>returns native connector.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.GetFormConnector(Syncfusion.SfDiagram.XForms.UWP.CustomConnector)">
+            <summary>
+            Get Form Connector.
+            </summary>
+            <param name="nativeConnector">native connector.</param>
+            <returns>returns form connector.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.OnFormConnectorPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.UWP.CustomConnector,Syncfusion.SfDiagram.XForms.Connector)">
+            <summary>
+            On Form Connector Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="nativeConnector">native connector.</param>
+            <param name="formConnector">form connector.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.GetOrthogonalSegment(Windows.Foundation.Point,Windows.Foundation.Point)">
+            <summary>
+            Get Orthogonal Segment.
+            </summary>
+            <param name="sourcePoint">source point.</param>
+            <param name="targetPoint">target point.</param>
+            <returns>orthogonal segment.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.OnConnectorPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Connector,Syncfusion.SfDiagram.XForms.UWP.CustomConnector)">
+            <summary>
+            On Connector Properties Changed.
+            </summary>
+            <param name="propertyName">Property name.</param>
+            <param name="formConnector">form Connector.</param>
+            <param name="nativeConnector">_native Connector.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.AddDefaultConnectorStyle(Syncfusion.SfDiagram.XForms.UWP.CustomConnector)">
+            <summary>
+            Method to add default style for connector rendering through connector tool.
+            </summary>
+            <param name="nativeConnector">native connector object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.Annotations_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Collection Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.GetConnectorStyle(Syncfusion.SfDiagram.XForms.Style)">
+            <summary>
+            Get connector style.
+            </summary>
+            <param name="style">style value.</param>
+            <returns>sty value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.GetDecoratorStyle(Syncfusion.SfDiagram.XForms.DecoratorStyle)">
+            <summary>
+            Get Decorator Style.
+            </summary>
+            <param name="style">style value.</param>
+            <returns>returns sty.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.SetterValueforDecorators(Syncfusion.SfDiagram.XForms.Connector,Windows.UI.Xaml.Setter)">
+            <summary>
+            Setter value for decorators.
+            </summary>
+            <param name="formConnector">form connector.</param>
+            <param name="item">setter item.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ConnectorMapping.ConvertStringToFormsColor(System.String)">
+            <summary>
+            Convert String To Forms Color.
+            </summary>
+            <param name="v">string v.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.CustomConnector">
+            <summary>
+            Custom Connector.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.opacity">
+            <summary>
+            Opacity value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.sourceDecoratorType">
+            <summary>
+            Source decorator type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.targetDecoratorType">
+            <summary>
+            Target decorator type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.segmentType">
+            <summary>
+            Segment type.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfDiagram.XForms.UWP.CustomConnector"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.SourceDecoratorType">
+            <summary>
+            Gets or sets source Decorator Type.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.TargetDecoratorType">
+            <summary>
+            Gets or sets target Decorator Type.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.SegmentType">
+            <summary>
+            Gets or sets segment Type.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomConnector.Opacity">
+            <summary>
+            Gets or sets opacity value.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.ContextMenuSettingsMapping">
+            <summary>
+            Context MenuSettings Mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ContextMenuSettingsMapping.OnContextMenuSettingsPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Context Menu Settings Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ContextMenuSettingsMapping.GetNativeContextMenuSettings(Syncfusion.SfDiagram.XForms.ContextMenuSettings)">
+            <summary>
+            Get Native Context Menu Settings.
+            </summary>
+            <param name="formContextMenuSettings">form Context Menu Settings.</param>
+            <returns>native Context Menu Settings.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ContextMenuSettingsMapping.OnContextMenuSettingsPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.ContextMenuSettings,Syncfusion.UI.Xaml.Diagram.SfDiagram)">
+            <summary>
+            On Context Menu Settings Properties Changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formContextMenuSettings">form Context Menu Settings.</param>
+            <param name="nativeContextMenuSettings">native Context Menu Settings.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.DataSourceSettingsMapping">
+            <summary>
+            Data Source Settings Mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DataSourceSettingsMapping.OnDataSourceSettingsPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Data Source Settings Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DataSourceSettingsMapping.OnDataSourceSettingsPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.DataSourceSettings,Syncfusion.UI.Xaml.Diagram.DataSourceSettings)">
+            <summary>
+            On Data Source Settings Properties Changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formDataSourceSettings">form data source settings.</param>
+            <param name="nativeDataSourcSettings">native data source settings.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DataSourceSettingsMapping.GetNativeDataSourceSettings(Syncfusion.SfDiagram.XForms.DataSourceSettings)">
+            <summary>
+            Get Native Data Source Settings.
+            </summary>
+            <param name="formDataSourceSettings">form Data Source Settings.</param>
+            <returns>native Data Source Settings.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.LayoutManagerMapping">
+            <summary>
+            Layout manager mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutManagerMapping.OnLayoutManagerPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Layout Manager Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutManagerMapping.OnLayoutManagerPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.LayoutManager,Syncfusion.UI.Xaml.Diagram.Layout.LayoutManager)">
+            <summary>
+            Layout Manager Properties Changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formLayoutManager">form layout manager.</param>
+            <param name="nativeLayoutManager">native layout manager.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutManagerMapping.GetNativeLayoutManager(Syncfusion.SfDiagram.XForms.LayoutManager)">
+            <summary>
+            Get Native Layout Manager.
+            </summary>
+            <param name="formLayoutManager">form layout manager.</param>
+            <returns>native layout manager.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.LayoutBaseMapping">
+            <summary>
+            Layout base mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutBaseMapping.OnLayoutBasePropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Layout Base Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutBaseMapping.OnLayoutBasePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.DirectedTreeLayout,Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout)">
+            <summary>
+            Layout Base Properties Changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formLayoutBase">layout base.</param>
+            <param name="nativeLayoutBase">native layout base.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.LayoutBaseMapping.GetNativeLayoutBase(Syncfusion.SfDiagram.XForms.DirectedTreeLayout)">
+            <summary>
+            Get native layout base.
+            </summary>
+            <param name="formLayoutBase">form layout base.</param>
+            <returns>native layout base.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.DirectedTreeLayoutMapping">
+            <summary>
+            Directed tree layout mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DirectedTreeLayoutMapping.OnDirectedTreeLayoutPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Directed Tree Layout Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DirectedTreeLayoutMapping.OnDirectedTreeLayoutPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.DirectedTreeLayout,Syncfusion.UI.Xaml.Diagram.Layout.DirectedTreeLayout)">
+            <summary>
+            Directed Tree Layout Properties Changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formDirectedTreeLayout">directed tree layout.</param>
+            <param name="nativeDirectedTreeLayout">native directed tree layout.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DirectedTreeLayoutMapping.GetNativeDirectedTreeLayout(Syncfusion.SfDiagram.XForms.DirectedTreeLayout)">
+            <summary>
+            Get Native Directed Tree Layout.
+            </summary>
+            <param name="formDirectedTreeLayout">Directed tree layout.</param>
+            <returns>native directed tree layout.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.OverviewMapping">
+            <summary>
+            Overview mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.OverviewMapping.OnOverviewPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On overview property changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.OverviewMapping.OnOverviewPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.OverviewPanel,Syncfusion.UI.Xaml.Diagram.Controls.Overview)">
+            <summary>
+            On Overview Properties Changed.
+            </summary>
+            <param name="propertyName">Property name.</param>
+            <param name="overviewPanel">over view panel.</param>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.PageSettingsMapping">
+            <summary>
+            Page Settings Mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PageSettingsMapping.GetWindowsColor(Xamarin.Forms.Color)">
+            <summary>
+            Get Windows Color.
+            </summary>
+            <param name="xColor">color value.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PageSettingsMapping.OnPageSettingPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Page Setting Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PageSettingsMapping.GetNativePageSettings(Syncfusion.SfDiagram.XForms.PageSettings)">
+            <summary>
+            Get Native Page Settings.
+            </summary>
+            <param name="formPageSettings">form Page Settings.</param>
+            <returns>native page settings.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PageSettingsMapping.GetNativeSnapSettings(Syncfusion.SfDiagram.XForms.PageSettings)">
+            <summary>
+            Get Native Snap Settings.
+            </summary>
+            <param name="formPageSettings">form Page Settings.</param>
+            <returns>native Snap Settings.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PageSettingsMapping.OnSnapSettingPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.PageSettings,Syncfusion.UI.Xaml.Diagram.SnapSettings)">
+            <summary>
+            On Snap Setting Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formPageSettings">form Page Settings.</param>
+            <param name="nativeSnapSettings">native Snap Settings.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PageSettingsMapping.OnPageSettingPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.PageSettings,Syncfusion.UI.Xaml.Diagram.PageSettings)">
+            <summary>
+            On Page Setting Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formPageSettings">form Page Settings.</param>
+            <param name="nativePageSettings">native Page Settings.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.DataTemplateViewConverter">
+            <summary>
+            Data Template View Converter.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DataTemplateViewConverter.Convert(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Convert method.
+            </summary>
+            <param name="value">object value.</param>
+            <param name="targetType">target type.</param>
+            <param name="parameter">object parameter.</param>
+            <param name="language">string language.</param>
+            <returns>converted view.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DataTemplateViewConverter.ConvertBack(System.Object,System.Type,System.Object,System.String)">
+            <summary>
+            Convert back method.
+            </summary>
+            <param name="value">object value.</param>
+            <param name="targetType">target type.</param>
+            <param name="parameter">object parameter.</param>
+            <param name="language">string language.</param>
+            <returns>returns value.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.ShapeHelper">
+            <summary>
+            Shape helper.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.ShapeHelper.geometryDictionary">
+            <summary>
+            Geometry dictionary.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ShapeHelper.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Syncfusion.SfDiagram.XForms.UWP.ShapeHelper"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.ShapeHelper.ToGeometry(Syncfusion.SfDiagram.XForms.ShapeType)">
+            <summary>
+            To geometry.
+            </summary>
+            <param name="source">source value.</param>
+            <returns>geometry dictionary.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.NodeMapping">
+            <summary>
+            Node mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.annotationMapping">
+            <summary>
+            Annotation mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.portMapping">
+            <summary>
+            Port mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.GetTemplateView(Syncfusion.UI.Xaml.Diagram.NodeViewModel,Syncfusion.UI.Xaml.Diagram.SfDiagram)">
+            <summary>
+            Get template view.
+            </summary>
+            <param name="node">node value.</param>
+            <param name="nativeDiagram">native diagram.</param>
+            <returns>returns native.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.OnNodePropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On node property changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.Dispose(Syncfusion.SfDiagram.XForms.Port)">
+            <summary>
+            Dispose method.
+            </summary>
+            <param name="port">Port value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.Dispose(Syncfusion.SfDiagram.XForms.Annotation)">
+            <summary>
+            Dispose method.
+            </summary>
+            <param name="annotation">annotation value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.GetFormNode(Syncfusion.SfDiagram.XForms.UWP.CustomNode)">
+            <summary>
+            Get from node.
+            </summary>
+            <param name="nativeNode">native node.</param>
+            <returns>returns form node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.GetNativeNode(Syncfusion.SfDiagram.XForms.Node)">
+            <summary>
+            Get Native Node.
+            </summary>
+            <param name="formNode">form node.</param>
+            <returns>native node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.GetNode(System.Int32,Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get node.
+            </summary>
+            <param name="index">index value.</param>
+            <param name="diagram">diagram value.</param>
+            <returns>returns node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.ConvertToNative(Xamarin.Forms.View,Xamarin.Forms.VisualElement)">
+            <summary>
+            Convert to native.
+            </summary>
+            <param name="templateLayout">template layout.</param>
+            <param name="parent">parent value.</param>
+            <returns>returns renderer.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.GetFormsNode(Syncfusion.UI.Xaml.Diagram.SfDiagram,Syncfusion.UI.Xaml.Diagram.NodeViewModel)">
+            <summary>
+            Get Forms Node.
+            </summary>
+            <param name="sender">sender value.</param>
+            <param name="node">node value.</param>
+            <returns>form node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.OnNodePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Node,Syncfusion.SfDiagram.XForms.UWP.CustomNode)">
+            <summary>
+            On node properties changed.
+            </summary>
+            <param name="propertyName">property name.</param>
+            <param name="formNode">form node.</param>
+            <param name="nativeNode">native node.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.ConvertColorToHex(Xamarin.Forms.Color)">
+            <summary>
+            Convert Color To Hex.
+            </summary>
+            <param name="fillColor">fill color value.</param>
+            <returns>returns hex value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.GetDataTemplate(System.Text.StringBuilder)">
+            <summary>
+            Get Data Template.
+            </summary>
+            <param name="stringBuilder">string builder.</param>
+            <returns>string builder,</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.Annotations_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Annotations Collection Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.Ports_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Port Collection Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.GetStyle(System.String,System.String,System.Double,System.Single,System.Double)">
+            <summary>
+            Get style.
+            </summary>
+            <param name="fill">fill value.</param>
+            <param name="strokecolor">stroke color.</param>
+            <param name="strokewidth">stroke width.</param>
+            <param name="opacity">opacity value.</param>
+            <param name="strokestyle">stroke style.</param>
+            <returns>return sty value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.ConvertHex(System.String)">
+            <summary>
+            Convert hex.
+            </summary>
+            <param name="hex">hex value.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.OnFormNodePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.UWP.CustomNode,Syncfusion.SfDiagram.XForms.Node)">
+            <summary>
+            On Form Node Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="nativeNode">native Node.</param>
+            <param name="formNode">form node.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.NodeMapping.ConvertStringToFormsColor(System.String)">
+            <summary>
+            Convert String To Forms Color.
+            </summary>
+            <param name="v">string v.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.CustomNode">
+            <summary>
+            Custom node.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomNode.shape">
+            <summary>
+            Shape type.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomNode.fill">
+            <summary>
+            Shape fill.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomNode.strokeColor">
+            <summary>
+            Stroke color.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomNode.strokeWidth">
+            <summary>
+            Stroke width.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomNode.strokeStyle">
+            <summary>
+            Stroke style.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.CustomNode.opacity">
+            <summary>
+            Opacity value.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.CustomNode.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfDiagram.XForms.UWP.CustomNode"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomNode.Opacity">
+            <summary>
+            Gets or sets opacity.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomNode.StrokeStyle">
+            <summary>
+            Gets or sets stroke style.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomNode.EnumShape">
+            <summary>
+            Gets or sets enum shape.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomNode.Fill">
+            <summary>
+            Gets or sets fill.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomNode.StrokeColor">
+            <summary>
+            Gets or sets stroke color.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.SfDiagram.XForms.UWP.CustomNode.StrokeWidth">
+            <summary>
+            Gets or sets Stroke width.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.CustomNode.Dispose">
+            <summary>
+            Dispose method.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.PortMapping">
+            <summary>
+            Port mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PortMapping.OnNodePortPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Node Port Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PortMapping.GetNativeNodePort(Syncfusion.SfDiagram.XForms.Port)">
+            <summary>
+            Get Native Node Port.
+            </summary>
+            <param name="formnodeport">form node port.</param>
+            <returns>native Node Port.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PortMapping.GetFormPort(Syncfusion.UI.Xaml.Diagram.NodePortViewModel)">
+            <summary>
+            Get form port.
+            </summary>
+            <param name="nativePort">native port.</param>
+            <returns>returns form port.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PortMapping.OnNodePortPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Port,Syncfusion.UI.Xaml.Diagram.NodePortViewModel)">
+            <summary>
+            On Node Port Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formPort">form port.</param>
+            <param name="nativePort">native port.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PortMapping.GetStyle(Syncfusion.UI.Xaml.Diagram.NodePortViewModel,System.String)">
+            <summary>
+            Get style.
+            </summary>
+            <param name="formnodeport">form node port.</param>
+            <param name="fill">fill value.</param>
+            <returns>returns sty value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PortMapping.ShapeStyle(Syncfusion.SfDiagram.XForms.Style)">
+            <summary>
+            Shape style.
+            </summary>
+            <param name="formPortStyle">form port style.</param>
+            <returns>returns sty value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.PortMapping.OnFormPortPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Port,Syncfusion.UI.Xaml.Diagram.NodePortViewModel)">
+            <summary>
+            On Form Port Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formPort">form Port.</param>
+            <param name="nativePort">native port.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping">
+            <summary>
+            Diagram mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.nodeMapping">
+            <summary>
+            Node mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.connectorMapping">
+            <summary>
+            Connector mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.diagram">
+            <summary>
+            Diagram value.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.nodes">
+            <summary>
+            custom nodes.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.OnSfDiagramPropertiesChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Diagram Properties Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.Dispose">
+            <summary>
+            Dispose method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.OnSfDiagramPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.SfDiagram,Syncfusion.UI.Xaml.Diagram.SfDiagram)">
+            <summary>
+            On Diagram Properties Changed.
+            </summary>
+            <param name="propertyName">.property Name.</param>
+            <param name="formdiagram">form diagram.</param>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.SetCustomShapeStyle(Syncfusion.SfDiagram.XForms.Node)">
+            <summary>
+            Method to set style for custom shape.
+            </summary>
+            <param name="node">node value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.Nodes_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Nodes collection changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramMapping.Connectors_CollectionChanged(System.Object,System.Collections.Specialized.NotifyCollectionChangedEventArgs)">
+            <summary>
+            Connectors Collection Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.StencilMapping">
+            <summary>
+            Stencil mapping.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.StencilMapping.renderer">
+            <summary>
+            Stencil renderer.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilMapping.#ctor(Syncfusion.SfDiagram.XForms.UWP.StencilRenderer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Syncfusion.SfDiagram.XForms.UWP.StencilMapping"/> class.
+            </summary>
+            <param name="renderer">renderer value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilMapping.OnStencilPropertiesChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Stencil Properties Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilMapping.OnStencilPropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Stencil,Syncfusion.UI.Xaml.Diagram.Stencil.Stencil)">
+            <summary>
+            On Stencil Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formsStencil">forms Stencil.</param>
+            <param name="nativeObject">native Object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilMapping.Filter(Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider,Syncfusion.UI.Xaml.Diagram.Stencil.ISymbol)">
+            <summary>
+            Filter value.
+            </summary>
+            <param name="sender">sender value.</param>
+            <param name="symbol">symbol value.</param>
+            <returns>returns true.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilMapping.SymbolFilter(Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider,System.Object)">
+            <summary>
+            Symbol filter.
+            </summary>
+            <param name="sender">sender value.</param>
+            <param name="symbol">object symbol.</param>
+            <returns>returns true.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.StyleMapping">
+            <summary>
+            Style mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.OnStylePropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Style Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.OnStylePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Style,Windows.UI.Xaml.Style)">
+            <summary>
+            On Style Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formStyle">form Style.</param>
+            <param name="nativeStyle">native style.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.OnConnectorStylePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Style,Windows.UI.Xaml.Style)">
+            <summary>
+            On Connector Style Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formStyle">form Style.</param>
+            <param name="nativeStyle">native style.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.OnPortStylePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Style,Windows.UI.Xaml.Style)">
+            <summary>
+            On PortStyle Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formStyle" >form Style.</param>
+            <param name="nativeStyle">native style..</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.GetNativeStyle(Syncfusion.SfDiagram.XForms.Style)">
+            <summary>
+            Get Native Style.
+            </summary>
+            <param name="formStyle">form style.</param>
+            <returns>return native style.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.OnFormStylePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.Style,Windows.UI.Xaml.Style)">
+            <summary>
+            On Form Style Properties Changed.
+            </summary>
+            <param name="propertyName">Property name.</param>
+            <param name="formStyle">form style.</param>
+            <param name="nativeStyle">native style.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.ConnectorStyleSetter(Syncfusion.SfDiagram.XForms.Style,Windows.UI.Xaml.Style,Windows.UI.Xaml.Setter)">
+            <summary>
+            Connector Style Setter.
+            </summary>
+            <param name="formStyle">form Style.</param>
+            <param name="nativeStyle">native style.</param>
+            <param name="setter">setter value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.NodeStyleSetter(Syncfusion.SfDiagram.XForms.Style,Windows.UI.Xaml.Style,Windows.UI.Xaml.Setter)">
+            <summary>
+            Node Style Setter.
+            </summary>
+            <param name="formStyle">form Style.</param>
+            <param name="nativeStyle">native style.</param>
+            <param name="setter">setter value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.ConvertColorToHex(Xamarin.Forms.Color)">
+            <summary>
+            Convert Color To Hex.
+            </summary>
+            <param name="fillColor">fill color.</param>
+            <returns>return color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.ConvertHex(System.String)">
+            <summary>
+            Convert hex.
+            </summary>
+            <param name="hex">hex value.</param>
+            <returns>return color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StyleMapping.ConvertStringToFormsColor(System.String)">
+            <summary>
+            Convert String To Forms Color.
+            </summary>
+            <param name="v">string v.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.DecoratorStyleMapping">
+            <summary>
+            Decorator Style Mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DecoratorStyleMapping.OnDecoratorStylePropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            On Decorator Style Property Changed.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DecoratorStyleMapping.OnTargetDecoratorStylePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.DecoratorStyle,Windows.UI.Xaml.Style)">
+            <summary>
+            On Target Decorator Style Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formDecoratorStyle">formDecorator Style.</param>
+            <param name="nativeDecoratorStyle">native Decorator Style.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DecoratorStyleMapping.OnSourceDecoratorStylePropertiesChanged(System.String,Syncfusion.SfDiagram.XForms.DecoratorStyle,Windows.UI.Xaml.Style)">
+            <summary>
+            On Source Decorator Style Properties Changed.
+            </summary>
+            <param name="propertyName">property Name.</param>
+            <param name="formDecoratorStyle">form Decorator Style.</param>
+            <param name="nativeDecoratorStyle">native Decorator Style.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DecoratorStyleMapping.GetNativeDecoratorStyle(Syncfusion.SfDiagram.XForms.DecoratorStyle)">
+            <summary>
+            Get Native Decorator Style.
+            </summary>
+            <param name="formDecoratorStyle">form Decorator Style.</param>
+            <returns>native Decorator Style.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.DecoratorStyleMapping.StyleSetter(Syncfusion.SfDiagram.XForms.DecoratorStyle,Windows.UI.Xaml.Style,Windows.UI.Xaml.Setter)">
+            <summary>
+            Style Setter.
+            </summary>
+            <param name="formStyle">form Style.</param>
+            <param name="nativeStyle">native Style.</param>
+            <param name="setter">setter value.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer">
+            <summary>
+            Represents the renderer class for Overview panel.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer.nativeOverview">
+            <summary>
+            Native overview.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer.formOverview">
+            <summary>
+            Form overview.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer.GetPublicProperties(System.Type)">
+            <summary>
+            Get Public Properties.
+            </summary>
+            <param name="type">type value.</param>
+            <returns>returns properties.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer.GetNativeObject(System.Type,System.Object)">
+            <summary>
+            Get Native Object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <returns>returns value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer.SetNativeObject(System.Type,System.Object,System.Object)">
+            <summary>
+            Set Native Object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer.GetNativeOverview(Syncfusion.SfDiagram.XForms.OverviewPanel)">
+            <summary>
+            Get Native Overview.
+            </summary>
+            <param name="overviewPanel">over view Panel.</param>
+            <returns>native Overview.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.OverviewPanelRenderer.OnElementChanged(Xamarin.Forms.Platform.UWP.ElementChangedEventArgs{Syncfusion.SfDiagram.XForms.OverviewPanel})">
+            <summary>
+            On Element Changed.
+            </summary>
+            <param name="e">event args.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer">
+            <summary>
+            Diagram renderer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.nativediagram">
+            <summary>
+            Native diagram.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.formDiagram">
+            <summary>
+            Form diagram.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.diagramMapping">
+            <summary>
+            Diagram mapping.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.Init">
+            <summary>
+            Initialization method.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.SetNativeObject(System.Type,System.Object,System.Object)">
+            <summary>
+            Set Native Object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetWindowsColor(Xamarin.Forms.Color)">
+            <summary>
+            Get Windows Color.
+            </summary>
+            <param name="xColor">color value.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetPropertiesChanged(System.Type,System.Object)">
+            <summary>
+            Get Properties Changed.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <returns>returns list.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.Style">
+            <summary>
+            Style method.
+            </summary>
+            <returns>returns style.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetPublicProperties(System.Type)">
+            <summary>
+            Get Public Properties.
+            </summary>
+            <param name="type">type value.</param>
+            <returns>return properties.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.SetSnapSettingsObject(System.Type,System.Object,System.Object)">
+            <summary>
+            Set Snap Settings Object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetKnownTypes">
+            <summary>
+            Get Known Types.
+            </summary>
+            <returns>returns item.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.SetInternalProperty(System.Type,System.Object,System.String,System.Object)">
+            <summary>
+            Set Internal Property.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="propertyName">property Name.</param>
+            <param name="value">value of object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.SetFormObject(System.Type,System.Object,System.Object)">
+            <summary>
+            Set Form Object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetFormDiagram">
+            <summary>
+            Get Form Diagram.
+            </summary>
+            <returns>returns form Diagram.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetNativeDiagram">
+            <summary>
+            Get Native Diagram.
+            </summary>
+            <returns>returns native diagram.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetNativePropertiesChanged(System.Type,System.Object)">
+            <summary>
+            Get Native Properties Changed.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <returns>properties list.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetFormsNode(System.Object,System.Object)">
+            <summary>
+            Get Forms Node.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="node">object node.</param>
+            <returns>returns form node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetSnapSettingsObject(System.Type,System.Object)">
+            <summary>
+            Get Snap Settings Object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <returns>returns value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetNativeObject(System.Type,System.Object)">
+            <summary>
+            Get Native Object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <returns>returns value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.SetInternalResourceProperty(System.Type,System.Object,System.String,System.Object)">
+            <summary>
+            Set Internal Resource Property.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="propertyName">property name.</param>
+            <param name="value">Object value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.InvokeInternalMethod(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Invoke Internal Method.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="methodName">method name.</param>
+            <param name="args">event args.</param>
+            <returns>returns null.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetNativeDiagram(Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get Native Diagram.
+            </summary>
+            <param name="sfdiagram">diagram value.</param>
+            <returns>native diagram.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.SetMargin">
+            <summary>
+            Method to set layout margin - XAMARIN-33657 Margin support for Layout in Diagram.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.OnElementChanged(Xamarin.Forms.Platform.UWP.ElementChangedEventArgs{Syncfusion.SfDiagram.XForms.SfDiagram})">
+            <summary>
+            On Element Changed.
+            </summary>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.Dispose(System.Boolean)">
+            <summary>
+            Method to dispose diagram objects.
+            </summary>
+            <param name="disposing">disposing value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.GetNode(System.Int32,Syncfusion.SfDiagram.XForms.SfDiagram)">
+            <summary>
+            Get Node.
+            </summary>
+            <param name="index">index value.</param>
+            <param name="diagram">diagram value.</param>
+            <returns>returns node.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.Nativediagram_Loaded(System.Object,Windows.UI.Xaml.RoutedEventArgs)">
+            <summary>
+            Native diagram Loaded.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.SfDiagramRenderer_ViewPortChangedEvent(System.Object,Syncfusion.UI.Xaml.Diagram.ChangeEventArgs{System.Object,Syncfusion.UI.Xaml.Diagram.ScrollChanged})">
+            <summary>
+            View Port Changed Event.
+            </summary>
+            <param name="sender">object sender.</param>
+            <param name="args">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.DisposeDiagramObjects">
+            <summary>
+            Method to dispose native diagram objects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.DisposeFormsObjects">
+            <summary>
+            Method to dispose forms diagram objects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.DisposeNodeObjects">
+            <summary>
+            Method to dispose native diagram node objects.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.SfDiagramRenderer.DisposeNodeAnnotationObjects(Syncfusion.SfDiagram.XForms.UWP.CustomNode)">
+            <summary>
+            Method to dispose native diagram annotation objects.
+            </summary>
+            <param name="node">node value.</param>
+        </member>
+        <member name="T:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer">
+            <summary>
+            Stencil Renderer.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.formStencil">
+            <summary>
+            Form stencil.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.nativeStencil">
+            <summary>
+            Native stencil.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.SetNativeObject(System.Type,System.Object,System.Object)">
+            <summary>
+            SEt native object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="nativeObject">native object.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.GetWindowsColor(Xamarin.Forms.Color)">
+            <summary>
+            Get window color.
+            </summary>
+            <param name="xColor">color value.</param>
+            <returns>returns color.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.GetPropertiesChanged(System.Type,System.Object)">
+            <summary>
+            Get properties changed event.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <returns>returns list.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.GetPublicProperties(System.Type)">
+            <summary>
+            Get public properties.
+            </summary>
+            <param name="type">type value.</param>
+            <returns>returns properties.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.GetFormsStencil">
+            <summary>
+            Get forms stencil.
+            </summary>
+            <returns>form stencil.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.GetNativeObject(System.Type,System.Object)">
+            <summary>
+            Get native object.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <returns>returns value.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.SetInternalProperty(System.Type,System.Object,System.String,System.Object)">
+            <summary>
+            Set internal property.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="propertyName">property name.</param>
+            <param name="value">Object value.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.InvokeInternalMethod(System.Type,System.Object,System.String,System.Object[])">
+            <summary>
+            Invoke internal method.
+            </summary>
+            <param name="type">type value.</param>
+            <param name="obj">object value.</param>
+            <param name="methodName">string method name.</param>
+            <param name="args">object args.</param>
+            <returns>returns null.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.GetNativeDiagram(Syncfusion.SfDiagram.XForms.Stencil)">
+            <summary>
+            Get native diagram.
+            </summary>
+            <param name="stencil">stencil value.</param>
+            <returns>native stencil.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.StencilSymbolStyle(Syncfusion.SfDiagram.XForms.SymbolStyle)">
+            <summary>
+            Stencil symbol style.
+            </summary>
+            <param name="symbolstyle">symbol style.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.OnElementChanged(Xamarin.Forms.Platform.UWP.ElementChangedEventArgs{Syncfusion.SfDiagram.XForms.Stencil})">
+            <summary>
+            On element changed.
+            </summary>
+            <param name="e">event args.</param>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.StencilSymbolStyle">
+            <summary>
+            Stencil symbol style.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.Filter(Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider,Syncfusion.UI.Xaml.Diagram.Stencil.ISymbol)">
+            <summary>
+            Filter method.
+            </summary>
+            <param name="sender">sender value.</param>
+            <param name="symbol">symbol value.</param>
+            <returns>returns true.</returns>
+        </member>
+        <member name="M:Syncfusion.SfDiagram.XForms.UWP.StencilRenderer.SymbolFilter(Syncfusion.UI.Xaml.Diagram.Stencil.SymbolFilterProvider,System.Object)">
+            <summary>
+            Symbol filter.
+            </summary>
+            <param name="sender">sender value.</param>
+            <param name="symbol">object symbol.</param>
+            <returns>returns true.</returns>
+        </member>
+    </members>
+</doc>

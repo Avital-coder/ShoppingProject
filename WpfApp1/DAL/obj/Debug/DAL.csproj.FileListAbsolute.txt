@@ -27,3 +27,28 @@ C:\Users\user\ShoppingProject\WpfApp1\DAL\bin\Debug\de\PdfSharp.Charting.resourc
 C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.dll
 C:\Users\user\ShoppingProject\WpfApp1\DAL\obj\Debug\DAL.pdb
+D:\פרויקט זורי\WpfApp1\DAL\obj\Debug\DAL.dll
+D:\פרויקט זורי\WpfApp1\DAL\obj\Debug\DAL.pdb
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\DAL.dll.config
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\DAL.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\DAL.pdb
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\BE.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\EntityFramework.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\IronBarCode.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\PdfSharp.Charting.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\PdfSharp.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\Syncfusion.Compression.Base.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\Syncfusion.Licensing.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\Syncfusion.Pdf.Base.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\BE.pdb
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\EntityFramework.xml
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\IronBarCode.xml
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\PdfSharp.xml
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\PdfSharp.Charting.xml
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\Syncfusion.Compression.Base.xml
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\Syncfusion.Pdf.Base.xml
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\de\PdfSharp.resources.dll
+D:\פרויקט זורי\WpfApp1\DAL\bin\Debug\de\PdfSharp.Charting.resources.dll
+D:\פרויקט זורי\WpfApp1\DAL\obj\Debug\DAL.csproj.CopyComplete

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Data;
 
-namespace WpfApp1.Converters
+namespace WpfApp1.Convertors
 {
     class ItemIdToPrice : IValueConverter
     {
@@ -17,7 +17,7 @@ namespace WpfApp1.Converters
             string id = value as string;
             if (id == null)
                 return 0;
-            var item = new BL.BLImp(((App)Application.Current).Currents.LoggedUser).GetAllItems().Where(x => x.Id == id).FirstOrDefault();
+            var item = new BL.BLImp(((App)Application.Current).Currents.CurrentUser).GetAllItems().Where(x => x.Id == id).FirstOrDefault();
             return item == null ? 0 : item.Price;
         }
 

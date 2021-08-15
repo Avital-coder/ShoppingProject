@@ -17,7 +17,7 @@ namespace WpfApp1.Convertors
             string id = value as string;
             if (id == null)
                 return null;
-            var item = new BL.BLImp(((App)Application.Current).Currents.LoggedUser).GetAllItems().Where(x => x.Id == id).FirstOrDefault();
+            var item = new BL.BLImp(((App)Application.Current).Currents.CurrentUser).GetAllItems().Where(x => x.Id == id).FirstOrDefault();
             return item == null ? null : item.BranchName;
         }
 

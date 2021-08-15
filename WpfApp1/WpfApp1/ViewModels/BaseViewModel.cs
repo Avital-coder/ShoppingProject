@@ -22,20 +22,23 @@ namespace WpfApp1.ViewModels
         }
 
         #region commands
+        
         public ICommand DisplayContactUsView
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new ContactVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new ContactViewModel(); });
             }
         }
+        
+        /*
         public ICommand DisplayAboutUsView
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new AboutUsVM(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new AboutUsViewModel(); });
             }
-        }
+        }*/
 
         public ICommand DisplayLoginView
         {
@@ -43,19 +46,22 @@ namespace WpfApp1.ViewModels
             {
                 return new BaseCommand(delegate ()
                 {
-                    ((App)Application.Current).Currents.CurrentVM = new LoginVM();
-                    ((App)Application.Current).Currents.GoBack.Clear();
-                    ((App)Application.Current).Currents.LoggedUser = null;
+                    
+                    ((App)Application.Current).Currents.CurrentViewModel = new LoginViewModel();
+                   /* ((App)Application.Current).Currents.GoBack.Clear();*/
+                    ((App)Application.Current).Currents.CurrentUser = null;
                 });
             }
         }
+        
+        /*
         public ICommand GoBack
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = ((App)Application.Current).Currents.GoBack.Pop(); ((App)Application.Current).Currents.GoBack.Pop(); }, () => ((App)Application.Current).Currents.GoBack.Count() > 0);
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = ((App)Application.Current).Currents.GoBack.Pop(); ((App)Application.Current).Currents.GoBack.Pop(); }, () => ((App)Application.Current).Currents.GoBack.Count() > 0);
             }
-        }
+        }*/
 
         public ICommand Logout
         {
@@ -63,17 +69,19 @@ namespace WpfApp1.ViewModels
             {
                 return new BaseCommand(delegate ()
                 {
-                    ((App)Application.Current).Currents.CurrentVM = new LogInViewModel();
-                    ((App)Application.Current).Currents.GoBack.Clear();
-                    ((App)Application.Current).Currents.LoggedUser = null;
+                    
+                    ((App)Application.Current).Currents.CurrentViewModel = new LoginViewModel();
+                    //((App)Application.Current).Currents.GoBack.Clear();
+                    ((App)Application.Current).Currents.CurrentUser = null;
                 });
             }
         }
+        
         public ICommand LastPurchase
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new LastPurchaseViewModel(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new LastPurchaseViewModel(); });
             }
         }
 
@@ -81,14 +89,14 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryByShopViewModel(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new HistoryByShopViewModel(); });
             }
         }
         public ICommand HistoryByItem
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryByItemViewModel(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new HistoryByItemViewModel(); });
             }
         }
 
@@ -96,7 +104,7 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new HistoryBySCartViewModel(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new HistoryBySCartViewModel(); });
             }
         }
 
@@ -104,7 +112,7 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new PriceComparisonViewModel(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new PriceComparisonViewModel(); });
             }
         }
 
@@ -112,9 +120,10 @@ namespace WpfApp1.ViewModels
         {
             get
             {
-                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentVM = new CreateCartViewModel(); });
+                return new BaseCommand(delegate () { ((App)Application.Current).Currents.CurrentViewModel = new CreateCartViewModel(); });
             }
         }
+        
         #endregion
 
     }

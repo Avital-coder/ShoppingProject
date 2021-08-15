@@ -17,26 +17,26 @@ namespace WpfApp1.Others
 
     public class Currents : INotifyPropertyChanged
     {
-        /*
-       public Stack<BaseViewModel> GoBack;
+        
+       //public Stack<BaseViewModel> GoBack;
        public Currents()
        {
-           GoBack = new Stack<BaseViewModel>();
+           //GoBack = new Stack<BaseViewModel>();
        }
 
-       private BaseViewModel currentVM;
-       public BaseViewModel CurrentVM
+       private BaseViewModel currentViewModel;
+       public BaseViewModel CurrentViewModel
        {
-           get { return currentVM; }
+           get { return currentViewModel; }
            set
            {
-               if (currentVM != null && !currentVM.GetType().Equals(value.GetType()))
-                   GoBack.Push(currentVM);
-               currentVM = value;
-               OnPropertyRaised("CurrentVM");
+               //if (currentVM != null && !currentVM.GetType().Equals(value.GetType()))
+                  // GoBack.Push(currentVM);
+               currentViewModel = value;
+               OnPropertyRaised("CurrentViewModel");
 
            }
-       }*/
+       }
 
         private User currentUser;
         public User CurrentUser
@@ -45,7 +45,7 @@ namespace WpfApp1.Others
             set
             {
                 currentUser = value;
-                OnPropertyRaised("LoggedUser");
+                OnPropertyRaised("CurrentUser");
             }
         }
 

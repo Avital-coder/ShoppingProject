@@ -7,6 +7,7 @@ using LiveCharts;
 using LiveCharts.Wpf;
 using WpfApp1.Models;
 using WpfApp1.Others;
+using WpfApp1.Commands;
 
 namespace WpfApp1.ViewModels
 {

@@ -15,7 +15,7 @@ namespace WpfApp1.Models
         IBL BL;
         public LastPurchaseModel()
         {
-            BL = new BLImp(((App)Application.Current).Currents.LoggedUser);
+            BL = new BLImp(((App)Application.Current).Currents.CurrentUser);
         }
 
         #region getters

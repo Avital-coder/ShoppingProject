@@ -39,11 +39,22 @@ namespace WpfApp1.Models
         public IEnumerable<double> GetPriceOptions(string[] Shops, IEnumerable<string> itemsList)
         {
             List<double> priceOptions = new List<double>();
-            foreach (var shop in Shops)
+            foreach (var Shop in Shops)
             {
-                priceOptions.Add(BL.GetCartPriceByShopName(shop, itemsList));
+                priceOptions.Add(BL.GetCartPriceByShopName(Shop, itemsList));
             }
             return priceOptions;
         }
+
+        /*
+        public IEnumerable<double> GetCartSize(string[] Carts, IEnumerable<string> itemsList)
+        {
+            List<double> CartsSize = new List<double>();
+            foreach (var Cart in Carts)
+            {
+                CartsSize.Add(BL.GetCartPriceByShopName(Cart, itemsList));
+            }
+            return CartsSize;
+        }*/
     }
 }

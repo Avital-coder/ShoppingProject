@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\פרויקט זורי\WpfApp1\WpfApp1\App.xaml
-12-1837589896
+121539488292
 
-642062965123
-211810371953
-MainWindow.xaml;Styles.xaml;Views\Contact.xaml;Views\CreateCart.xaml;Views\HistoryByCart.xaml;Views\HistoryByItem.xaml;Views\HistoryByShop.xaml;Views\LastPurchase.xaml;Views\LogIn.xaml;Views\PriceComparison.xaml;Views\SideBar.xaml;Views\SignUp.xaml;
+64-1042657195
+145-840666108
+MainWindow.xaml;Styles.xaml;Views\ContactView.xaml;Views\CreateCartView.xaml;Views\HistoryByCartView.xaml;Views\HistoryByItemView.xaml;Views\HistoryByShopView.xaml;Views\LastPurchaseView.xaml;Views\LogInView.xaml;Views\PriceComparisonView.xaml;Views\SideBarView.xaml;Views\SignUpView.xaml;
 
-False
+True
 

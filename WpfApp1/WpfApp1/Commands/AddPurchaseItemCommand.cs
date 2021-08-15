@@ -33,7 +33,7 @@ namespace WpfApp1.Commands
         public void Execute(object parameter)
         {
             PurchaseItem Item = parameter as PurchaseItem;
-            Item.UserId = ((App)Application.Current).Currents.LoggedUser.Id;
+            Item.UserId = ((App)Application.Current).Currents.CurrentUser.Id;
             CurrentViewModel.PurchaseItems.Add(Item);
             ((App)Application.Current).Currents.CurrentViewModel = CurrentViewModel;
         }

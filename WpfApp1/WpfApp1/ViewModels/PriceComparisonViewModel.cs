@@ -17,7 +17,7 @@ namespace WpfApp1.ViewModels
 
     public class PriceComparisonViewModel : BaseViewModel
     {
-        public priceComparisonModel PriceComparisonModel { get; set; }
+        public priceComparisonModel PriceComparisonModel{ get; set; }
         public PriceComparisonViewModel()
         {
             SeriesCollection = new SeriesCollection();
@@ -83,7 +83,7 @@ namespace WpfApp1.ViewModels
             new ColumnSeries
             {
                 Title = "הסל שלך",
-                Values = new ChartValues<double> (priceComparisonModel.GetPriceOptions(Labels, PriceComparisonList.Select(x => x.Name)))
+                Values = new ChartValues<double> (PriceComparisonModel.GetPriceOptions(Labels, PriceComparisonList.Select(x => x.Name)))
             }
             };
         }

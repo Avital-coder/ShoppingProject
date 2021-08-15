@@ -9,7 +9,7 @@ using System.Windows.Controls;
 namespace WpfApp1.Validations
 {
 
-    class ValidId : ValidationRule
+    public class ValidId : ValidationRule
     {
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {

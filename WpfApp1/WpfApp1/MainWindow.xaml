@@ -10,6 +10,10 @@
         WindowStartupLocation="CenterScreen"
         WindowState="Maximized"
         Icon="/WpfApp1;component/Images/logo.ico">
+    <Window.Background>
+        <ImageBrush Opacity="0.8" ImageSource="/WpfApp1;component/Images/background.png" />
+    </Window.Background>
+
     <Grid>
 
         <Grid.ColumnDefinitions>
@@ -66,16 +70,14 @@
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button Grid.Column="0" VerticalAlignment="Center" HorizontalContentAlignment="Center" Command="{Binding GoBack}" Foreground="Black" Background="{x:Null}" Style="{StaticResource roundedCornersButtonTransparent}">
-                    <materialDesign:PackIcon Grid.Column="0" Kind="Undo" HorizontalAlignment="Center" VerticalAlignment="Center" Height="25" Width="25"/>
-                </Button >
+
             </Grid>
 
         </Grid>
 
         <Grid Grid.Row="3" Grid.Column="1" >
 
-            <ContentControl Content="{Binding Path=Currents.CurrentVM, Source={x:Static Application.Current}}"/>
+            <ContentControl Content="{Binding Path=Currents.CurrentViewModel, Source={x:Static Application.Current}}"/>
 
         </Grid>
 

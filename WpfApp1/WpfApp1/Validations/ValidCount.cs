@@ -8,7 +8,7 @@ using System.Windows.Controls;
 
 namespace WpfApp1.Validations
 {
-    class ValidCount : ValidationRule
+    public class ValidCount : ValidationRule
     {
         public override ValidationResult Validate(object value, CultureInfo cultureInfo)
         {

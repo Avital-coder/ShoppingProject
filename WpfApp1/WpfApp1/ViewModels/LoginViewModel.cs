@@ -89,9 +89,8 @@ namespace WpfApp1.ViewModels
         public void Login()
         {
 
-
             if (LoginModel.Login(Mail, Password))
-                ((App)Application.Current).Currents.CurrentViewModel = new LastPurchaseViewModel();
+               ((App)Application.Current).Currents.CurrentViewModel = new LastPurchaseViewModel();
             else
                 ErrorVisible = Visibility.Visible;
 

@@ -9,3 +9,4 @@ C:\Users\user\ShoppingProject\WpfApp1\BE\obj\Debug\BE.csprojAssemblyReference.ca
 C:\Users\user\ShoppingProject\WpfApp1\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\user\ShoppingProject\WpfApp1\BE\obj\Debug\BE.dll
 C:\Users\user\ShoppingProject\WpfApp1\BE\obj\Debug\BE.pdb
+D:\פרויקט זורי\WpfApp1\BE\obj\Debug\BE.csprojAssemblyReference.cache

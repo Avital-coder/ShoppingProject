@@ -6,6 +6,7 @@ using System.Windows.Input;
 using LiveCharts;
 using LiveCharts.Wpf;
 using WpfApp1.Models;
+using WpfApp1.Commands;
 
 namespace WpfApp1.ViewModels
 {
@@ -16,10 +17,10 @@ namespace WpfApp1.ViewModels
             NumberOfMounths = "5";
             HistoryByShopM = new HistoryByShopModel();
             ShopList = new ObservableCollection<string>(HistoryByShopM.GetShops().OrderBy(x => x));
-            NumOfMonthsList = new ObservableCollection<string>(new Other.ListOfMonths().GetNumOfMonthsList());
+            NumOfMonthsList = new ObservableCollection<string>(new Others.ListOfMonths().GetNumOfMonthsList());
             SeriesCollection = new SeriesCollection();
 
-            Labels = new Other.GetMonthLabel().GetLabels(int.Parse(NumberOfMounths));
+            Labels = new Others.GetMonthLabel().GetLabels(int.Parse(NumberOfMounths));
             YFormatter = value => value.ToString("C");
         }
         #region collections
@@ -35,7 +36,7 @@ namespace WpfApp1.ViewModels
             set
             {
                 numberOfMounths = value.Split(' ')[0];
-                Labels = new Other.GetMonthLabel().GetLabels(int.Parse(NumberOfMounths));
+                Labels = new Others.GetMonthLabel().GetLabels(int.Parse(NumberOfMounths));
                 normelizeGraph();
                 OnPropertyRaised("NumberOfMounths");
             }
