@@ -36,3 +36,7 @@ D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Syncfusion.Pdf.Base.xml
 D:\פרויקט זורי\WpfApp1\BL\bin\Debug\EntityFramework.xml
 D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Syncfusion.Compression.Base.xml
 D:\פרויקט זורי\WpfApp1\BL\obj\Debug\BL.csproj.CopyComplete
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\libgrpc_csharp_ext.x64.dylib

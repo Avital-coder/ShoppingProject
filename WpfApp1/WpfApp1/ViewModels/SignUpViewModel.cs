@@ -167,25 +167,19 @@ namespace WpfApp1.ViewModels
         {
 
 
-            if (FirstName == null || LastName == null || Id == null || Mail == null || Password1 == null || Password2 == null)
+            if (FirstName == null || LastName == null || Id == null || Mail == null || Password1 == null)
             {
-                MassageText = "אנא מלא את כל השדות";
+                MassageText = "make sure everything is filled";
                 ErrorMessageVisible = Visibility.Visible;
             }
 
 
             else if (!new ValidPassword().IsValidPassword(Password1))
             {
-                MassageText = "סיסמה צריכה להכיל 6 תווית לפחות ותו חזק";
+                MassageText = "your password is too weak";
                 ErrorMessageVisible = Visibility.Visible;
             }
 
-
-            else if (Password1 != Password2)
-            {
-                MassageText = "הסיסמאות שהזנת אינן תואמות";
-                ErrorMessageVisible = Visibility.Visible;
-            }
 
             else
             {
@@ -194,7 +188,7 @@ namespace WpfApp1.ViewModels
                     SuccessMessageVisible = Visibility.Visible;
                 else
                 {
-                    MassageText = "המשתמש כבר קיים";
+                    MassageText = "oops, we already know you";
                     ErrorMessageVisible = Visibility.Visible;
                 }
 

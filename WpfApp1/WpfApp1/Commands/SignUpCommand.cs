@@ -33,9 +33,7 @@ namespace WpfApp1.Commands
         {
             var values = (object[])parameter;
             PasswordBox PasswordBox1 = values[0] as PasswordBox;
-            PasswordBox PasswordBox2 = values[1] as PasswordBox;
             CurrentVM.Password1 = PasswordBox1.Password;
-            CurrentVM.Password2 = PasswordBox2.Password;
             CurrentVM.Signup();
         }
     }

@@ -11,6 +11,49 @@
         <ResourceDictionary>
 
 
+            <DataTemplate DataType="{x:Type ViewModels:LoginViewModel}">
+                <Views:LogInView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:SignUpViewModel}">
+                <Views:SignUpView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:ContactViewModel}">
+                <Views:ContactView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:LastPurchaseViewModel}">
+                <Views:LastPurchaseView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:HistoryByShopViewModel}">
+                <Views:HistoryByShopView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:HistoryByItemViewModel}">
+                <Views:HistoryByItemView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:HistoryBySCartViewModel}">
+                <Views:HistoryByCartView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:PriceComparisonViewModel}">
+                <Views:PriceComparisonView/>
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type ViewModels:CreateCartViewModel}">
+                <Views:CreateCartView/>
+            </DataTemplate>
+
+
+            <Convert:loginConvertor x:Key="loginConverter"/>
+
+            <Convert:SignUpConvertor x:Key="SignupConverter"/>
+
+            <Convert:ItemIdToPath x:Key="ItemIdToPathConverter"/>
+
+            <Convert:ItemIdToBranchName x:Key="ItemIdToBranchNameConverter"/>
+
+            <Convert:ItemIdToName x:Key="ItemIdToNameConverter"/>
+
+            <Convert:ItemIdToDescription x:Key="ItemIdToDescriptionConverter"/>
+
+            <Convert:ItemIdToPrice x:Key="ItemIdToPriceConverter"/>
+            
 
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Syncfusion.SfDiagram.Wpf;component/Resources/BasicShapes.xaml"/>

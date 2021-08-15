@@ -36,8 +36,8 @@
         <Setter Property="materialDesign:ButtonAssist.CornerRadius" Value="20"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="materialDesign:ShadowAssist.ShadowDepth" Value="Depth0"/>
-        <Setter Property="Background" Value="#42A5F5"/>
-        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Background" Value="#EC5578"/>
+        <Setter Property="Foreground" Value="Black"/>
     </Style>
 
     <Style TargetType="{x:Type ButtonBase}" x:Key="roundedCornersButtonBase"  BasedOn="{ StaticResource MaterialDesignRaisedDarkButton}">

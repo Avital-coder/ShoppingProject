@@ -19,7 +19,7 @@
             <ColumnDefinition Width="0.5*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid  Grid.Column="1">
+        <Grid  Grid.Column="1" Margin="78.2,32,151.2,-32.4" Grid.ColumnSpan="3">
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.8*"/>
                 <RowDefinition Height="1*"/>
@@ -39,142 +39,30 @@
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
 
-            <TextBlock Grid.Row="0" Grid.Column="1" FlowDirection="RightToLeft" VerticalAlignment="Center" HorizontalAlignment="Center"
-                       Text="צרו קשר" FontSize="28" Style="{StaticResource textFont}" FontWeight="Bold" />
+            <TextBlock Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center"
+                       Text="Call us" FontSize="45" Style="{StaticResource textFont}" FontWeight="Bold" Margin="0,46,12.8,62.4" Grid.RowSpan="2" Width="144" Grid.Column="1" />
 
-            <TextBlock  Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center"
-                       TextWrapping="Wrap" TextAlignment="Center" FlowDirection="RightToLeft"
-                       Text="לקוחות יקרים - טופס זה הינו לפניות כלליות ולפניות ייעול ושיפור התוכנה. פניות אלו מועברות לצוות מפעילי ומתחזקי התוכנה, תודה על שיתוף הפעולה." FontSize="18" Style="{StaticResource textFont}" FontWeight="Bold" Grid.Row="1"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"
+                       TextWrapping="Wrap" TextAlignment="Center"
+                       Text="We want to hear from you!" FontSize="25" Style="{StaticResource textFont}" FontWeight="Bold" Grid.Row="1" Grid.ColumnSpan="3" Margin="10,46,9.8,21.2" Width="345" Height="68" Grid.RowSpan="2"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"
+                       TextWrapping="Wrap" TextAlignment="Center"
+                       Text="Please choose your preferred way of contact below" FontSize="22" Style="{StaticResource textFont}" FontWeight="Bold" Grid.Row="2" Margin="-60,23.6,-60.2,4.2" Grid.RowSpan="2" Grid.ColumnSpan="3" Width="485"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center"
+                       TextWrapping="Wrap" TextAlignment="Center"
+                       Text="Feel free to call any time :)" FontSize="22" Style="{StaticResource textFont}" FontWeight="Bold" Grid.Row="3" Margin="-60,25,-60.2,11.6" Grid.RowSpan="3" Grid.ColumnSpan="3" Width="485"/>
 
-            <Border Grid.Row ="3" Grid.ColumnSpan="3" BorderThickness="1" CornerRadius="15" BorderBrush="Black">
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="20*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="1" BorderThickness="0"  FontSize="15"
-                                 materialDesign:HintAssist.Hint="הכנס שם" 
-                                 FlowDirection="RightToLeft"/>
-                </Grid>
-            </Border>
-            <Border Grid.Row ="5" Grid.ColumnSpan="3" BorderThickness="1" CornerRadius="15" BorderBrush="Black" >
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="20*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="1" BorderThickness="0"  FontSize="15"
-                                 materialDesign:HintAssist.Hint="הכנס כתובת מייל" 
-                                 FlowDirection="RightToLeft"/>
-                </Grid>
-            </Border>
-            <Border Grid.Row ="7" Grid.ColumnSpan="3" BorderThickness="1" CornerRadius="15" BorderBrush="Black" >
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="20*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBox Grid.Column="1" BorderThickness="0"  FontSize="15"
-                                 materialDesign:HintAssist.Hint="הפנייה שלך" 
-                                 FlowDirection="RightToLeft"/>
-                </Grid>
-            </Border>
-            <Button Grid.Row ="8" Grid.ColumnSpan="3" Background="#42A5F5" BorderThickness="0" 
-                Style="{StaticResource MaterialDesignRaisedDarkButton}" materialDesign:ButtonAssist.CornerRadius="20" materialDesign:ShadowAssist.ShadowDepth="Depth0" >
-                <TextBlock Text="שלח" />
+            <Button Style="{StaticResource MaterialDesignIconButton}" Height="100" Width="100" Command="{Binding Calling}" Grid.ColumnSpan="2" Margin="42,0,118.8,52" Grid.Row="4" Grid.RowSpan="4" >
+
+                <materialDesign:PackIcon Height="70" Width="70" Kind="Phone" Foreground="#EC5578"></materialDesign:PackIcon>
+            </Button>
+
+            <Button Style="{StaticResource MaterialDesignIconButton}" Height="100" Width="100" Command="{Binding Emailing}" Grid.ColumnSpan="2" Grid.Column="1" Margin="91,0,69.8,52" Grid.Row="4" Grid.RowSpan="4">
+                <materialDesign:PackIcon Height="70" Width="70" Kind="Email" Foreground="#EC5578"></materialDesign:PackIcon>
             </Button>
         </Grid>
 
-        <Grid Grid.Column="3" >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="40*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
 
-            <materialDesign:Card Grid.Row="1" UniformCornerRadius="20" >
-                <Grid  Background="#ffb6c5cf">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                        <RowDefinition Height="*"/>
-                    </Grid.RowDefinitions>
-                    <Grid Grid.Row="1">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1.8*"/>
-                            <ColumnDefinition Width="1*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="4*"/>
-                            <RowDefinition Height="90*"/>
-                            <RowDefinition Height="10*"/>
-                            <RowDefinition Height="39*"/>
-                        </Grid.RowDefinitions>
-                        <Border Grid.Row="1" Grid.Column="1"  CornerRadius="360" BorderBrush="#42A5F5" BorderThickness="2">
-
-                            <Button Style="{StaticResource MaterialDesignIconButton}" Height="100" Width="100" Command="{Binding EmailUs}">
-                                <materialDesign:PackIcon Height="70" Width="70" Kind="Email" Foreground="#42A5F5"></materialDesign:PackIcon>
-                            </Button>
-                        </Border>
-                        <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Text="Shops@gmail.com"   TextWrapping="Wrap" TextAlignment="Center" 
-                           Foreground="White" FontSize="15" FontWeight="Bold" Height="50" Width="140" Grid.Column="0" Grid.ColumnSpan="3"  ></TextBlock>
-                    </Grid>
-
-                    <Grid Grid.Row="0">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1.8*"/>
-                            <ColumnDefinition Width="1*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="4*"/>
-                            <RowDefinition Height="90*"/>
-                            <RowDefinition Height="10*"/>
-                            <RowDefinition Height="39*"/>
-                        </Grid.RowDefinitions>
-                        <Border Grid.Row="1" Grid.Column="1"  CornerRadius="360" BorderBrush="#78c257" BorderThickness="2" >
-
-                            <Button Style="{StaticResource MaterialDesignIconButton}"  Height="100" Width="100" Command="{Binding CallUs}" >
-
-                                <materialDesign:PackIcon Height="70" Width="70" Kind="Phone" Foreground="#78c257"></materialDesign:PackIcon>
-                            </Button>
-                        </Border>
-                        <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Text="052 - 3520018
-                                    052 - 5274374"   TextWrapping="Wrap" TextAlignment="Center" FlowDirection="LeftToRight"
-                           Foreground="White" FontSize="15" FontWeight="Bold" Height="50" Width="120" Grid.Column="0" Grid.ColumnSpan="3"  ></TextBlock>
-                    </Grid>
-                    <Grid Grid.Row="2">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1*"/>
-                            <ColumnDefinition Width="1.8*"/>
-                            <ColumnDefinition Width="1*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="4*"/>
-                            <RowDefinition Height="90*"/>
-                            <RowDefinition Height="10*"/>
-                            <RowDefinition Height="39*"/>
-                        </Grid.RowDefinitions>
-                        <Border Grid.Row="1" Grid.Column="1"  CornerRadius="360" BorderBrush="#78c257" BorderThickness="2">
-
-                            <Button Style="{StaticResource MaterialDesignIconButton}" Height="100" Width="100" Command="{Binding WhatsappUs}">
-
-                                <materialDesign:PackIcon Height="70" Width="70" Kind="Whatsapp" Foreground="#78c257"></materialDesign:PackIcon>
-
-                            </Button>
-                        </Border>
-                        <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Text="לצ'אט עם נציג"   TextWrapping="Wrap" TextAlignment="Center" 
-                           Foreground="White" FontSize="15" FontWeight="Bold" Height="50" Width="120" Grid.Column="0" Grid.ColumnSpan="3"  ></TextBlock>
-                    </Grid>
-
-
-                </Grid>
-            </materialDesign:Card>
-        </Grid>
 
     </Grid>
 
