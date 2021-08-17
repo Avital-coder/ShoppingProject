@@ -9,7 +9,6 @@ namespace BL
 {
     public interface IBL
     {
-        void SaveNewItemsGoogleDrive(); // this func download the new images from google drive and then delete them from the drive
         List<Item> GetAllItems(Func<Item, bool> predicate = null);
         List<PurchaseItem> GetAllPurchases(Func<PurchaseItem, bool> predicate = null);
         List<PurchaseItem> GetAllPurchasesOfAllUsers();
@@ -24,9 +23,9 @@ namespace BL
         IEnumerable<string> GetAllBranches();
         IEnumerable<string> GetAllShops();
         IEnumerable<double> GetHistoryByItem(string itemName, string[] mounths);
-        IEnumerable<double> GetHistoryBySCart(string[] Mounths);
+        IEnumerable<double> GetHistoryByCart(string[] Mounths);
         IEnumerable<string> GetPriceComparison(string ItemName);
-        Dictionary<string, List<string>> AnalizeHistory(List<string> items);
+        Dictionary<string, List<string>> AnalyzeHistory(List<string> items);
         void CreatePDF(List<object[]> items);
 
     }

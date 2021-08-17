@@ -17,7 +17,7 @@ namespace WpfApp1.Models
         }
         public IEnumerable<double> GetHistoryBySCart(string[] labels)
         {
-            return BL.GetHistoryBySCart(labels);
+            return BL.GetHistoryByCart(labels);
         }
     }
 }

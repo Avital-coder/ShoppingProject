@@ -62,12 +62,13 @@ namespace BL
 
         }
 
-        public IEnumerable<double> GetHistoryByShop(string shopName, string[] Mounths)
+        // get total purchases price for specific shop
+        public IEnumerable<double> GetHistoryByShop(string shopName, string[] Months)
         {
-            double[] values = new double[Mounths.Length];
-            for (int i = 0; i < Mounths.Length; i++)
+            double[] values = new double[Months.Length];
+            for (int i = 0; i < Months.Length; i++)
             {
-                values[i] = GetHistoryByShopAndMounth(shopName, Mounths[i]);
+                values[i] = GetHistoryByShopAndMonth(shopName, Months[i]);
             }
             return values;
         }
@@ -75,67 +76,72 @@ namespace BL
         {
             return dal.GetLastPurchase();
         }
-        private double GetHistoryByShopAndMounth(string shopName, string Mounth)
+
+        // get one month's total purchases price for specific shop
+        private double GetHistoryByShopAndMonth(string shopName, string Mounth)
         {
             double sum = 0;
-            foreach (var Purchases in GetAllPurchases())
+            foreach (var Purchase in GetAllPurchases())
             {
-                Item item = GetAllItems(x => x.Id == Purchases.ItemId).FirstOrDefault();
+                Item item = GetAllItems(x => x.Id == Purchase.ItemId).FirstOrDefault();
 
-                if (item != null && item.ShopName == shopName && Purchases.Date.ToString("MMM yy") == Mounth)
-                    sum += int.Parse(Purchases.Count) * item.Price;
+                if (item != null && item.ShopName == shopName && Purchase.Date.ToString("MMM yy") == Mounth)
+                    sum += int.Parse(Purchase.Count) * item.Price;
             }
             return sum;
         }
 
-        public IEnumerable<double> GetHistoryByItem(string itemName, string[] Mounths)
+        // get total purchases price of specific item
+        public IEnumerable<double> GetHistoryByItem(string itemName, string[] Months)
         {
-            double[] values = new double[Mounths.Length];
-            for (int i = 0; i < Mounths.Length; i++)
+            double[] values = new double[Months.Length];
+            for (int i = 0; i < Months.Length; i++)
             {
-                values[i] = GetHistoryByItemAndMounth(itemName, Mounths[i]);
+                values[i] = GetHistoryByItemAndMonth(itemName, Months[i]);
             }
             return values;
         }
-        private double GetHistoryByItemAndMounth(string itemName, string Mounth)
+
+        // get one month's total purchases price of specific item
+        private double GetHistoryByItemAndMonth(string itemName, string Month)
         {
             double count = 0;
-            foreach (var Purchases in GetAllPurchases())
+            foreach (var Purchase in GetAllPurchases())
             {
-                Item item = GetAllItems(x => x.Id == Purchases.ItemId).FirstOrDefault();
+                // find the item in items list
+                Item item = GetAllItems(x => x.Id == Purchase.ItemId).FirstOrDefault();
 
-                if (item != null && item.Name == itemName && Purchases.Date.ToString("MMM yy") == Mounth)
-                    count += double.Parse(Purchases.Count);
+                if (item != null && item.Name == itemName && Purchase.Date.ToString("MMM yy") == Month)
+                    count += double.Parse(Purchase.Count);
             }
             return count;
         }
 
-        public IEnumerable<double> GetHistoryBySCart(string[] Mounths)
+        // get total items purchases price of the user (ever)
+        public IEnumerable<double> GetHistoryByCart(string[] Months)
         {
-            double[] values = new double[Mounths.Length];
-            for (int i = 0; i < Mounths.Length; i++)
+            double[] values = new double[Months.Length];
+            for (int i = 0; i < Months.Length; i++)
             {
-                values[i] = GetHistoryBySCartMounth(Mounths[i]);
+                values[i] = GetHistoryByCartMonth(Months[i]);
             }
             return values;
         }
 
-        private double GetHistoryBySCartMounth(string Mounth)
+        // get one month's total purchases price of all items
+        private double GetHistoryByCartMonth(string Month)
         {
             double sum = 0;
-            foreach (var Purchases in GetAllPurchases())
+            foreach (var Purchase in GetAllPurchases())
             {
-                Item item = GetAllItems(x => x.Id == Purchases.ItemId).FirstOrDefault();
-                if (item != null && Purchases.Date.ToString("MMM yy") == Mounth)
-                    sum += double.Parse(Purchases.Count) * item.Price;
+                Item item = GetAllItems(x => x.Id == Purchase.ItemId).FirstOrDefault();
+                if (item != null && Purchase.Date.ToString("MMM yy") == Month)
+                    sum += double.Parse(Purchase.Count) * item.Price;
             }
             return sum;
         }
 
-        public void SaveNewItemsGoogleDrive()
-        {
-            throw new NotImplementedException();
-        }
+        // generate new PurchaseId to add
         private string FindNextPurchaseId()
         {
             var AllPurchases = GetAllPurchasesOfAllUsers();
@@ -144,6 +150,9 @@ namespace BL
             return (AllPurchases
                    .Select(item => int.Parse(item.Id)).Max() + 1).ToString();
         }
+
+        //Getters
+        #region Getters
         public List<Item> GetAllItems(Func<Item, bool> predicate = null)
         {
             return dal.GetAllItems(predicate);
@@ -171,6 +180,11 @@ namespace BL
             return GetAllItems().Select(item => item.ShopName + " " + item.BranchName).Distinct();
 
         }
+        #endregion
+
+        // Analyzing
+
+        // get all prices for all items
         public IEnumerable<string> GetPriceComparison(string ItemName)
         {
             List<string> PriceComparison = new List<string>();
@@ -179,13 +193,13 @@ namespace BL
             {
                 PriceComparison.Add(item.ShopName + " " + item.BranchName + "\n" + item.Price.ToString("C"));
             }
-
             return PriceComparison;
         }
-        public double GetCartPriceByShopName(string ShopName, IEnumerable<string> itemsName)
+
+        public double GetCartPriceByShopName(string ShopName, IEnumerable<string> itemsNames)
         {
             double sum = 0;
-            List<Item> Items = GetAllItems(item => item.ShopName + " " + item.BranchName == ShopName && itemsName.Contains(item.Name));
+            List<Item> Items = GetAllItems(item => item.ShopName + " " + item.BranchName == ShopName && itemsNames.Contains(item.Name));
             foreach (var item in Items)
             {
                 sum += item.Price;
@@ -200,37 +214,41 @@ namespace BL
         {
             dal.CreatePDF(items);
         }
-        
         public void DeletePurchaseFromUserFile(PurchaseItem PurchaseItem)
         {
             dal.DeletePurchaseFromUserFile(PurchaseItem);
         }
 
 
-
-        public Dictionary<string, List<string>> AnalizeHistory(List<string> itemsName)
+        // Recommendations Algorithm
+        public Dictionary<string, List<string>> AnalyzeHistory(List<string> itemsNames)
         {
-            if (itemsName == null || itemsName.Count == 0)
+            if (itemsNames == null || itemsNames.Count == 0)
                 return null;
-            Dictionary<string, Dictionary<string, int>> analizeDict = new Dictionary<string, Dictionary<string, int>>();
-            Dictionary<string, List<string>> itemsInPurchase = new Dictionary<string, List<string>>();
+            Dictionary<string, Dictionary<string, int>> analyzeDict = new Dictionary<string, Dictionary<string, int>>();
+            Dictionary<string, List<string>> itemsInDate = new Dictionary<string, List<string>>();
             List<PurchaseItem> Purchases = GetAllPurchases();
+
+            // itemsInDate Dict = { Date : List_of_items_bought }
             foreach (var purchase in Purchases)
             {
                 string dateOfPurchase = purchase.Date.ToString("dd.MM.yyyy");
-                if (!itemsInPurchase.Keys.Contains(dateOfPurchase))
-                    itemsInPurchase.Add(dateOfPurchase, new List<string> { GetItemNameById(purchase.ItemId) });
-                else if (!itemsInPurchase[dateOfPurchase].Contains(GetItemNameById(purchase.ItemId)))
-                    itemsInPurchase[dateOfPurchase].Add(GetItemNameById(purchase.ItemId));
+                if (!itemsInDate.Keys.Contains(dateOfPurchase))
+                    itemsInDate.Add(dateOfPurchase, new List<string> { GetItemNameById(purchase.ItemId) });
+                else if (!itemsInDate[dateOfPurchase].Contains(GetItemNameById(purchase.ItemId)))
+                    itemsInDate[dateOfPurchase].Add(GetItemNameById(purchase.ItemId));
             }
-            foreach (var item in itemsName)
+
+
+            // analyzeDict = { itemName : connection_counter }
+            foreach (var item in itemsNames)
             {
                 Dictionary<string, int> connectionCounter = new Dictionary<string, int>();
-                foreach (var itemsOfPurchase in itemsInPurchase)
+                foreach (var itemsOfDate in itemsInDate)
                 {
-                    if (itemsOfPurchase.Value.Contains(item))
+                    if (itemsOfDate.Value.Contains(item))
                     {
-                        foreach (var tempItem in itemsOfPurchase.Value)
+                        foreach (var tempItem in itemsOfDate.Value)
                         {
                             if (tempItem != item)
                             {
@@ -243,14 +261,23 @@ namespace BL
 
                     }
                 }
-                analizeDict.Add(item, connectionCounter);
+                analyzeDict.Add(item, connectionCounter);
             }
+            // connectionCounter Dict = { itemName : how_many_times_it_was_bought_with_an_item_from_this_purchase }
+            // {1} : 3
+            // {2} : 5
+            // {3} : 2
+            // {4} : 1
+
+            // allConnectionCounter dict = {
+
             Dictionary<string, int> allConnectionCounter = new Dictionary<string, int>();
-            foreach (var itemAnalize in analizeDict.Values)
+            // go over each item in counter dictionary
+            foreach (var itemAnalyze in analyzeDict.Values)
             {
-                foreach (var itemCounter in itemAnalize)
+                foreach (var itemCounter in itemAnalyze)
                 {
-                    if (!itemsName.Contains(itemCounter.Key))
+                    if (!itemsNames.Contains(itemCounter.Key))
                     {
                         if (!allConnectionCounter.Keys.Contains(itemCounter.Key))
                             allConnectionCounter.Add(itemCounter.Key, itemCounter.Value);
@@ -261,8 +288,12 @@ namespace BL
             }
             if (allConnectionCounter.Count == 0)
                 return null;
+
+            // order the suggested items (that go well with the cart items) by freq of appearing together
             var sortedAllConnectionCounter = allConnectionCounter.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
             List<string> suggestedItems = new List<string>();
+
+            // add top 3 suggested items to new list (suggestedItems)
             if (sortedAllConnectionCounter.Count <= 3)
                 for (int i = 0; i < 3; i++)
                 {
@@ -278,6 +309,8 @@ namespace BL
                     suggestedItems.Add(sortedAllConnectionCounter.Keys.ElementAt(sortedAllConnectionCounter.Count - i));
                 }
             }
+
+
             Dictionary<string, List<string>> pairsOfSuggestions = new Dictionary<string, List<string>>();
             {
                 foreach (var suggestedItem in suggestedItems)
@@ -287,19 +320,19 @@ namespace BL
                     int maxValueConnector = 0;
                     int maxValueConnector2 = 0;
 
-                    foreach (var analizedItem in analizeDict)
+                    foreach (var analyzedItem in analyzeDict)
                     {
-                        if (analizedItem.Value.Keys.Contains(suggestedItem))
+                        if (analyzedItem.Value.Keys.Contains(suggestedItem))
                         {
-                            if (analizedItem.Value[suggestedItem] > maxValueConnector)
+                            if (analyzedItem.Value[suggestedItem] > maxValueConnector)
                             {
-                                maxConnector = analizedItem.Key;
-                                maxValueConnector = analizedItem.Value[suggestedItem];
+                                maxConnector = analyzedItem.Key;
+                                maxValueConnector = analyzedItem.Value[suggestedItem];
                             }
-                            if (analizedItem.Value[suggestedItem] > maxValueConnector2 && maxConnector != analizedItem.Key)
+                            if (analyzedItem.Value[suggestedItem] > maxValueConnector2 && maxConnector != analyzedItem.Key)
                             {
-                                maxConnector2 = analizedItem.Key;
-                                maxValueConnector2 = analizedItem.Value[suggestedItem];
+                                maxConnector2 = analyzedItem.Key;
+                                maxValueConnector2 = analyzedItem.Value[suggestedItem];
                             }
                         }
                     }

@@ -47,7 +47,7 @@ namespace WpfApp1.Models
 
         public Dictionary<string, List<string>> GetBuyingOffer(List<string> itemsName)
         {
-            return BL.AnalizeHistory(itemsName);
+            return BL.AnalyzeHistory(itemsName);
         }
 
         public void CreatePDF(List<object[]> items)
