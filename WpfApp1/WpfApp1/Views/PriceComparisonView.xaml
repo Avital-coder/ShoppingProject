@@ -14,30 +14,30 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.3*"/>
-            <ColumnDefinition Width="5.3*"/>
-            <ColumnDefinition Width="0.1*"/>
-            <ColumnDefinition Width="0.9*"/>
-            <ColumnDefinition Width="0.1*"/>
-            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="169*"/>
+            <ColumnDefinition Width="414*"/>
+            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="94*"/>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="104*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="84*"/>
+            <RowDefinition Height="0*"/>
+            <RowDefinition Height="214*"/>
+            <RowDefinition Height="146*"/>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="3*"/>
-            <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
 
-        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="6" Panel.ZIndex="1" Margin="-13,0,10,-0.4"/>
+        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="6" Panel.ZIndex="1" Margin="-13,0,5,-3.4"/>
 
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="המוצרים שלך לאורך זמן" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Panel.ZIndex="0"/>
-        <StackPanel Grid.Row="0" Grid.Column="2" Panel.ZIndex="0">
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Your products over time" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Left" Panel.ZIndex="0" Height="27" Margin="4.2,29,0,28" Width="229"/>
+        <StackPanel Grid.Row="0" Grid.Column="2" Panel.ZIndex="0" Margin="0.8,0,3,1">
             <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
         </StackPanel>
 
-        <ListView Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" ItemsSource="{Binding PriceComparisonList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Panel.ZIndex="0">
+        <ListView Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" ItemsSource="{Binding PriceComparisonList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Panel.ZIndex="0" Height="0" Margin="0,4,2.2,0">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid  Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Stretch">
@@ -83,7 +83,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Grid Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="0" Grid.RowSpan="2">
+        <Grid Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="0" Grid.RowSpan="3" Margin="2,4,0.4,1.6">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.2*"/>
@@ -91,7 +91,7 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Grid.Row="0" Text="בחר את המוצרים שברצונך להציג" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock Text="Choose products to display:" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight" Margin="-423,22,370,292" Grid.RowSpan="3" Width="145" Height="46"/>
             <TextBlock Grid.Row="1"/>
             <ListView x:Name="ItemlistView" Grid.Row="2" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="RightToLeft" Panel.ZIndex="0" >
                 <ListView.ItemTemplate>
@@ -106,7 +106,7 @@
             </ListView>
         </Grid>
 
-        <Grid Grid.Row="3" Grid.Column="1" >
+        <Grid Grid.Row="3" Grid.ColumnSpan="2" Margin="67,10.6,2.2,1.6" Grid.RowSpan="2" >
             <lvc:CartesianChart Series="{Binding SeriesCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" LegendLocation="Left">
                 <lvc:CartesianChart.AxisY>
                     <lvc:Axis Title="עלות הסל"  FontSize="14" LabelFormatter="{Binding YFormatter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
