@@ -61,7 +61,7 @@
 
                                 <TextBlock Text="{Binding ItemId,  Mode=TwoWay, Converter={StaticResource ItemIdToPriceConverter}}" FontSize="17" VerticalAlignment="Center"/>
                                 <TextBlock Text=" "/>
-                                <Image Stretch="Uniform" Width="12" Height="10" Source="/WpfApp;component/Images/sheqel.png" VerticalAlignment="Center"/>
+                                <Image Stretch="Uniform" Width="12" Height="10" Source="/WpfApp1;component/Images/sheqel.png" VerticalAlignment="Center"/>
 
                             </StackPanel>
 
@@ -149,7 +149,7 @@
             <StackPanel  Grid.Column="3" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
                 <TextBlock Text="{Binding AddPurchaseItem.ItemId,  Mode=TwoWay, Converter={StaticResource ItemIdToPriceConverter}}" FontSize="17" VerticalAlignment="Center"/>
                 <TextBlock Text=" "/>
-                <Image Stretch="Uniform" Width="12" Height="10" Source="/WpfApp;component/Images/sheqel.png" VerticalAlignment="Center"/>
+                <Image Stretch="Uniform" Width="12" Height="10" Source="/WpfApp1;component/Images/sheqel.png" VerticalAlignment="Center"/>
                 <TextBlock Text="  "/>
             </StackPanel>
 

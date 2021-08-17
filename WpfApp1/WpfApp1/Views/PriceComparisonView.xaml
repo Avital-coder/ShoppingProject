@@ -30,7 +30,7 @@
             <RowDefinition Height="0.1*"/>
         </Grid.RowDefinitions>
 
-        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="10" Panel.ZIndex="1"/>
+        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="6" Panel.ZIndex="1" Margin="-13,0,10,-0.4"/>
 
         <TextBlock Grid.Row="0" Grid.Column="1" Text="המוצרים שלך לאורך זמן" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Panel.ZIndex="0"/>
         <StackPanel Grid.Row="0" Grid.Column="2" Panel.ZIndex="0">

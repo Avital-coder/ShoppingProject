@@ -62,7 +62,7 @@ namespace DAL
             //Draws the date by using DrawString method
             page.Graphics.DrawString(currentDate, pdfFont, element.Brush, textPosition, format);
             //Creates text elements to add the address and draw it to the page.
-            element = new PdfTextElement("רשימת הקניות שלך:", pdfFont);
+            element = new PdfTextElement("Here is your shopping list: ", pdfFont);
             element.Brush = new PdfSolidBrush(new PdfColor(126, 155, 203));
             element.StringFormat = format;
             result = element.Draw(page, new PointF(page.Graphics.ClientSize.Width - textSize.Width + 70, result.Bounds.Bottom + 25));
@@ -77,10 +77,10 @@ namespace DAL
             //Create a DataTable.
             DataTable dataTable = new DataTable();
             //Add columns to the DataTable
-            dataTable.Columns.Add("הכי זול אצל:");
-            dataTable.Columns.Add("כמות");
-            dataTable.Columns.Add("תיאור");
-            dataTable.Columns.Add("שם");
+            dataTable.Columns.Add("Cheapest");
+            dataTable.Columns.Add("Amount");
+            dataTable.Columns.Add("Description");
+            dataTable.Columns.Add("Name");
             //Add rows to the DataTable.
             foreach (var item in items)
             {
@@ -150,17 +150,59 @@ namespace DAL
                 ctx.Users.Add(user);
                 ctx.SaveChanges();
             }
-            /*string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
-            string FolderPath = Path.Combine(CSPath, @"DAL\UsersLists\" + user.Id + ".txt");
+            string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
+            string FolderPath = Path.Combine(CSPath, @"DAL\Users\" + user.Id + ".txt");
             if (!File.Exists(FolderPath))
-                File.Create(FolderPath);*/
+                File.Create(FolderPath);
         }
 
-        /*
+        private string GetDateTaken(string FileName)
+        {
+            try
+            {
+                string Name = FileName.Split('\\').Last().Replace(",", "");
+                string[] date = Name.Split();
+                string PurchaseDate = date[1] + "/" + date[0] + "/" + date[2];
+                return DateTime.Parse(PurchaseDate).ToString();
+            }
+            catch
+            {
+                return DateTime.Today.ToString();
+            }
+        }
+        private void UpdateUserList(string user)
+        {
+            string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
+            string FolderPath = Path.Combine(CSPath, @"DAL\DriveFiles\");
+
+            string[] Files = Directory.GetFiles(FolderPath);
+            StreamWriter userList = new StreamWriter(Path.Combine(CSPath, @"DAL\Users\" + user + ".txt"), append: true);
+            foreach (string file in Files)
+            {
+                string ItemId = AnalaysQRCode(file);
+                if (ItemId != null && GetAllItems().Select(item => item.Id).ToList().Contains(ItemId))
+                {
+                    userList.WriteLineAsync(ItemId + "," + GetDateTaken(file));
+                }
+                File.Delete(file);
+            }
+            userList.Close();
+        }
+
+
+        private string AnalaysQRCode(string Path)
+        {
+            BarcodeResult ItemId = BarcodeReader.QuicklyReadOneBarcode(Path, BarcodeEncoding.QRCode);
+            if (ItemId != null)
+                return ItemId.Text;
+            return null;
+        }
+
+
         public void DeletePurchaseFromUserFile(PurchaseItem purchaseItem)
         {
             string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
-            string FolderPath = Path.Combine(CSPath, @"DAL\UsersLists\" + purchaseItem.UserId + ".txt");
+            string FolderPath = Path.Combine(CSPath, @"DAL\Users\" + purchaseItem.UserId + ".txt");
             string[] UserList = File.ReadAllLines(FolderPath);
 
             foreach (string purchase in UserList)
@@ -179,7 +221,7 @@ namespace DAL
 
             }
         }
-        */
+        
 
         public void AddPurchase(PurchaseItem purchaseItem)
         {
@@ -187,7 +229,7 @@ namespace DAL
             {
                 ctx.PurchaseItems.Add(purchaseItem);
                 ctx.SaveChanges();
-                //DeletePurchaseFromUserFile(purchaseItem);
+                DeletePurchaseFromUserFile(purchaseItem);
             }
         }
 
@@ -264,8 +306,63 @@ namespace DAL
             return result;
         }
 
-        public List<PurchaseItem> GetLastPurchase() { return null; }
-        public void DeletePurchaseFromUserFile(PurchaseItem p) { }
+        public List<PurchaseItem> GetLastPurchase() {
+            List<PurchaseItem> LastPurchase = new List<PurchaseItem>();
+            var currentUserId = currentUser.Id;
+
+            try
+            {
+                GetImagesFromDrive(currentUserId);
+                UpdateUserList(currentUserId);
+            }
+            catch
+            {
+
+            }
+
+            string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
+            string FolderPath = Path.Combine(CSPath, @"DAL\UsersLists\" + currentUserId + ".txt");
+
+            string[] UserList = File.ReadAllLines(FolderPath);
+
+            foreach (string Id in UserList)
+            {
+                PurchaseItem tempPurchaseItem = new PurchaseItem()
+                {
+                    UserId = currentUserId,
+                    ItemId = Id.Split(',')[0],
+                    Date = DateTime.Parse(Id.Split(',')[1])
+                };
+
+                LastPurchase.Add(tempPurchaseItem);
+            }
+
+            return LastPurchase;
+        }
+
+        [Obsolete]
+        private void GetImagesFromDrive(string FolderName)
+        {
+            GoogleDriveAPI googleDrive = new GoogleDriveAPI();
+            List<GoogleDriveFile> collection = googleDrive.GetDriveFiles();
+            GoogleDriveFile folder = googleDrive.GetDriveFolder(FolderName);
+            if (folder != null)
+            {
+                string folderId = folder.Id;
+                List<GoogleDriveFile> images = new List<GoogleDriveFile>();
+                foreach (GoogleDriveFile item in collection)
+                {
+                    if (item.Parents != null && item.Parents.Contains(folderId))
+                        images.Add(item);
+                }
+                foreach (GoogleDriveFile item in images)
+                {
+                    string fileId = item.Id;
+                    string FilePath = googleDrive.DownloadGoogleFile(fileId);
+                    googleDrive.DeleteGoogleFile(fileId);
+                }
+            }
+        }
 
 
     }

@@ -132,6 +132,7 @@
   <ItemGroup>
     <Compile Include="DALImp.cs" />
     <Compile Include="DBShopping.cs" />
+    <Compile Include="GoogleDrive.cs" />
     <Compile Include="IDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -144,6 +145,10 @@
       <Project>{61aadc5e-2007-4ca1-b025-21fd8946780a}</Project>
       <Name>BE</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DriveFIles\" />
+    <Folder Include="Users\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
