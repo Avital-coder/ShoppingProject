@@ -160,9 +160,8 @@ namespace DAL
         {
             try
             {
-                string Name = FileName.Split('\\').Last().Replace(",", "");
-                string[] date = Name.Split();
-                string PurchaseDate = date[1] + "/" + date[0] + "/" + date[2];
+                string[] date = FileName.Split('-');
+                string PurchaseDate = date[3] + "/" + date[2] + "/" + date[1];
                 return DateTime.Parse(PurchaseDate).ToString();
             }
             catch
@@ -179,24 +178,24 @@ namespace DAL
             string[] Files = Directory.GetFiles(FolderPath);
             StreamWriter userList = new StreamWriter(Path.Combine(CSPath, @"DAL\Users\" + user + ".txt"), append: true);
 
-            // get all files (barcodes) from DriveFiles folder
+            // get all files (QRcodes) from DriveFiles folder
             foreach (string file in Files)
             {
-                // analyse the barcode
-                string ItemId = AnalayseQRCode(file);
+                // analyse the QRcode
+                string ItemId = AnalyseQRCode(file);
                 // if it's a known item - add item to user list of items with its date
                 if (ItemId != null && GetAllItems().Select(item => item.Id).ToList().Contains(ItemId))
                 {
                     userList.WriteLineAsync(ItemId + "," + GetFileDate(file));
                 }
-                // delete barcode file from drive
+                // delete QRcode file from drive
                 File.Delete(file);
             }
             userList.Close();
         }
 
 
-        private string AnalayseQRCode(string Path)
+        private string AnalyseQRCode(string Path)
         {
             BarcodeResult ItemId = BarcodeReader.QuicklyReadOneBarcode(Path, BarcodeEncoding.QRCode);
             if (ItemId != null)

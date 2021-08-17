@@ -310,7 +310,9 @@
       <Name>BL</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="ItemImages\" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\logo.ico" />
   </ItemGroup>
