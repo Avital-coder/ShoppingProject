@@ -25,12 +25,13 @@ namespace DAL
             service = GetService();
         }
 
-        //create Drive API service.
+        //Initialize GoogleDriveAPI service
         [Obsolete]
         public DriveService GetService()
         {
             string[] Scopes = { DriveService.Scope.Drive };
-            //get Credentials from client_secret.json file 
+
+            //get credentials from client_secret.json 
             UserCredential credential;
             var CSPath = Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName;
             var aa = Path.Combine(Directory.GetParent(CSPath).FullName, "DAL");
@@ -48,8 +49,6 @@ namespace DAL
                     CancellationToken.None,
                     new FileDataStore(FilePath, true)).Result;
             }
-
-            //create Drive API service.
             DriveService service = new DriveService(new BaseClientService.Initializer()
             {
                 HttpClientInitializer = credential,
@@ -58,22 +57,18 @@ namespace DAL
             return service;
         }
 
-        //get all files from Google Drive.
+        //get all files from Google Drive
         public List<GoogleDriveFile> GetDriveFiles()
         {
             // Define parameters of request.
             FilesResource.ListRequest FileListRequest = service.Files.List();
-            // for getting folders only.
-            // FileListRequest.Q = "mimeType='application/vnd.google-apps.folder'";
             FileListRequest.Fields = "nextPageToken, files(*)";
 
-            // List files.
+            // List files
             IList<Google.Apis.Drive.v3.Data.File> files = FileListRequest.Execute().Files;
             List<GoogleDriveFile> FileList = new List<GoogleDriveFile>();
 
 
-            // For getting only folders
-            // files = files.Where(x => x.MimeType == "application/vnd.google-apps.folder").ToList();
             if (files != null && files.Count > 0)
             {
                 foreach (var file in files)
@@ -94,7 +89,7 @@ namespace DAL
             return FileList;
         }
 
-        //Download file from Google Drive by fileId.
+        //Download file from Google Drive by ID
         public string DownloadGoogleFile(string fileId)
         {
             var CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
@@ -145,7 +140,6 @@ namespace DAL
         {
             FilesResource.DeleteRequest DeleteRequest = service.Files.Delete(fileId);
             DeleteRequest.Execute();
-
         }
 
         [Obsolete]

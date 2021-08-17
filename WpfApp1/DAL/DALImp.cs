@@ -156,7 +156,7 @@ namespace DAL
                 File.Create(FolderPath);
         }
 
-        private string GetDateTaken(string FileName)
+        private string GetFileDate(string FileName)
         {
             try
             {
@@ -175,22 +175,28 @@ namespace DAL
             string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
             string FolderPath = Path.Combine(CSPath, @"DAL\DriveFiles\");
 
+            // add StreamWrite class to to user.txt
             string[] Files = Directory.GetFiles(FolderPath);
             StreamWriter userList = new StreamWriter(Path.Combine(CSPath, @"DAL\Users\" + user + ".txt"), append: true);
+
+            // get all files (barcodes) from DriveFiles folder
             foreach (string file in Files)
             {
-                string ItemId = AnalaysQRCode(file);
+                // analyse the barcode
+                string ItemId = AnalayseQRCode(file);
+                // if it's a known item - add item to user list of items with its date
                 if (ItemId != null && GetAllItems().Select(item => item.Id).ToList().Contains(ItemId))
                 {
-                    userList.WriteLineAsync(ItemId + "," + GetDateTaken(file));
+                    userList.WriteLineAsync(ItemId + "," + GetFileDate(file));
                 }
+                // delete barcode file from drive
                 File.Delete(file);
             }
             userList.Close();
         }
 
 
-        private string AnalaysQRCode(string Path)
+        private string AnalayseQRCode(string Path)
         {
             BarcodeResult ItemId = BarcodeReader.QuicklyReadOneBarcode(Path, BarcodeEncoding.QRCode);
             if (ItemId != null)
@@ -218,7 +224,6 @@ namespace DAL
                     File.Move(tempFile, FolderPath);
                     break;
                 }
-
             }
         }
         
@@ -242,7 +247,7 @@ namespace DAL
             }
         }
 
-        //Get
+        //Getters
         public List<Item> GetAllItems(Func<Item, bool> predicate = null)
         {
             List<Item> result = new List<Item>();
@@ -306,10 +311,10 @@ namespace DAL
             return result;
         }
 
+        [Obsolete]
         public List<PurchaseItem> GetLastPurchase() {
             List<PurchaseItem> LastPurchase = new List<PurchaseItem>();
             var currentUserId = currentUser.Id;
-
             try
             {
                 GetImagesFromDrive(currentUserId);
@@ -321,7 +326,7 @@ namespace DAL
             }
 
             string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
-            string FolderPath = Path.Combine(CSPath, @"DAL\UsersLists\" + currentUserId + ".txt");
+            string FolderPath = Path.Combine(CSPath, @"DAL\Users\" + currentUserId + ".txt");
 
             string[] UserList = File.ReadAllLines(FolderPath);
 
@@ -344,17 +349,19 @@ namespace DAL
         private void GetImagesFromDrive(string FolderName)
         {
             GoogleDriveAPI googleDrive = new GoogleDriveAPI();
-            List<GoogleDriveFile> collection = googleDrive.GetDriveFiles();
+            List<GoogleDriveFile> files = googleDrive.GetDriveFiles();
             GoogleDriveFile folder = googleDrive.GetDriveFolder(FolderName);
             if (folder != null)
             {
                 string folderId = folder.Id;
                 List<GoogleDriveFile> images = new List<GoogleDriveFile>();
-                foreach (GoogleDriveFile item in collection)
+                //for each file in google drive files go over all images and add those related to user
+                foreach (GoogleDriveFile item in files)
                 {
                     if (item.Parents != null && item.Parents.Contains(folderId))
                         images.Add(item);
                 }
+                //for each user's image added - download and delete from drive
                 foreach (GoogleDriveFile item in images)
                 {
                     string fileId = item.Id;

@@ -13,7 +13,7 @@ namespace WpfApp1.Others
             List<string> returnList = new List<string>();
             for (int i = 3; i <= 12; i++)
             {
-                returnList.Add(i + " חודשים");
+                returnList.Add(i + " months");
             }
             return returnList;
         }
