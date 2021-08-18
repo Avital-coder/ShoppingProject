@@ -33,7 +33,7 @@ namespace DAL
             PdfGrid pdfGrid = new PdfGrid();
             //Loads the image from disk
             string CSPath = Directory.GetParent(Directory.GetParent(Directory.GetParent(Directory.GetCurrentDirectory()).FullName).FullName).FullName;
-            string ImagePath = Path.Combine(CSPath, @"DAL\Images\logo.png");
+            string ImagePath = Path.Combine(CSPath, @"WpfApp1\Images\background.png");
             PdfImage image = PdfImage.FromFile(ImagePath);
             RectangleF bounds = new RectangleF(50, 0, 400, 150);
             //Draws the image to the PDF page
@@ -42,7 +42,7 @@ namespace DAL
             PdfFont pdfFont = new PdfTrueTypeFont(font, true);
             PdfStringFormat format = new PdfStringFormat();
             //Set right-to-left text direction for RTL text
-            format.TextDirection = PdfTextDirection.RightToLeft;
+            format.TextDirection = PdfTextDirection.LeftToRight;
             format.Alignment = PdfTextAlignment.Right;
 
             //Draw grid to the page of PDF document.

@@ -81,7 +81,7 @@
                     <TextBlock Text="{Binding Currents.CurrentUser.LastName, Source={x:Static Application.Current}}" Style="{StaticResource textFont}" FontSize="20"/>
                 </StackPanel>
             </Border>
-            <Button Content="I wanna go now!" Command="{Binding Logout}" Style="{StaticResource roundedCornersButtonTransparent}" Margin="0,25.2,5,-0.4" Height="Auto" Grid.Row="5" Grid.RowSpan="2" />
+            <Button Content="I wanna go now!" Command="{Binding Logout}" Style="{StaticResource roundedCornersButtonTransparent}" Margin="0,11.8,5,10.2" Height="Auto" Grid.Row="5" />
 
         </Grid>
 
