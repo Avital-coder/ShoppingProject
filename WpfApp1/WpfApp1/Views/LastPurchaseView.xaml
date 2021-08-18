@@ -16,12 +16,12 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="38*"/>
             <ColumnDefinition Width="185*"/>
-            <ColumnDefinition Width="218*"/>
-            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="159*"/>
+            <ColumnDefinition Width="138*"/>
             <ColumnDefinition Width="99*"/>
             <ColumnDefinition Width="96*"/>
             <ColumnDefinition Width="11*"/>
-            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="74*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -34,9 +34,9 @@
 
         <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="8" Margin="0,0,-6,-0.4"/>
 
-        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="Your list" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="31.4,0,19.4,4.8" Width="134" Grid.Column="1"/>
+        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="Your list" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="133.6,0,29.2,5.6" Width="134" Grid.Column="2" Grid.ColumnSpan="2"/>
 
-        <ListView x:Name="listView" Grid.Column="2" Grid.ColumnSpan="4" Grid.Row="2" ItemsSource="{Binding PurchaseItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Height="0" Margin="3.6,0.4,55,0" >
+        <ListView x:Name="listView" Grid.Column="2" Grid.ColumnSpan="4" Grid.Row="2" ItemsSource="{Binding PurchaseItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Height="0" Margin="3.6,0.6,55.4,0" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid  Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
@@ -107,16 +107,16 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Content="Finished" Style="{StaticResource roundedCornersButton}" Command="{Binding ConfirmedAllItemCommand}" Margin="33.4,33.8,0,29.6" Height="Auto" Width="99" />
+        <Button Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" Content="Finished" Style="{StaticResource roundedCornersButton}" Command="{Binding ConfirmedAllItemCommand}" Margin="33.4,34,0,29.6" Height="Auto" Width="99" />
 
-        <Button Grid.Column="1" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignIconButton}" Command="{Binding ShowAddGridCommand}" Height="Auto" Margin="0,0,174.8,4.8" Grid.ColumnSpan="2">
+        <Button Grid.Column="1" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignIconButton}" Command="{Binding ShowAddGridCommand}" Height="Auto" Margin="0,0,0.4,4.6">
 
             <materialDesign:PackIcon  Kind="Add" Foreground="Black"></materialDesign:PackIcon>
 
         </Button>
 
 
-        <Grid Background="Transparent" Grid.Column="3" Grid.ColumnSpan="5" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="{Binding ShowAddGrid}" Margin="22.2,10.4,65,173.2" Grid.RowSpan="1" >
+        <Grid Background="Transparent" Grid.Column="3" Grid.ColumnSpan="5" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="{Binding ShowAddGrid}" Margin="21.4,10.6,65,173" Grid.RowSpan="1" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.65*"/>
                 <ColumnDefinition Width="0.85*"/>
@@ -162,24 +162,24 @@
                 <TextBlock/>
             </StackPanel>
         </Grid>
-        <Button Content="X" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding HideAddGridCommand}" Background="Red" Height="Auto" Margin="8.2,53.8,24,4.6" Grid.Row="3" Grid.Column="4"/>
-        <Button Content="V" Background="Green" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding AddPurchaseItemCommand}" CommandParameter="{Binding AddPurchaseItem}" Grid.Column="5" Height="Auto" Margin="10,53.8,24,4.6" Grid.Row="3"/>
-        <ComboBox  ItemsSource="{Binding ListBranchs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" Style="{StaticResource ComboBoxTrigger}" SelectedItem="{Binding ComboboxShopContent}" Margin="109.4,228.4,10.4,10.2" Grid.Column="1" Grid.Row="2" Height="35"/>
-        <TextBlock Grid.Column="1" Grid.Row="2" Text="Store" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="33.4,231.4,117.4,22.2" Height="20" Width="34"/>
+        <Button Content="X" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding HideAddGridCommand}" Background="Red" Height="Auto" Margin="84.6,29,71.6,29.6" Grid.Row="3" Grid.Column="2"/>
+        <Button Content="V" Background="Green" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding AddPurchaseItemCommand}" CommandParameter="{Binding AddPurchaseItem}" Grid.Column="3" Height="Auto" Margin="26.4,34,10.2,24.6" Grid.Row="3"/>
+        <ComboBox  ItemsSource="{Binding ListBranchs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" Style="{StaticResource ComboBoxTrigger}" SelectedItem="{Binding ComboboxShopContent}" Margin="4.4,150.6,41.2,88" Grid.Column="3" Grid.Row="2" Height="35"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Text="Store" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="80.6,152.6,44.6,101" Height="20" Width="34"/>
         <DatePicker FlowDirection="LeftToRight" HorizontalAlignment="Center" Language="he-IL" Foreground="Black" DisplayDate="01.01.2021"
                     materialDesign:HintAssist.Hint="    00/00/00    " FontSize="20" HorizontalContentAlignment="Center" 
-                            SelectedDate="{Binding AddPurchaseItem.Date}" Grid.Column="1" Margin="33.4,80.4,7.4,158.2" Grid.Row="2" Height="35" Width="144"/>
+                            SelectedDate="{Binding AddPurchaseItem.Date}" Grid.Column="2" Margin="99.6,16.6,53.2,222" Grid.Row="2" Height="35" Width="144" Grid.ColumnSpan="2"/>
         <TextBox BorderThickness="0"  VerticalAlignment="Center" FontSize="15"
                              materialDesign:HintAssist.Hint="Amount"
-                             HorizontalContentAlignment="Center"  Validation.ErrorTemplate="{StaticResource validationTemplate}" Grid.Column="1" Margin="10.4,182.4,0.4,63.2" Grid.Row="2" Height="28">
+                             HorizontalContentAlignment="Center"  Validation.ErrorTemplate="{StaticResource validationTemplate}" Grid.Column="2" Margin="46.6,112.6,11.6,133" Grid.Row="2" Height="28">
             <Binding Path="AddPurchaseItem.Count"  UpdateSourceTrigger="PropertyChanged"  Mode="TwoWay" ValidatesOnExceptions="True">
                 <Binding.ValidationRules>
                     <valid:ValidCount/>
                 </Binding.ValidationRules>
             </Binding>
         </TextBox>
-        <TextBlock Grid.Row="2" Text="Product" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="31.4,137.4,83.4,102.2" Grid.Column="1" Height="34" Width="70"/>
-        <ComboBox  x:Name="ItemsList" ItemsSource="{Binding Items}"   FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" SelectedItem="{Binding ComboboxItemContent}" Margin="112.4,136.4,8.4,0" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock Grid.Row="2" Text="Product" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="74.6,69.6,14.6,170" Grid.Column="2" Height="34" Width="70" RenderTransformOrigin="-0.483,0.541"/>
+        <ComboBox  x:Name="ItemsList" ItemsSource="{Binding Items}"   FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" SelectedItem="{Binding ComboboxItemContent}" Margin="156.6,57.6,41.2,0" Grid.Row="2" Grid.Column="2" Height="35" Grid.ColumnSpan="2"/>
 
     </Grid>
 </UserControl>

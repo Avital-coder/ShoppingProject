@@ -23,5 +23,10 @@ namespace WpfApp1.Views
         {
             InitializeComponent();
         }
+
+        private void SideBarView_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,17 +28,17 @@
             <RowDefinition Height="54*"/>
         </Grid.RowDefinitions>
 
-        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="7" Panel.ZIndex="1" Margin="0,0,0,1.6"/>
+        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="7" Panel.ZIndex="1" Margin="0,0,0,1.6" Loaded="SideBarView_Loaded"/>
 
         <Border  Grid.Row="0" Margin="47,0,12,4.6" Grid.RowSpan="2">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="6*"/>
-                    <ColumnDefinition Width="1*"/>
-                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="60"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="10"/>
                 </Grid.ColumnDefinitions>
-                <materialDesign:PackIcon Kind="FilePdf" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,-678.2,-377.2" Width="93" RenderTransformOrigin="0.569,8.5" Grid.Column="2" Height="30"/>
-                <Button Content="Create PDF" Command="{Binding CreatePdf}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource roundedCornersButtonTransparent}" Margin="519.2,375,-678.2,-373.2" Width="163" RenderTransformOrigin="0.569,8.5" Grid.Column="2" Height="47"/>
+                <materialDesign:PackIcon Kind="FilePdf" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,-678.2,-423.2" Width="44" RenderTransformOrigin="0.569,8.5" Grid.Column="2" Height="45"/>
+                <Button Content="Create PDF" Command="{Binding CreatePdf}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource roundedCornersButtonTransparent}" Margin="0,0,-698.2,-476.2" Width="201" RenderTransformOrigin="0.569,8.5" Grid.Column="2" Height="150"/>
             </Grid>
         </Border>
 
