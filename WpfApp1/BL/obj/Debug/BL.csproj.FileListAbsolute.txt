@@ -56,3 +56,23 @@ C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Google.Apis.xml
 C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Google.Apis.Core.pdb
 C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Google.Apis.Core.xml
 C:\Users\user\ShoppingProject\WpfApp1\BL\bin\Debug\Newtonsoft.Json.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\grpc_csharp_ext.x86.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\grpc_csharp_ext.x64.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\libgrpc_csharp_ext.x64.so
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\libgrpc_csharp_ext.x64.dylib
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\IronBarCode.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Drive.v3.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Auth.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Core.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Newtonsoft.Json.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\IronBarCode.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Drive.v3.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Drive.v3.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Auth.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Auth.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Core.pdb
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Core.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Newtonsoft.Json.xml

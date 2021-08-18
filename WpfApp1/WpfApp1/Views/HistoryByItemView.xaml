@@ -34,10 +34,10 @@
 
         <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="10" Panel.ZIndex="1"/>
 
-        <TextBlock Grid.Row="0" Grid.Column="3" Text="המוצרים שלך לאורך זמן" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Panel.ZIndex="0"/>
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="Your products over time" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Panel.ZIndex="0"/>
         <StackPanel Grid.Row="0" Grid.Column="2">
             <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
-            <TextBlock Text="כמות חודשים להצגת נתונים:" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Right" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock Text="How many months ago?" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Right" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
             <ComboBox ItemsSource="{Binding NumOfMonthsList}" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" SelectedItem="{Binding NumberOfMounths}"/>
         </StackPanel>
 
@@ -47,7 +47,7 @@
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="בחר את המוצרים שברצונך להציג" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock Text="which products?" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
             <TextBlock/>
             <ListView x:Name="listView"  Grid.Row="2" Grid.Column="3" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="RightToLeft">
                 <ListView.ItemTemplate>
