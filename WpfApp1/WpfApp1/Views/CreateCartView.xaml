@@ -38,7 +38,7 @@
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
                 <materialDesign:PackIcon Grid.Column="2" Kind="FilePdf" HorizontalAlignment="Right" VerticalAlignment="Center"/>
-                <Button Grid.Column="0" Grid.ColumnSpan="3" Content="PDF-יצא ל" Command="{Binding CreatePdf}" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}"/>
+                <Button Content="Create PDF" Command="{Binding CreatePdf}" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="565.2,390,-678.2,-373.2" Width="117" RenderTransformOrigin="0.569,8.5" Grid.Column="2"/>
             </Grid>
         </Border>
 
@@ -50,7 +50,7 @@
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="0"  Text="הוסף לסל:" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock Grid.Row="2"  Text="Add to cart: " VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft" Height="34" Margin="28,64.6,-70,-81" Width="109" RenderTransformOrigin="0.502,1.216"/>
             <ListView Grid.Row="2" x:Name="listViewItem"  Grid.Column="3" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="RightToLeft">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -93,7 +93,7 @@
                             </Grid.ColumnDefinitions>
 
                             <TextBox Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="15"
-                             materialDesign:HintAssist.Hint="כמות"
+                             materialDesign:HintAssist.Hint="Amount"
                              HorizontalContentAlignment="Center"  Validation.ErrorTemplate="{StaticResource validationTemplate}">
                                 <TextBox.Text>
                                     <Binding Path="Count"  UpdateSourceTrigger="PropertyChanged"  Mode="TwoWay" ValidatesOnExceptions="True">
@@ -108,7 +108,7 @@
 
                         <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="RightToLeft">
 
-                            <TextBlock Text="הכי זול בחנות:"   FontSize="15" />
+                            <TextBlock Text="Cheapest in store: "   FontSize="15" />
                             <TextBlock/>
                             <TextBlock Text="{Binding CheapestBranch, Mode=TwoWay}" FontSize="15"/>
 
