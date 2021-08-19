@@ -33,7 +33,7 @@
 
         <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="8" Margin="0,0,-6,-0.4"/>
 
-        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="Your list" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="133.6,0,29.2,5.6" Width="134" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="New List's on the way" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="133.6,0,29.2,5.6" Width="330" Grid.Column="2" Grid.ColumnSpan="2"/>
 
         <ListView x:Name="listView" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2" ItemsSource="{Binding PurchaseItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" >
             <ListView.ItemTemplate>
@@ -90,7 +90,7 @@
                             <materialDesign:PackIcon Grid.Column="2" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
 
-                        <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="RightToLeft">
+                        <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight">
 
                             <TextBlock Text="{Binding Date, StringFormat={}\{0:dd.MM.yyyy\}, Mode=TwoWay}"   FontSize="15" />
                             <TextBlock/>
@@ -134,14 +134,14 @@
 
             <Image Source="{Binding Path=AddPurchaseItem.ItemId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ItemIdToPathConverter}}"  Grid.Column="7"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
 
-            <TextBlock Grid.Column="5" Grid.Row="1" Text="Choose a shop" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.ColumnSpan="3" Margin="66.8,3.8,32.8,3.4" Width="114"/>
-            <TextBlock Grid.Column="5" Grid.Row="0" Text="Choose a product" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.ColumnSpan="3" Margin="56.8,4,32.8,3.2" Width="124"/>
+            <TextBlock Grid.Column="5" Grid.Row="1" Text="Choose a shop" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.ColumnSpan="3" Margin="66.8,3.8,32.8,3.4" Width="114"/>
+            <TextBlock Grid.Column="5" Grid.Row="0" Text="Choose a product" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.ColumnSpan="3" Margin="56.8,4,32.8,3.2" Width="124"/>
 
             <StackPanel Grid.Column="5" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
 
-                <ComboBox  x:Name="ItemsList" ItemsSource="{Binding Items}"   FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" SelectedItem="{Binding ComboboxItemContent}"/>
+                <ComboBox  x:Name="ItemsList" ItemsSource="{Binding Items}"   FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="LeftToRight" SelectedItem="{Binding ComboboxItemContent}" Margin="0,0,18.8,0"/>
 
-                <ComboBox  ItemsSource="{Binding ListBranchs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Stretch" FlowDirection="RightToLeft" Style="{StaticResource ComboBoxTrigger}" SelectedItem="{Binding ComboboxShopContent}"/>
+                <ComboBox  ItemsSource="{Binding ListBranchs, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"   FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Stretch" FlowDirection="LeftToRight" Style="{StaticResource ComboBoxTrigger}" SelectedItem="{Binding ComboboxShopContent}" Margin="0,0,16.8,0"/>
 
             </StackPanel>
 
@@ -175,7 +175,7 @@
                 <materialDesign:PackIcon Grid.Column="2" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
             </Grid>
 
-            <StackPanel Grid.Column="1" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="RightToLeft" Orientation="Horizontal">
+            <StackPanel Grid.Column="1" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" Orientation="Horizontal">
 
                 <DatePicker FlowDirection="LeftToRight" HorizontalAlignment="Center" Language="he-IL" Foreground="Black" DisplayDate="01.01.2021"
                     materialDesign:HintAssist.Hint="    00/00/00    " FontSize="20" HorizontalContentAlignment="Center" 

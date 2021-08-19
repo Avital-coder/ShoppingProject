@@ -34,7 +34,7 @@
 
         <TextBlock Grid.Row="0" Grid.Column="1" Text="Your products over time" VerticalAlignment="Center" FontSize="28" HorizontalAlignment="Center" Panel.ZIndex="0" Height="60" Margin="64.2,23,35.4,1" Width="314"/>
         <StackPanel Grid.Row="0" Grid.Column="2" Panel.ZIndex="0" Margin="0.8,0,3,1">
-            <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight"/>
         </StackPanel>
 
         <ListView Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" ItemsSource="{Binding PriceComparisonList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Panel.ZIndex="0" Height="0" Margin="0,4,2.2,0">
@@ -60,12 +60,12 @@
                             <TextBlock Text="{Binding Description, Mode=TwoWay}" HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15"/>
                         </StackPanel>
 
-                        <ListView Grid.Column="0" Grid.Row="2" ItemsSource="{Binding PriceComparison, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Center" FlowDirection="RightToLeft" >
+                        <ListView Grid.Column="0" Grid.Row="2" ItemsSource="{Binding PriceComparison, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Center" FlowDirection="LeftToRight" >
                             <ListView.ItemTemplate>
                                 <DataTemplate>
                                     <Border BorderBrush="Black" BorderThickness="0,0,1,0">
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15" FlowDirection="RightToLeft"/>
+                                            <TextBlock Text="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15" FlowDirection="LeftToRight"/>
                                             <TextBlock Text="   "></TextBlock>
                                         </StackPanel>
                                     </Border>
@@ -91,9 +91,9 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Choose products to display:" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight" Margin="-343,6,180,308" Grid.RowSpan="3" Width="255" Height="46"/>
+            <TextBlock Text="Choose products to display:" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight" Margin="-343,6,180,3.2" Width="255"/>
             <TextBlock Grid.Row="1"/>
-            <ListView x:Name="ItemlistView" Grid.Row="1" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="RightToLeft" Panel.ZIndex="0" Margin="-262,11.8,262,4" Grid.RowSpan="2" >
+            <ListView x:Name="ItemlistView" Grid.Row="1" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight" Panel.ZIndex="0" Margin="-262,11.8,262,4" Grid.RowSpan="2" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Horizontal">

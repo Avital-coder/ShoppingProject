@@ -36,8 +36,8 @@
 
         <TextBlock Grid.Row="0" Grid.Column="2" Text="Your products over time" FontWeight="ExtraBlack" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Panel.ZIndex="0" Margin="73.8,4,29.2,4.8" Grid.ColumnSpan="2" Width="397"/>
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Margin="10.4,0,369.2,342" Grid.RowSpan="3">
-            <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
-            <TextBlock Text="How many months ago?" VerticalAlignment="Top" FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
+            <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight"/>
+            <TextBlock Text="How many months ago?" VerticalAlignment="Top" FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight"/>
             <ComboBox ItemsSource="{Binding NumOfMonthsList}" FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Left" FlowDirection="LeftToRight" SelectedItem="{Binding NumberOfMounths}" Height="44" Width="160"/>
         </StackPanel>
 

@@ -35,7 +35,7 @@
                         <ColumnDefinition Width="6*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <Button BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Last purchase" Command="{Binding LastPurchase}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="10,22,10,2"/>
+                    <Button BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2" FontWeight="ExtraBlack" Content="Buy now" Command="{Binding LastPurchase}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="10,22,10,2"/>
                 </Grid>
             </Border>
 
@@ -46,7 +46,7 @@
                         <ColumnDefinition Width="6*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <Button BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Comparisons" Command="{Binding PriceComparison}"  Style="{StaticResource roundedCornersButtonTransparent}" Margin="10,10,9.8,10.8"/>
+                    <Button BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Compare prices" FontWeight="ExtraBlack" Command="{Binding PriceComparison}"  Style="{StaticResource roundedCornersButtonTransparent}" Margin="10,10,9.8,10.8"/>
                 </Grid>
             </Border>
 
@@ -57,7 +57,7 @@
                         <ColumnDefinition Width="6*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <Button BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2" Content="New list" Command="{Binding CreateCart}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="10"/>
+                    <Button BorderThickness="1" Grid.Column="0" FontWeight="ExtraBlack" Grid.ColumnSpan="2" Content="Create a list" Command="{Binding CreateCart}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="10"/>
                 </Grid>
             </Border>
 
@@ -68,7 +68,7 @@
                         <ColumnDefinition Width="6*"/>
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
-                    <Button BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2" Content="Your history" Command="{Binding }"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="10,10,9.8,10.8"/>
+                    <Button BorderThickness="1" Grid.Column="0" Grid.ColumnSpan="2" FontWeight="ExtraBlack" Content="Your history" Command="{Binding }"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="10,10,9.8,10.8"/>
                 </Grid>
 
             </Border>
@@ -81,7 +81,7 @@
                     <TextBlock Text="{Binding Currents.CurrentUser.LastName, Source={x:Static Application.Current}}" Style="{StaticResource textFont}" FontSize="20"/>
                 </StackPanel>
             </Border>
-            <Button Content="I wanna go now!" Command="{Binding Logout}" Style="{StaticResource roundedCornersButtonTransparent}" Margin="0,11.8,5,10.2" Height="Auto" Grid.Row="5" />
+            <Button Content="I wanna go now!" Command="{Binding Logout}" FontSize="17" FontWeight="ExtraBlack" Style="{StaticResource roundedCornersButtonTransparent}" Margin="0,11.8,5,10.2" Height="Auto" Grid.Row="5" />
 
         </Grid>
 
@@ -142,7 +142,7 @@
                         <ColumnDefinition Width="1*"/>
                     </Grid.ColumnDefinitions>
                     <materialDesign:PackIcon Grid.Column="2" Kind="Money" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-                    <Button Grid.Column="0" Grid.ColumnSpan="2" Content="By cart size" Command="{Binding HistoryBySCart}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}"/>
+                    <Button Grid.Column="0" Grid.ColumnSpan="2" Content="Cart cost over time" Command="{Binding HistoryBySCart}"  VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}"/>
                 </Grid>
             </Border>
 

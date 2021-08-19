@@ -26,7 +26,7 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="7" Panel.ZIndex="1" Margin="0,0,0,1.6" Loaded="SideBarView_Loaded"/>
+        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="7" Panel.ZIndex="1" Margin="0,0,0,1.6"/>
 
         <Border  Grid.Row="0" Grid.Column="1">
             <Grid>
@@ -35,8 +35,7 @@
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-                <materialDesign:PackIcon Kind="FilePdf" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,-678.2,-423.2" Width="44" RenderTransformOrigin="0.569,8.5" Grid.Column="2" Height="45"/>
-                <Button Grid.Column="0" Grid.ColumnSpan="3" Content="Create PDF" Command="{Binding CreatePdf}" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}"/>
+                <Button Grid.Column="0" Content="PDF" Command="{Binding CreatePdf}" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}" Margin="-84,-17,0,31.8" Width="94" Height="34"/>
             </Grid>
         </Border>
 
@@ -48,7 +47,7 @@
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
-    
+
             <ListView Grid.Row="2" x:Name="listViewItem"  Grid.Column="3" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -117,7 +116,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Border Visibility="{Binding Path=ViewVisible, Mode=TwoWay}" Grid.RowSpan="4" Grid.ColumnSpan="5" Opacity="0.9" VerticalAlignment="Center" HorizontalAlignment="Center" Height="490" Width="650" Style="{StaticResource roundedCornersBorder}">
+        <Border Visibility="{Binding Path=ViewVisible, Mode=TwoWay}" Opacity="1" Grid.RowSpan="5" Grid.ColumnSpan="7" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="490" Width="803" Style="{StaticResource roundedCornersBorder}" Margin="-78,-45,75,4.6">
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -136,11 +135,11 @@
                     <ColumnDefinition Width="0.5*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock  Grid.Row="2" Grid.Column="3" Text="You once bought those:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
+                <TextBlock  Grid.Row="2" Grid.Column="3" Text="You once bought those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 
-                <TextBlock  Grid.Row="2" Grid.Column="1" Text="Maybe now you'd want those:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
+                <TextBlock  Grid.Row="2" Grid.Column="1" Text="Maybe now you'd want those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 
-                <Button Grid.Row="8" Grid.RowSpan="2" Grid.Column="2" Command="{Binding CloseViewCommand}"  Style="{StaticResource roundedCornersButton}">
+                <Button Grid.Row="4" Grid.RowSpan="2" Grid.Column="2" Command="{Binding CloseViewCommand}"  Style="{StaticResource roundedCornersButton}" Grid.ColumnSpan="2" Height="Auto" Margin="0.2,2.2,189.2,6.8">
                     <TextBlock Text="That's all"/>
                 </Button>
 
@@ -173,6 +172,7 @@
 
             </Grid>
         </Border>
+        <materialDesign:PackIcon Kind="FilePdf" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="-16,0,22.2,7.8" Width="33" RenderTransformOrigin="0.569,8.5" Height="39"/>
     </Grid>
 
 </UserControl>
