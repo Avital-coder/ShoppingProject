@@ -32,9 +32,9 @@
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="9" Panel.ZIndex="1" Margin="0,0,0,-0.4"/>
+        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="9" Panel.ZIndex="1" Margin="0,0,0,-0.4" Loaded="SideBarView_Loaded"/>
 
-        <TextBlock Grid.Row="0" Grid.Column="2" Text="Your visits to shops over time" FontWeight="ExtraBlack" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Panel.ZIndex="0" Margin="74,4,72,4.8" Grid.ColumnSpan="4" Width="454"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="Your visited shops over time" FontWeight="ExtraBlack" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Panel.ZIndex="0" Margin="74,4,72,4.8" Grid.ColumnSpan="4" Width="454"/>
         <StackPanel Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3" Margin="10.4,0,369.2,342" Grid.RowSpan="3">
             <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>
             <TextBlock Text="How many months ago?" VerticalAlignment="Top" FontSize="15" HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft"/>

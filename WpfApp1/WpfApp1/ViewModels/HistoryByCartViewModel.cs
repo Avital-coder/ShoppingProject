@@ -72,7 +72,7 @@ namespace WpfApp1.ViewModels
             SeriesCollection.Clear();
             SeriesCollection.Add(new LineSeries
             {
-                Title = "סל הקניות שלך",
+                Title = "Your shopping cart",
                 Values = new ChartValues<double>(HistoryBySCartM.GetHistoryBySCart(Labels)),
                 PointGeometry = DefaultGeometries.Circle,
                 PointGeometrySize = 15

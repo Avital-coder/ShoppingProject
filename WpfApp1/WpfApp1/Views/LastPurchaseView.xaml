@@ -99,8 +99,8 @@
 
                         </StackPanel>
 
-                        <Button Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Center" Content="אישור" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding ElementName=listView, Path=DataContext.ConfirmedItemCommand}" CommandParameter="{Binding}"/>
-                        <Button Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" Content="מחיקה" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding ElementName=listView, Path=DataContext.DeleteItemCommand}" CommandParameter="{Binding}" Background="Red"/>
+                        <Button Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Center" Content="OK" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding ElementName=listView, Path=DataContext.ConfirmedItemCommand}" CommandParameter="{Binding}"/>
+                        <Button Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" Content="DELETE" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding ElementName=listView, Path=DataContext.DeleteItemCommand}" CommandParameter="{Binding}" Background="Red"/>
 
                     </Grid>
                 </DataTemplate>

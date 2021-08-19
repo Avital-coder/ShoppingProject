@@ -109,10 +109,10 @@
         <Grid Grid.Row="3" Grid.ColumnSpan="2" Margin="67,10.6,2.2,1.6" Grid.RowSpan="2" >
             <lvc:CartesianChart Series="{Binding SeriesCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" LegendLocation="Left">
                 <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Title="עלות הסל"  FontSize="14" LabelFormatter="{Binding YFormatter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
+                    <lvc:Axis Title="Cart cost"  FontSize="14" LabelFormatter="{Binding YFormatter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
                 </lvc:CartesianChart.AxisY>
                 <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Title="חנויות" FontSize="14" Labels="{Binding Labels, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
+                    <lvc:Axis Title="Shops" FontSize="14" Labels="{Binding Labels, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
                 </lvc:CartesianChart.AxisX>
             </lvc:CartesianChart>
         </Grid>

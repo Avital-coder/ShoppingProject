@@ -82,7 +82,7 @@ namespace WpfApp1.ViewModels
             {
             new ColumnSeries
             {
-                Title = "הסל שלך",
+                Title = "Your cart",
                 Values = new ChartValues<double> (PriceComparisonModel.GetPriceOptions(Labels, PriceComparisonList.Select(x => x.Name)))
             }
             };
