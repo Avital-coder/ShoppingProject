@@ -7,50 +7,49 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
 
-
-
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="88*"/>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="494*"/>
-            <ColumnDefinition Width="10*"/>
-            <ColumnDefinition Width="63*"/>
-            <ColumnDefinition Width="36*"/>
-            <ColumnDefinition Width="109*"/>
+            <ColumnDefinition Width="0.4*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.1*"/>
+            <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="49*"/>
-            <RowDefinition Height="5*"/>
-            <RowDefinition Height="342*"/>
-            <RowDefinition Height="0*"/>
-            <RowDefinition Height="54*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="0.1*"/>
+            <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
         <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="7" Panel.ZIndex="1" Margin="0,0,0,1.6" Loaded="SideBarView_Loaded"/>
 
-        <Border  Grid.Row="0" Margin="47,0,12,4.6" Grid.RowSpan="2">
+        <Border  Grid.Row="0" Grid.Column="1">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="60"/>
-                    <ColumnDefinition Width="10"/>
-                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="6*"/>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
                 <materialDesign:PackIcon Kind="FilePdf" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,-678.2,-423.2" Width="44" RenderTransformOrigin="0.569,8.5" Grid.Column="2" Height="45"/>
-                <Button Content="Create PDF" Command="{Binding CreatePdf}" HorizontalAlignment="Right" VerticalAlignment="Bottom" Style="{StaticResource roundedCornersButtonTransparent}" Margin="0,0,-698.2,-476.2" Width="201" RenderTransformOrigin="0.569,8.5" Grid.Column="2" Height="150"/>
+                <Button Grid.Column="0" Grid.ColumnSpan="3" Content="Create PDF" Command="{Binding CreatePdf}" HorizontalAlignment="Left" VerticalAlignment="Center" Style="{StaticResource roundedCornersButtonTransparent}"/>
             </Grid>
         </Border>
 
-        <TextBlock Grid.Row="0" Grid.Column="2" Text="Make a list based on your shopping history" Margin="0,0,0.4,4.6" Grid.RowSpan="2" />
-        <Grid Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Top" Panel.ZIndex="0" Height="20" Margin="0,0.4,32.2,0" Width="67" Grid.ColumnSpan="2">
+        <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="Make a list based on your shopping history" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Panel.ZIndex="0"/>
+
+        <Grid Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Top" Panel.ZIndex="0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
-            <TextBlock Grid.Row="2"  Text="Add to cart: " VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="RightToLeft" Height="34" Margin="28,64.6,-70,-81" Width="109" RenderTransformOrigin="0.502,1.216"/>
-            <ListView Grid.Row="2" x:Name="listViewItem"  Grid.Column="3" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="RightToLeft">
+    
+            <ListView Grid.Row="2" x:Name="listViewItem"  Grid.Column="3" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Horizontal">
@@ -63,7 +62,7 @@
             </ListView>
         </Grid>
 
-        <ListView x:Name="listView" Grid.Column="2" Grid.Row="2" ItemsSource="{Binding CartItemList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Height="0" Margin="11,0.4,0.6,0" >
+        <ListView x:Name="listView" Grid.Column="2" Grid.Row="2" ItemsSource="{Binding CartItemList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" >
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <Grid  Background="Transparent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
@@ -105,9 +104,9 @@
                             <materialDesign:PackIcon Grid.Column="2" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
 
-                        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="RightToLeft">
+                        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight">
 
-                            <TextBlock Text="Cheapest in store: "   FontSize="15" />
+                            <TextBlock Text="Cheapest in store:"    FontSize="15" />
                             <TextBlock/>
                             <TextBlock Text="{Binding CheapestBranch, Mode=TwoWay}" FontSize="15"/>
 
@@ -118,7 +117,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Border Grid.RowSpan="5" Grid.ColumnSpan="4" Opacity="0.8" VerticalAlignment="Center" HorizontalAlignment="Left" Height="440" Width="582" Style="{StaticResource roundedCornersBorder}" Margin="10,0,0,9.6" RenderTransformOrigin="0.507,0.502">
+        <Border Visibility="{Binding Path=ViewVisible, Mode=TwoWay}" Grid.RowSpan="4" Grid.ColumnSpan="5" Opacity="0.9" VerticalAlignment="Center" HorizontalAlignment="Center" Height="490" Width="650" Style="{StaticResource roundedCornersBorder}">
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -130,22 +129,22 @@
                     <RowDefinition Height="0.3*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="30*"/>
-                    <ColumnDefinition Width="194*"/>
-                    <ColumnDefinition Width="45*"/>
-                    <ColumnDefinition Width="252*"/>
-                    <ColumnDefinition Width="58*"/>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="1.2*"/>
+                    <ColumnDefinition Width="1.6*"/>
+                    <ColumnDefinition Width="1.2*"/>
+                    <ColumnDefinition Width="0.5*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock  Grid.Row="2" Grid.Column="1" Text="You once bought those:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap" Margin="16.6,5,16.8,4.6" Width="161" Height="20"/>
+                <TextBlock  Grid.Row="2" Grid.Column="3" Text="You once bought those:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 
-                <TextBlock  Grid.Row="2" Grid.Column="3" Text="Maybe now you'd want those:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap" Height="30" Margin="21.4,5,57,312.2" Grid.RowSpan="2" Width="232" Grid.ColumnSpan="2"/>
+                <TextBlock  Grid.Row="2" Grid.Column="1" Text="Maybe now you'd want those:" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 
-                <Button Grid.Row="3" Grid.Column="2" Command="{Binding CloseViewCommand}"  Style="{StaticResource roundedCornersButton}" Height="Auto" Margin="1.2,317.4,149.6,10.2" Grid.RowSpan="3" Grid.ColumnSpan="2">
+                <Button Grid.Row="8" Grid.RowSpan="2" Grid.Column="2" Command="{Binding CloseViewCommand}"  Style="{StaticResource roundedCornersButton}">
                     <TextBlock Text="That's all"/>
                 </Button>
 
-                <ListView Grid.Row="3"  Grid.Column="3" ItemsSource="{Binding CartViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Center" VerticalAlignment="Stretch" FlowDirection="RightToLeft" Margin="125.4,0.4,126.6,0.2" Width="0">
+                <ListView Grid.Row="3"  Grid.Column="3" ItemsSource="{Binding CartViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Center" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Vertical">
@@ -157,7 +156,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <ListView Grid.Row="3" x:Name="OfferViewItem"  Grid.Column="1" ItemsSource="{Binding OfferViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="RightToLeft" Margin="2.6,0.4,2.8,0.2">
+                <ListView Grid.Row="3" x:Name="OfferViewItem"  Grid.Column="1" ItemsSource="{Binding OfferViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
                     <ListView.ItemTemplate>
                         <DataTemplate>
 
