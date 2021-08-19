@@ -135,7 +135,7 @@
             <Image Source="{Binding Path=AddPurchaseItem.ItemId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ItemIdToPathConverter}}"  Grid.Column="7"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
 
             <TextBlock Grid.Column="5" Grid.Row="1" Text="Choose a shop" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.ColumnSpan="3" Margin="66.8,3.8,32.8,3.4" Width="114"/>
-            <TextBlock Grid.Column="5" Grid.Row="0" Text="Choose a product" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.ColumnSpan="3" Margin="56.8,4,32.8,3.2" Width="124"/>
+            <TextBlock Grid.Column="5" Grid.Row="0" Text="Choose a product" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Grid.ColumnSpan="3" Margin="56.8,4,9.8,3.2" Width="147"/>
 
             <StackPanel Grid.Column="5" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
 

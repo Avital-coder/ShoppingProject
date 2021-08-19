@@ -39,7 +39,7 @@
             </Grid>
         </Border>
 
-        <TextBlock Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2" Text="Make a list based on your shopping history" VerticalAlignment="Center" FontSize="20" HorizontalAlignment="Right" Panel.ZIndex="0"/>
+        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="Make a list based on your shopping history" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="69.2,2,71.2,6.8" Width="462" Grid.Column="2" Grid.ColumnSpan="3"/>
 
         <Grid Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Top" Panel.ZIndex="0">
             <Grid.RowDefinitions>
