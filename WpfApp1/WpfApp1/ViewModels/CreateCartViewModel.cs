@@ -92,7 +92,7 @@ namespace WpfApp1.ViewModels
                     List<object[]> items = new List<object[]>();
                     foreach (CartItem item in CartItemList)
                     {
-                        items.Add(new object[] { item.CheapestBranch, item.Count, item.Description, item.Name });
+                        items.Add(new object[] { item.Name, item.Description, item.Count, item.CheapestBranch });
                     }
                     CreatCartM.CreatePDF(items);
                 });

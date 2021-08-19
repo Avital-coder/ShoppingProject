@@ -392,3 +392,7 @@ D:\פרויקט זורי\WpfApp1\WpfApp1\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\פרויקט זורי\WpfApp1\WpfApp1\bin\Debug\IronBarCode.xml
 D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe.config
 D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\XamlC.stamp
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\bin\Debug\libgrpc_csharp_ext.x64.dylib

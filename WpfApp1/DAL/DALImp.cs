@@ -41,9 +41,9 @@ namespace DAL
             Font font = new Font("Ariel", 14);
             PdfFont pdfFont = new PdfTrueTypeFont(font, true);
             PdfStringFormat format = new PdfStringFormat();
-            //Set right-to-left text direction for RTL text
+            //Set left-to-right text direction for RTL text
             format.TextDirection = PdfTextDirection.LeftToRight;
-            format.Alignment = PdfTextAlignment.Right;
+            format.Alignment = PdfTextAlignment.Left;
 
             //Draw grid to the page of PDF document.
             PdfBrush solidBrush = new PdfSolidBrush(new PdfColor(126, 151, 173));
@@ -77,10 +77,10 @@ namespace DAL
             //Create a DataTable.
             DataTable dataTable = new DataTable();
             //Add columns to the DataTable
-            dataTable.Columns.Add("Cheapest");
-            dataTable.Columns.Add("Amount");
+            dataTable.Columns.Add("Product Name");
             dataTable.Columns.Add("Description");
-            dataTable.Columns.Add("Name");
+            dataTable.Columns.Add("Amount");
+            dataTable.Columns.Add("Cheapest Store for Product");
             //Add rows to the DataTable.
             foreach (var item in items)
             {
@@ -131,8 +131,8 @@ namespace DAL
             //Save the document.
             try
             {
-                doc.Save("Output.pdf");
-                System.Diagnostics.Process.Start("Output.pdf");
+                doc.Save("MyList.pdf");
+                System.Diagnostics.Process.Start("MyList.pdf");
             }
             catch
             {
