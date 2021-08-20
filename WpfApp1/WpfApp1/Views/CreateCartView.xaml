@@ -39,7 +39,7 @@
             </Grid>
         </Border>
 
-        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="Make a list based on your shopping history" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="69.2,2,71.2,6.8" Width="462" Grid.Column="2" Grid.ColumnSpan="3"/>
+        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="Make a list based on your shopping history" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="0.2,2,71.2,6.8" Width="531" Grid.Column="2" Grid.ColumnSpan="3"/>
 
         <Grid Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Top" Panel.ZIndex="0">
             <Grid.RowDefinitions>
@@ -76,20 +76,20 @@
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
 
-                        <Image Source="{Binding Path=ImagePath , Mode=TwoWay }"  Grid.Column="3"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
+                        <Image Source="{Binding Path=ImagePath , Mode=TwoWay }"  Grid.Column="0" Grid.ColumnSpan="1"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
 
-                        <TextBlock Text="{Binding  Name, Mode=TwoWay}"   Grid.Column="2" Grid.Row="0" FontSize="20" HorizontalAlignment="Right" />
+                        <TextBlock Text="{Binding  Name, Mode=TwoWay}" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="2"  FontSize="20" HorizontalAlignment="Right" />
 
-                        <TextBlock Text="{Binding Description, Mode=TwoWay}" Grid.Column="1"  Grid.ColumnSpan="2" Grid.Row="1"  HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15"/>
+                        <TextBlock Text="{Binding Description, Mode=TwoWay}" Grid.Column="0"  Grid.ColumnSpan="1" Grid.Row="0"  HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15"/>
 
-                        <Grid Grid.Column="1" Grid.RowSpan="2">
+                        <Grid Grid.Column="2" Grid.RowSpan="2">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="4*"/>
                                 <ColumnDefinition Width="4*"/>
                                 <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
 
-                            <TextBox Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="15"
+                            <TextBox Grid.Column="0" BorderThickness="0" VerticalAlignment="Center" FontSize="15"
                              materialDesign:HintAssist.Hint="Amount"
                              HorizontalContentAlignment="Center"  Validation.ErrorTemplate="{StaticResource validationTemplate}">
                                 <TextBox.Text>
@@ -100,10 +100,10 @@
                                     </Binding>
                                 </TextBox.Text>
                             </TextBox>
-                            <materialDesign:PackIcon Grid.Column="2" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <materialDesign:PackIcon Grid.Column="0" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
 
-                        <StackPanel Grid.Column="0" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight">
+                        <StackPanel Grid.Column="3" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight">
 
                             <TextBlock Text="Cheapest in store:"    FontSize="15" />
                             <TextBlock/>
@@ -116,7 +116,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Border Visibility="{Binding Path=ViewVisible, Mode=TwoWay}" Opacity="1" Grid.RowSpan="5" Grid.ColumnSpan="7" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="490" Width="803" Style="{StaticResource roundedCornersBorder}" Margin="-78,-45,75,4.6">
+        <Border Visibility="{Binding Path=ViewVisible, Mode=TwoWay}" Opacity="1" Grid.RowSpan="5" Grid.ColumnSpan="7" VerticalAlignment="Bottom" HorizontalAlignment="Center" Height="490" Width="803" Style="{StaticResource roundedCornersBorder}" Margin="-68,-45,65,4.6">
 
             <Grid>
                 <Grid.RowDefinitions>
@@ -135,15 +135,15 @@
                     <ColumnDefinition Width="0.5*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock  Grid.Row="2" Grid.Column="3" Text="You once bought those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
+                <TextBlock  Grid.Row="2" Grid.Column="1" Text="You once bought those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 
-                <TextBlock  Grid.Row="2" Grid.Column="1" Text="Maybe now you'd want those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
+                <TextBlock  Grid.Row="2" Grid.Column="3" Text="Maybe now you'd want those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 
                 <Button Grid.Row="4" Grid.RowSpan="2" Grid.Column="2" Command="{Binding CloseViewCommand}"  Style="{StaticResource roundedCornersButton}" Grid.ColumnSpan="2" Height="Auto" Margin="0.2,2.2,189.2,6.8">
                     <TextBlock Text="That's all"/>
                 </Button>
 
-                <ListView Grid.Row="3"  Grid.Column="3" ItemsSource="{Binding CartViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Center" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
+                <ListView Grid.Row="3" Grid.Column="1" ItemsSource="{Binding CartViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Center" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Vertical">
@@ -155,7 +155,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
 
-                <ListView Grid.Row="3" x:Name="OfferViewItem"  Grid.Column="1" ItemsSource="{Binding OfferViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
+                <ListView Grid.Row="3" Grid.Column="3"  x:Name="OfferViewItem"  ItemsSource="{Binding OfferViewItem, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight">
                     <ListView.ItemTemplate>
                         <DataTemplate>
 
