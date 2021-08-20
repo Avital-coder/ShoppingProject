@@ -47,7 +47,7 @@
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="7*"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="which products?" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight"/>
+            <TextBlock Text="which products?" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight" Margin="0,-2,-0.4,2"/>
             <TextBlock/>
             <ListView x:Name="listView"  Grid.Row="2" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight" Margin="0,0,-0.4,-303">
                 <ListView.ItemTemplate>

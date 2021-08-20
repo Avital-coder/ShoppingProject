@@ -46,7 +46,7 @@ namespace DAL
             format.Alignment = PdfTextAlignment.Left;
 
             //Draw grid to the page of PDF document.
-            PdfBrush solidBrush = new PdfSolidBrush(new PdfColor(126, 151, 173));
+            PdfBrush solidBrush = new PdfSolidBrush(new PdfColor(255, 0, 127));
             bounds = new RectangleF(0, bounds.Bottom + 90, page.Graphics.ClientSize.Width, 30);
             //Draws a rectangle to place the heading in that region.
             page.Graphics.DrawRectangle(solidBrush, bounds);
@@ -63,10 +63,10 @@ namespace DAL
             page.Graphics.DrawString(currentDate, pdfFont, element.Brush, textPosition, format);
             //Creates text elements to add the address and draw it to the page.
             element = new PdfTextElement("Here is your shopping list: ", pdfFont);
-            element.Brush = new PdfSolidBrush(new PdfColor(126, 155, 203));
+            element.Brush = new PdfSolidBrush(new PdfColor(255, 0, 127));
             element.StringFormat = format;
             result = element.Draw(page, new PointF(page.Graphics.ClientSize.Width - textSize.Width + 70, result.Bounds.Bottom + 25));
-            PdfPen linePen = new PdfPen(new PdfColor(126, 151, 173), 0.70f);
+            PdfPen linePen = new PdfPen(new PdfColor(255, 0, 127), 0.70f);
             PointF startPoint = new PointF(0, result.Bounds.Bottom + 3);
             PointF endPoint = new PointF(page.Graphics.ClientSize.Width, result.Bounds.Bottom + 3);
             //Draws a line at the bottom of the address
@@ -101,8 +101,8 @@ namespace DAL
             //PdfGridRow header = grid.Headers[0];
             //Creates the header style
             PdfGridCellStyle headerStyle = new PdfGridCellStyle();
-            headerStyle.Borders.All = new PdfPen(new PdfColor(126, 151, 173));
-            headerStyle.BackgroundBrush = new PdfSolidBrush(new PdfColor(126, 151, 173));
+            headerStyle.Borders.All = new PdfPen(new PdfColor(255, 0, 127));
+            headerStyle.BackgroundBrush = new PdfSolidBrush(new PdfColor(255, 0, 127));
             headerStyle.TextBrush = PdfBrushes.White;
             headerStyle.Font = pdfFont;
             headerStyle.StringFormat = format;
@@ -112,9 +112,9 @@ namespace DAL
             {
                 Column.Format = format;
             }
-            cellStyle.Borders.Bottom = new PdfPen(new PdfColor(217, 217, 217), 0.70f);
+            cellStyle.Borders.Bottom = new PdfPen(new PdfColor(200, 200, 200), 0.70f);
             cellStyle.Font = pdfFont;
-            cellStyle.TextBrush = new PdfSolidBrush(new PdfColor(131, 130, 136));
+            cellStyle.TextBrush = new PdfSolidBrush(new PdfColor(200, 200, 200));
             cellStyle.StringFormat = format;
 
 

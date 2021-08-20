@@ -32,7 +32,7 @@
 
         <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="6" Panel.ZIndex="1" Margin="-11,0,3,-3.4"/>
 
-        <TextBlock Grid.Row="0" Grid.Column="1" Text="Your products over time" VerticalAlignment="Center" FontSize="28" HorizontalAlignment="Center" Panel.ZIndex="0" Height="60" Margin="64.2,23,35.4,1" Width="314"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" FontWeight="ExtraBlack" Text="Your products over time" VerticalAlignment="Center" FontSize="28" HorizontalAlignment="Center" Panel.ZIndex="0" Height="60" Margin="36.2,23,35.4,1" Width="342"/>
         <StackPanel Grid.Row="0" Grid.Column="2" Panel.ZIndex="0" Margin="0.8,0,3,1">
             <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight"/>
         </StackPanel>
@@ -83,7 +83,7 @@
             </ListView.ItemTemplate>
         </ListView>
 
-        <Grid Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="0" Grid.RowSpan="3" Margin="2,4,0.4,1.6">
+        <Grid Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="0" Grid.RowSpan="3" Margin="2,4,0.4,1.6">
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.2*"/>
@@ -91,7 +91,7 @@
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Choose products to display:" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight" Margin="-343,6,180,3.2" Width="255"/>
+            <TextBlock Text="Choose products to display:" FontWeight="ExtraBlack" FontSize="17" HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Left"  FlowDirection="LeftToRight" Margin="-253,6,0,9.2" Width="255" Grid.RowSpan="2" />
             <TextBlock Grid.Row="1"/>
             <ListView x:Name="ItemlistView" Grid.Row="1" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight" Panel.ZIndex="0" Margin="-262,11.8,262,4" Grid.RowSpan="2" >
                 <ListView.ItemTemplate>
