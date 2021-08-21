@@ -33,7 +33,7 @@
 
         <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="8" Margin="0,0,-6,-0.4"/>
 
-        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="New List's on the way" VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="133.6,0,29.2,5.6" Width="330" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="New List's on the way..." VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="133.6,0,29.2,5.6" Width="330" Grid.Column="2" Grid.ColumnSpan="2"/>
 
         <ListView x:Name="listView" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2" ItemsSource="{Binding PurchaseItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" >
             <ListView.ItemTemplate>
@@ -52,9 +52,9 @@
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
 
-                        <Image Source="{Binding Path=ItemId , Mode=TwoWay, Converter={StaticResource ItemIdToPathConverter} }"  Grid.Column="5"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
+                        <Image Source="{Binding Path=ItemId , Mode=TwoWay, Converter={StaticResource ItemIdToPathConverter} }"  Grid.Column="0"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
 
-                        <StackPanel Grid.Column="4" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right">
+                        <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right">
                             <TextBlock Text="{Binding  ItemId, Mode=TwoWay, Converter={StaticResource ItemIdToNameConverter}}"   FontSize="20" />
 
                             <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
@@ -67,7 +67,7 @@
 
                         </StackPanel>
 
-                        <TextBlock Text="{Binding ItemId, Mode=TwoWay, Converter={StaticResource ItemIdToDescriptionConverter}}" Grid.Column="2"  Grid.ColumnSpan="3" Grid.Row="1"  HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15"/>
+                        <TextBlock Text="{Binding ItemId, Mode=TwoWay, Converter={StaticResource ItemIdToDescriptionConverter}}" Grid.Column="1"  Grid.ColumnSpan="0" Grid.Row="1"  HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15"/>
 
                         <Grid Grid.Column="3" Grid.RowSpan="2">
                             <Grid.ColumnDefinitions>
@@ -76,7 +76,7 @@
                                 <ColumnDefinition Width="1*"/>
                             </Grid.ColumnDefinitions>
 
-                            <TextBox Grid.Column="1" BorderThickness="0" VerticalAlignment="Center" FontSize="15"
+                            <TextBox Grid.Column="0" BorderThickness="0" VerticalAlignment="Center" FontSize="15"
                              materialDesign:HintAssist.Hint="Amount:"
                              HorizontalContentAlignment="Center"  Validation.ErrorTemplate="{StaticResource validationTemplate}">
                                 <TextBox.Text>
@@ -87,7 +87,7 @@
                                     </Binding>
                                 </TextBox.Text>
                             </TextBox>
-                            <materialDesign:PackIcon Grid.Column="2" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            <materialDesign:PackIcon Grid.Column="1" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
 
                         <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight">
@@ -98,8 +98,8 @@
 
                         </StackPanel>
 
-                        <Button Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Center" Content="Confirmation" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding ElementName=listView, Path=DataContext.ConfirmedItemCommand}" CommandParameter="{Binding}"/>
-                        <Button Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" Content="Delete" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding ElementName=listView, Path=DataContext.DeleteItemCommand}" CommandParameter="{Binding}" Background="Red"/>
+                        <Button Grid.Column="4" Grid.RowSpan="2" HorizontalAlignment="Center" Content="Confirmation" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding ElementName=listView, Path=DataContext.ConfirmedItemCommand}" CommandParameter="{Binding}"/>
+                        <Button Grid.Column="5" Grid.RowSpan="2" HorizontalAlignment="Center" Content="Delete" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding ElementName=listView, Path=DataContext.DeleteItemCommand}" CommandParameter="{Binding}" Background="Red"/>
 
                     </Grid>
                 </DataTemplate>
@@ -132,12 +132,14 @@
             </Grid.RowDefinitions>
 
 
-            <Image Source="{Binding Path=AddPurchaseItem.ItemId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ItemIdToPathConverter}}"  Grid.Column="7"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
+            <Image Source="{Binding Path=AddPurchaseItem.ItemId, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged, Converter={StaticResource ItemIdToPathConverter}}"  Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
 
-            <TextBlock Grid.Column="4" Grid.Row="1" Text="Shop" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="1.6,3.8,42,3.4" Width="54" Grid.ColumnSpan="2"/>
-            <TextBlock Grid.Column="4" Grid.Row="0" Text="Product" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="1.6,4,30,3.2" Width="66" Grid.ColumnSpan="2"/>
-
-            <StackPanel Grid.Column="5" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
+            <TextBlock Grid.Column="1" Grid.Row="1" Text="Shop" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="1.6,3.8,42,3.4" Width="54" Grid.ColumnSpan="2"/>
+            <TextBlock Grid.Column="1" Grid.Row="0" Text="Product" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="1.6,4,30,3.2" Width="66" Grid.ColumnSpan="2"/>
+            
+            <TextBlock Text="{Binding AddPurchaseItem.ItemId, Mode=TwoWay, Converter={StaticResource ItemIdToDescriptionConverter}, UpdateSourceTrigger=PropertyChanged}" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right"  FontSize="15"/>
+            
+            <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
 
                 <ComboBox  x:Name="ItemsList" ItemsSource="{Binding Items}"   FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="LeftToRight" SelectedItem="{Binding ComboboxItemContent}" Margin="100,0,-81.2,0"/>
 
@@ -145,16 +147,16 @@
 
             </StackPanel>
 
-            <StackPanel  Grid.Column="3" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+            <StackPanel  Grid.Column="5" Grid.ColumnSpan="2" Grid.Row="0"  VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
                 <TextBlock Text="{Binding AddPurchaseItem.ItemId,  Mode=TwoWay, Converter={StaticResource ItemIdToPriceConverter}}" FontSize="17" VerticalAlignment="Center"/>
                 <TextBlock Text=" "/>
                 <Image Stretch="Uniform" Width="12" Height="10" Source="/WpfApp1;component/Images/sheqel.jpg" VerticalAlignment="Center"/>
                 <TextBlock Text="  "/>
             </StackPanel>
 
-            <TextBlock Text="{Binding AddPurchaseItem.ItemId, Mode=TwoWay, Converter={StaticResource ItemIdToDescriptionConverter}, UpdateSourceTrigger=PropertyChanged}" Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right"  FontSize="15"/>
+            
 
-            <Grid Grid.Column="2" Grid.Row="0" >
+            <Grid Grid.Column="5" Grid.Row="0" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="4*"/>
                     <ColumnDefinition Width="4*"/>
@@ -175,14 +177,13 @@
                 <materialDesign:PackIcon Grid.Column="1" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="31.8,6,0,5.2"/>
             </Grid>
 
-            <StackPanel Grid.Column="2" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Left" FlowDirection="LeftToRight" Orientation="Horizontal">
-
+            <StackPanel Grid.Column="5" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Left" FlowDirection="LeftToRight" Orientation="Horizontal">
                 <DatePicker FlowDirection="LeftToRight" HorizontalAlignment="Center" Language="he-IL" Foreground="Black" DisplayDate="01.01.2021"
                     materialDesign:HintAssist.Hint="    00/00/00    " FontSize="20" HorizontalContentAlignment="Center" 
-                            SelectedDate="{Binding AddPurchaseItem.Date}"/>
+                            SelectedDate="{Binding AddPurchaseItem.Date}" Width="148"/>
             </StackPanel>
 
-            <StackPanel Grid.Column="0" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Grid.Column="7" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Button Content="Add" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding AddPurchaseItemCommand}" CommandParameter="{Binding AddPurchaseItem}"/>
                 <TextBlock/>
                 <Button Content="cancelation" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding HideAddGridCommand}" Background="Red"/>
