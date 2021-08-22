@@ -104,25 +104,11 @@ namespace WpfApp1.ViewModels
             get { return password1; }
             set
             {
-                password1 = null;
-                Password2 = null;
                 password1 = value;
                 OnPropertyRaised("Password1");
-                OnPropertyRaised("Password2");
             }
         }
 
-        private string password2;
-        public string Password2
-        {
-            get { return password2; }
-            set
-            {
-                password2 = null;
-                password2 = value;
-                OnPropertyRaised("Password2");
-            }
-        }
         #endregion
         #region view properties
 
@@ -165,11 +151,15 @@ namespace WpfApp1.ViewModels
         #region other
         public void Signup()
         {
-
-
-            if (FirstName == null || LastName == null || Id == null || Mail == null || Password1 == null)
+            if (Id == null)
             {
-                MassageText = "make sure everything is filled";
+                MassageText = "Your id is invalid";
+                ErrorMessageVisible = Visibility.Visible;
+            }
+
+            else if (FirstName == null || LastName == null || Mail == null || Password1 == null)
+            {
+                MassageText = "make sure every field is filled";
                 ErrorMessageVisible = Visibility.Visible;
             }
 

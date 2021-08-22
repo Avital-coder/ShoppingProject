@@ -33,7 +33,7 @@
 
         <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="8" Margin="0,0,-6,-0.4"/>
 
-        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="New List's on the way..." VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="133.6,0,29.2,5.6" Width="330" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="0" Foreground="#EC5578" FontWeight="ExtraBlack" Text="New List's on the way..." VerticalAlignment="Center" FontSize="30" HorizontalAlignment="Center" Height="40" Margin="51.2,0,45.4,4.8" Width="357" Grid.Column="3"/>
 
         <ListView x:Name="listView" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="2" ItemsSource="{Binding PurchaseItems, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" >
             <ListView.ItemTemplate>
@@ -52,7 +52,7 @@
                             <RowDefinition Height="1*"/>
                         </Grid.RowDefinitions>
 
-                        <Image Source="{Binding Path=ItemId , Mode=TwoWay, Converter={StaticResource ItemIdToPathConverter} }"  Grid.Column="0"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
+                        <Image Source="{Binding Path=ItemId , Mode=TwoWay, Converter={StaticResource ItemIdToPathConverter} }"  Grid.Column="0"  Grid.RowSpan="2" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="80" />
 
                         <StackPanel Grid.Column="1" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right">
                             <TextBlock Text="{Binding  ItemId, Mode=TwoWay, Converter={StaticResource ItemIdToNameConverter}}"   FontSize="20" />
@@ -136,9 +136,9 @@
 
             <TextBlock Grid.Column="1" Grid.Row="1" Text="Shop" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="1.6,3.8,42,3.4" Width="54" Grid.ColumnSpan="2"/>
             <TextBlock Grid.Column="1" Grid.Row="0" Text="Product" FontWeight="ExtraBlack" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="15" Margin="1.6,4,30,3.2" Width="66" Grid.ColumnSpan="2"/>
-            
+
             <TextBlock Text="{Binding AddPurchaseItem.ItemId, Mode=TwoWay, Converter={StaticResource ItemIdToDescriptionConverter}, UpdateSourceTrigger=PropertyChanged}" Grid.Column="5" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right"  FontSize="15"/>
-            
+
             <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Stretch">
 
                 <ComboBox  x:Name="ItemsList" ItemsSource="{Binding Items}"   FontSize="20" VerticalAlignment="Top" HorizontalAlignment="Stretch" FlowDirection="LeftToRight" SelectedItem="{Binding ComboboxItemContent}" Margin="100,0,-81.2,0"/>
@@ -154,7 +154,7 @@
                 <TextBlock Text="  "/>
             </StackPanel>
 
-            
+
 
             <Grid Grid.Column="5" Grid.Row="0" >
                 <Grid.ColumnDefinitions>

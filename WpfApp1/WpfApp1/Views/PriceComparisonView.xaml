@@ -39,38 +39,38 @@
 
         <Grid Background="White" Grid.RowSpan="2" Opacity="0.7" Grid.Row="2" Margin="109.2,0,168.2,94.8" Grid.Column="1">
             <TextBox HorizontalAlignment="Left" Height="43" Margin="30,10,0,0" TextWrapping="Wrap"   
-                 Text="TextBox" VerticalAlignment="Top" Width="282" Name="FileNameTextBox"/>
+                 Text="" VerticalAlignment="Top" Width="282" Name="FileNameTextBox"/>
             <Button x:Name="BrowseButton" Content="Browse a file" HorizontalAlignment="Left"   
                 Margin="339,13,0,0" VerticalAlignment="Top" Width="118" Click="BrowseButton_Click"
                 RenderTransformOrigin="1.047,0.821" Height="40" />
-            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,96,0,0" 
-                   TextWrapping="Wrap" Text="Product Name:" VerticalAlignment="Top"  
-                   Width="89"/>
-            <TextBlock HorizontalAlignment="Left" Height="47" Margin="120,96,0,0" 
+            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,90,0,0" 
+                   TextWrapping="Wrap" Text="Product Name:" FontSize="13" FontWeight="ExtraBlack" VerticalAlignment="Top"  
+                   Width="102"/>
+            <TextBlock HorizontalAlignment="Left"  FontSize="13" Height="47" Margin="132,90,-276,0" 
                    TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
                    Width="281" Name="TextBlock1"/>
-            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,140,0,-18" 
+            <TextBlock HorizontalAlignment="Left" Height="47"  FontSize="13" FontWeight="ExtraBlack" Margin="30,140,0,0" 
                    TextWrapping="Wrap" Text="Description:" VerticalAlignment="Top"  
-                   Width="75"/>
-            <TextBlock HorizontalAlignment="Left" Height="51" Margin="120,140,0,-22" 
+                   Width="85"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="13" Height="51" Margin="132,140,0,-22" 
                    TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
                    Width="282" Name="TextBlock2"/>
-            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,190,0,-68" 
+            <TextBlock HorizontalAlignment="Left" Height="47"  FontSize="13" FontWeight="ExtraBlack" Margin="30,190,0,0" 
                    TextWrapping="Wrap" Text="Shop Name:" VerticalAlignment="Top"  
-                   Width="75"/>
-            <TextBlock HorizontalAlignment="Left" Height="45" Margin="120,190,0,-66" 
+                   Width="86"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="13" Height="45" Margin="132,190,0,-66" 
                    TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
                    Width="330" Name="TextBlock3"/>
-            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,234,0,-112" 
+            <TextBlock HorizontalAlignment="Left" Height="47"  FontSize="13" FontWeight="ExtraBlack" Margin="30,240,0,-112" 
                    TextWrapping="Wrap" Text="Branch:" VerticalAlignment="Top"  
                    Width="75"/>
-            <TextBlock HorizontalAlignment="Left" Height="39" Margin="120,234,0,-104" 
+            <TextBlock HorizontalAlignment="Left" FontSize="13" Height="39" Margin="132,240,0,-104" 
                    TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
                    Width="328" Name="TextBlock4"/>
-            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,280,0,-158" 
+            <TextBlock HorizontalAlignment="Left" Height="47"  FontSize="13" FontWeight="ExtraBlack" Margin="30,290,0,-158" 
                    TextWrapping="Wrap" Text="Price:" VerticalAlignment="Top"  
                    Width="75"/>
-            <TextBlock HorizontalAlignment="Left" Height="43" Margin="120,278,0,-152" 
+            <TextBlock HorizontalAlignment="Left" FontSize="13" Height="43" Margin="132,290,0,-152" 
                    TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
                    Width="333" Name="TextBlock5"/>
             <Image Name="TextBlock6" Stretch="Fill" VerticalAlignment="Top" Width="110" HorizontalAlignment="Left" Height="100" Margin="30,320,0,-200" />
