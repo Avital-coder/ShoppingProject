@@ -37,7 +37,7 @@
             <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight"/>
         </StackPanel>
 
-        <Grid Margin="103,2,411.2,108.8" Grid.ColumnSpan="2" Background="White" Grid.RowSpan="2" Opacity="0.7" Grid.Row="2">
+        <Grid Background="White" Grid.RowSpan="2" Opacity="0.7" Grid.Row="2" Margin="109.2,0,168.2,94.8" Grid.Column="1">
             <TextBox HorizontalAlignment="Left" Height="43" Margin="30,10,0,0" TextWrapping="Wrap"   
                  Text="TextBox" VerticalAlignment="Top" Width="282" Name="FileNameTextBox"/>
             <Button x:Name="BrowseButton" Content="Browse a file" HorizontalAlignment="Left"   
