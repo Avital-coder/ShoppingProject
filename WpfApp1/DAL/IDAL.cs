@@ -24,5 +24,6 @@ namespace DAL
         void AddUser(User user);
         void DeletePurchaseFromUserFile(PurchaseItem purchaseItem);
         void CreatePDF(List<object[]> items);
+        string AnalyseQRCode(string Path);
     }
 }

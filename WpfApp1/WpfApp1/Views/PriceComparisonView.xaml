@@ -30,92 +30,51 @@
             <RowDefinition Height="5*"/>
         </Grid.RowDefinitions>
 
-        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="6" Panel.ZIndex="1" Margin="-11,0,3,-3.4"/>
+        <local:SideBarView Grid.RowSpan="5" Grid.Column="0" Grid.ColumnSpan="6" Panel.ZIndex="1" Margin="-11,0,3,-3.4" />
 
-        <TextBlock Grid.Row="0" Grid.Column="1" FontWeight="ExtraBlack" Text="Your products over time" VerticalAlignment="Center" FontSize="28" HorizontalAlignment="Center" Panel.ZIndex="0" Height="60" Margin="36.2,23,35.4,1" Width="342"/>
+        <TextBlock Grid.Row="0" FontWeight="ExtraBlack" Text="Choose QR code to see details" VerticalAlignment="Center" FontSize="28" HorizontalAlignment="Center" Panel.ZIndex="0" Height="60" Margin="167,23,78.4,1" Width="441" Grid.ColumnSpan="4"/>
         <StackPanel Grid.Row="0" Grid.Column="2" Panel.ZIndex="0" Margin="0.8,0,3,1">
             <TextBlock Text="" VerticalAlignment="Center" FontSize="15" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center"  FlowDirection="LeftToRight"/>
         </StackPanel>
 
-        <ListView Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" ItemsSource="{Binding PriceComparisonList, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Stretch" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Panel.ZIndex="0" Height="0" Margin="0,4,2.2,0">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <Grid  Background="Transparent" HorizontalAlignment="Right" VerticalAlignment="Stretch">
+        <Grid Margin="103,2,411.2,108.8" Grid.ColumnSpan="2" Background="White" Grid.RowSpan="2" Opacity="0.7" Grid.Row="2">
+            <TextBox HorizontalAlignment="Left" Height="43" Margin="30,10,0,0" TextWrapping="Wrap"   
+                 Text="TextBox" VerticalAlignment="Top" Width="282" Name="FileNameTextBox"/>
+            <Button x:Name="BrowseButton" Content="Browse a file" HorizontalAlignment="Left"   
+                Margin="339,13,0,0" VerticalAlignment="Top" Width="118" Click="BrowseButton_Click"
+                RenderTransformOrigin="1.047,0.821" Height="40" />
+            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,96,0,0" 
+                   TextWrapping="Wrap" Text="Product Name:" VerticalAlignment="Top"  
+                   Width="89"/>
+            <TextBlock HorizontalAlignment="Left" Height="47" Margin="120,96,0,0" 
+                   TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
+                   Width="281" Name="TextBlock1"/>
+            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,140,0,-18" 
+                   TextWrapping="Wrap" Text="Description:" VerticalAlignment="Top"  
+                   Width="75"/>
+            <TextBlock HorizontalAlignment="Left" Height="51" Margin="120,140,0,-22" 
+                   TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
+                   Width="282" Name="TextBlock2"/>
+            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,190,0,-68" 
+                   TextWrapping="Wrap" Text="Shop Name:" VerticalAlignment="Top"  
+                   Width="75"/>
+            <TextBlock HorizontalAlignment="Left" Height="45" Margin="120,190,0,-66" 
+                   TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
+                   Width="330" Name="TextBlock3"/>
+            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,234,0,-112" 
+                   TextWrapping="Wrap" Text="Branch:" VerticalAlignment="Top"  
+                   Width="75"/>
+            <TextBlock HorizontalAlignment="Left" Height="39" Margin="120,234,0,-104" 
+                   TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
+                   Width="328" Name="TextBlock4"/>
+            <TextBlock HorizontalAlignment="Left" Height="47" Margin="30,280,0,-158" 
+                   TextWrapping="Wrap" Text="Price:" VerticalAlignment="Top"  
+                   Width="75"/>
+            <TextBlock HorizontalAlignment="Left" Height="43" Margin="120,278,0,-152" 
+                   TextWrapping="Wrap" Text="" VerticalAlignment="Top"  
+                   Width="333" Name="TextBlock5"/>
+            <Image Name="TextBlock6" Stretch="Fill" VerticalAlignment="Top" Width="110" HorizontalAlignment="Left" Height="100" Margin="30,320,0,-200" />
 
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="5*"/>
-                            <ColumnDefinition Width="1*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="1*"/>
-                            <RowDefinition Height="0.1*"/>
-                            <RowDefinition Height="1*"/>
-                        </Grid.RowDefinitions>
-
-                        <Image Grid.Column="1" Grid.Row="0" Grid.RowSpan="2" Source="{Binding Path=ImagePath , Mode=TwoWay}" Stretch="Fill" Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" Height="60" />
-
-                        <StackPanel Grid.Column="0" Grid.Row="0" VerticalAlignment="Center">
-                            <TextBlock Text="{Binding Name, Mode=TwoWay}" HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15"/>
-                            <TextBlock Text="{Binding Description, Mode=TwoWay}" HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15"/>
-                        </StackPanel>
-
-                        <ListView Grid.Column="0" Grid.Row="2" ItemsSource="{Binding PriceComparison, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Right" VerticalAlignment="Center" HorizontalContentAlignment="Center" FlowDirection="LeftToRight" >
-                            <ListView.ItemTemplate>
-                                <DataTemplate>
-                                    <Border BorderBrush="Black" BorderThickness="0,0,1,0">
-                                        <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding}" HorizontalAlignment="Right" VerticalAlignment="Center"  FontSize="15" FlowDirection="LeftToRight"/>
-                                            <TextBlock Text="   "></TextBlock>
-                                        </StackPanel>
-                                    </Border>
-                                </DataTemplate>
-                            </ListView.ItemTemplate>
-                            <ListView.ItemsPanel>
-                                <ItemsPanelTemplate>
-                                    <StackPanel Orientation="Horizontal"/>
-                                </ItemsPanelTemplate>
-                            </ListView.ItemsPanel>
-                        </ListView>
-
-                    </Grid>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-
-        <Grid Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Panel.ZIndex="0" Grid.RowSpan="3" Margin="2,4,0.4,1.6">
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.2*"/>
-                <RowDefinition Height="0.1*"/>
-                <RowDefinition Height="2*"/>
-            </Grid.RowDefinitions>
-
-            <TextBlock Text="Choose products to display:" FontWeight="ExtraBlack" FontSize="17" HorizontalAlignment="Left" TextWrapping="Wrap" TextAlignment="Left"  FlowDirection="LeftToRight" Margin="-253,6,0,9.2" Width="255" Grid.RowSpan="2" />
-            <TextBlock Grid.Row="1"/>
-            <ListView x:Name="ItemlistView" Grid.Row="1" ItemsSource="{Binding ItemList, NotifyOnSourceUpdated=True}"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FlowDirection="LeftToRight" Panel.ZIndex="0" Margin="-262,11.8,262,4" Grid.RowSpan="2" >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Orientation="Horizontal">
-                            <CheckBox HorizontalAlignment="Right" VerticalAlignment="Stretch" Command="{Binding ElementName=ItemlistView, Path=DataContext.UpdatePriceComparisonList}" CommandParameter="{Binding}"/>
-                            <TextBlock Text =" "/>
-                            <TextBlock Text="{Binding}" FontSize="15" HorizontalAlignment="Left" VerticalAlignment="Stretch"/>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
         </Grid>
-
-        <Grid Grid.Row="3" Grid.ColumnSpan="2" Margin="67,10.6,2.2,1.6" Grid.RowSpan="2" >
-            <lvc:CartesianChart Series="{Binding SeriesCollection, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" LegendLocation="Left">
-                <lvc:CartesianChart.AxisY>
-                    <lvc:Axis Title="Cart cost"  FontSize="14" LabelFormatter="{Binding YFormatter, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
-                </lvc:CartesianChart.AxisY>
-                <lvc:CartesianChart.AxisX>
-                    <lvc:Axis Title="Shops" FontSize="14" Labels="{Binding Labels, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"></lvc:Axis>
-                </lvc:CartesianChart.AxisX>
-            </lvc:CartesianChart>
-        </Grid>
-
     </Grid>
 </UserControl>

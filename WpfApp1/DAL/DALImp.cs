@@ -195,7 +195,7 @@ namespace DAL
         }
 
 
-        private string AnalyseQRCode(string Path)
+        public string AnalyseQRCode(string Path)
         {
             BarcodeResult ItemId = BarcodeReader.QuicklyReadOneBarcode(Path, BarcodeEncoding.QRCode);
             if (ItemId != null)

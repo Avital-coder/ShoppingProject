@@ -377,5 +377,16 @@ namespace BL
             return sortedPairsOfSuggestions;
         }
 
+        public Item GetItemByQR(string Path)
+        {
+            string ItemId = dal.AnalyseQRCode(Path);
+
+            if (ItemId != null && GetAllItems().Select(item => item.Id).ToList().Contains(ItemId))
+            {
+                return GetAllItems().Where(item => item.Id == ItemId).FirstOrDefault();
+            }
+            return null;
+        }
+
     }
 }

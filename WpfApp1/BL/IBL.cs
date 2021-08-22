@@ -27,6 +27,7 @@ namespace BL
         IEnumerable<string> GetPriceComparison(string ItemName);
         Dictionary<string, List<string>> AnalyzeHistory(List<string> items);
         void CreatePDF(List<object[]> items);
+        Item GetItemByQR(string Path);
 
     }
 }
