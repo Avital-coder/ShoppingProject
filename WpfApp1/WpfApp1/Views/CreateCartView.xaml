@@ -100,7 +100,6 @@
                                     </Binding>
                                 </TextBox.Text>
                             </TextBox>
-                            <materialDesign:PackIcon Grid.Column="0" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
 
                         <StackPanel Grid.Column="3" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight">

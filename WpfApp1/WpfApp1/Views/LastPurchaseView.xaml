@@ -87,7 +87,6 @@
                                     </Binding>
                                 </TextBox.Text>
                             </TextBox>
-                            <materialDesign:PackIcon Grid.Column="1" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                         </Grid>
 
                         <StackPanel Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight">
@@ -98,24 +97,23 @@
 
                         </StackPanel>
 
-                        <Button Grid.Column="4" Grid.RowSpan="2" HorizontalAlignment="Center" Content="Confirmation" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding ElementName=listView, Path=DataContext.ConfirmedItemCommand}" CommandParameter="{Binding}"/>
-                        <Button Grid.Column="5" Grid.RowSpan="2" HorizontalAlignment="Center" Content="Delete" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding ElementName=listView, Path=DataContext.DeleteItemCommand}" CommandParameter="{Binding}" Background="Red"/>
+                        <Button Grid.Column="4" Grid.RowSpan="2" HorizontalAlignment="Center" Content="Yes, I'm sure!" Style="{StaticResource roundedCornersButton}"  Command="{Binding ElementName=listView, Path=DataContext.ConfirmedItemCommand}" CommandParameter="{Binding}"/>
+                        <Button Grid.Column="5" Grid.RowSpan="2" HorizontalAlignment="Center" Content="No, I regret it!" Style="{StaticResource roundedCornersButton}" Command="{Binding ElementName=listView, Path=DataContext.DeleteItemCommand}" CommandParameter="{Binding}"/>
 
                     </Grid>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
-        <Button Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Left" Content="Finished" Style="{StaticResource roundedCornersButton}" Command="{Binding ConfirmedAllItemCommand}" />
+        <Button Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2" HorizontalAlignment="Left" Content="Finished" Style="{StaticResource roundedCornersButton}" Command="{Binding ConfirmedAllItemCommand}" />
 
-        <Button Background="#EC5578" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignIconButton}" Command="{Binding ShowAddGridCommand}">
+        <Button Content="Add" Background="#EC5578" Grid.Column="1" Foreground="Black" Grid.Row="3" HorizontalAlignment="Right" Style="{StaticResource MaterialDesignIconButton}" Command="{Binding ShowAddGridCommand}">
 
-            <materialDesign:PackIcon  Kind="Add" Foreground="Black"></materialDesign:PackIcon>
 
         </Button>
 
 
-        <Grid Background="Transparent" Grid.Column="3" Grid.ColumnSpan="2" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="{Binding ShowAddGrid}" >
+        <Grid Background="White" Opacity="0.6" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Visibility="{Binding ShowAddGrid}" Margin="45.2,0.749,0.4,34.281" Grid.RowSpan="2" >
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.65*"/>
                 <ColumnDefinition Width="0.85*"/>
@@ -174,7 +172,7 @@
                         </Binding>
                     </TextBox.Text>
                 </TextBox>
-                <materialDesign:PackIcon Grid.Column="1" Kind="Counter" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="31.8,6,0,5.2"/>
+
             </Grid>
 
             <StackPanel Grid.Column="5" Grid.Row="1"  VerticalAlignment="Center" HorizontalAlignment="Left" FlowDirection="LeftToRight" Orientation="Horizontal">
@@ -184,9 +182,9 @@
             </StackPanel>
 
             <StackPanel Grid.Column="7" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <Button Content="Add" Style="{StaticResource roundedCornersButton}" Opacity="0.7" Command="{Binding AddPurchaseItemCommand}" CommandParameter="{Binding AddPurchaseItem}"/>
+                <Button Content="V" Style="{StaticResource roundedCornersButton}"  Command="{Binding AddPurchaseItemCommand}" CommandParameter="{Binding AddPurchaseItem}"/>
                 <TextBlock/>
-                <Button Content="cancelation" Style="{StaticResource roundedCornersButton}" Opacity="0.6" Command="{Binding HideAddGridCommand}" Background="Red"/>
+                <Button Content="X" Style="{StaticResource roundedCornersButton}"  Command="{Binding HideAddGridCommand}" />
             </StackPanel>
         </Grid>
 

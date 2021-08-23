@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\obj\Debug\
+D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\
 WpfApp1
 none
 false
 DEBUG;TRACE
-C:\Users\user\ShoppingProject\WpfApp1\WpfApp1\App.xaml
+D:\פרויקט זורי\WpfApp1\WpfApp1\App.xaml
 121539488292
 
-611998016760
-145471894028
+64-1042657195
+145-840666108
 MainWindow.xaml;Styles.xaml;Views\ContactView.xaml;Views\CreateCartView.xaml;Views\HistoryByCartView.xaml;Views\HistoryByItemView.xaml;Views\HistoryByShopView.xaml;Views\LastPurchaseView.xaml;Views\LogInView.xaml;Views\PriceComparisonView.xaml;Views\SideBarView.xaml;Views\SignUpView.xaml;
 
-False
+True
 
