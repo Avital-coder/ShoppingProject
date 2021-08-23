@@ -135,7 +135,7 @@
                     <ColumnDefinition Width="0.5*"/>
                 </Grid.ColumnDefinitions>
 
-                <TextBlock  Grid.Row="2" Grid.Column="1" Text="You once bought those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
+                <TextBlock  Grid.Row="2" Grid.Column="1" Text="Since you buy those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 
                 <TextBlock  Grid.Row="2" Grid.Column="3" Text="Maybe now you'd want those:" FontWeight="ExtraBlack" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center" FlowDirection="LeftToRight" TextWrapping="Wrap"/>
 

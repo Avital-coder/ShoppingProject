@@ -76,3 +76,14 @@ D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.xml
 D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Core.pdb
 D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Google.Apis.Core.xml
 D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Newtonsoft.Json.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.dll.config
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.MachineLearning.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.Math.Core.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.Math.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.Statistics.dll
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.MachineLearning.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.Math.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.Math.Core.xml
+D:\פרויקט זורי\WpfApp1\BL\bin\Debug\Accord.Statistics.xml

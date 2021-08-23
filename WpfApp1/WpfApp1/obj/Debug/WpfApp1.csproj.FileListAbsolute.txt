@@ -392,3 +392,4 @@ D:\פרויקט זורי\WpfApp1\WpfApp1\bin\Debug\Xamarin.Forms.Xaml.xml
 D:\פרויקט זורי\WpfApp1\WpfApp1\bin\Debug\IronBarCode.xml
 D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\WpfApp1.exe.config
 D:\פרויקט זורי\WpfApp1\WpfApp1\obj\Debug\XamlC.stamp
+D:\פרויקט זורי\WpfApp1\WpfApp1\bin\Debug\Accord.dll.config

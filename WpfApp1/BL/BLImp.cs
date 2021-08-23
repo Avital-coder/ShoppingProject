@@ -221,6 +221,7 @@ namespace BL
 
 
         // Recommendations Algorithm
+        /*
         public Dictionary<string, List<string>> AnalyzeHistory(List<string> itemsNames)
         {
             if (itemsNames == null || itemsNames.Count == 0)
@@ -375,6 +376,99 @@ namespace BL
                 j++;
             }
             return sortedPairsOfSuggestions;
+        }
+        */
+
+        public Dictionary<string, List<string>> AnalyzeHistory(List<string> itemsNames)
+        {
+            Dictionary<string, int> countPerItem = new Dictionary<string, int>();
+            List<PurchaseItem> Purchases = GetAllPurchases();
+            Dictionary<string, List<string>> itemsPerDate = new Dictionary<string, List<string>>();
+
+            //Creates Carts
+            foreach ( var PurchaseItem in Purchases)
+            {
+                string dateOfPurchase = PurchaseItem.Date.ToString("dd.MM.yyyy");
+                if(!itemsPerDate.Keys.Contains(dateOfPurchase))
+                {
+                    itemsPerDate[dateOfPurchase] = new List<string>();
+                }
+                itemsPerDate[dateOfPurchase].Add(GetItemNameById(PurchaseItem.ItemId));
+            }
+
+            //Delete the irrelevant
+            List<string> toRemove = new List<string>();
+            foreach (var Cart in itemsPerDate.Values)
+            {
+                if(!Cart.Intersect(itemsNames).Any())
+                {
+                    var key = itemsPerDate.Where(pair => pair.Value.Equals(Cart))
+                     .Select(pair => pair.Key)
+                     .FirstOrDefault();
+                    toRemove.Add(key);
+                }
+            }
+            foreach(var removeItem in toRemove)
+            {
+                itemsPerDate.Remove(removeItem);
+            }
+
+            //Choos the most relevant items from the relevant cars
+            Dictionary<string, int> CountItems = new Dictionary<string, int>();
+            foreach(var Cart in itemsPerDate.Values)
+            {
+                foreach(var item in Cart)
+                {
+                    if(!itemsNames.Contains(item))
+                    {
+                        if (!CountItems.Keys.Contains(item))
+                        {
+                            CountItems[item] = 0;
+                        }
+                        CountItems[item]++;
+                    }
+                }
+            }
+            var SortedCountItems = CountItems.OrderBy(x => x.Value).ToDictionary(x => x.Key, x => x.Value);
+            List<string> MostRelevant = new List<string>();
+            if (SortedCountItems.Count>3)
+            {
+                for(int i=0; i<3; i++)
+                {
+                    MostRelevant.Add(SortedCountItems.Last().Key);
+                    SortedCountItems.Remove(SortedCountItems.Last().Key);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < SortedCountItems.Count; i++)
+                {
+                    MostRelevant.Add(SortedCountItems.Last().Key);
+                    SortedCountItems.Remove(SortedCountItems.Last().Key);
+                }
+            }
+            //Make suggestions
+            Dictionary<string, List<string>> suggestions = new Dictionary<string, List<string>>();
+            foreach(var Item in itemsNames)
+            {
+                foreach (var relevant in MostRelevant)
+                {
+                    foreach (var Cart in itemsPerDate.Values)
+                    {
+                        if (Cart.Contains(Item) && Cart.Contains(relevant) && Item!=relevant && !itemsNames.Contains(relevant))
+                        {
+                            if(!suggestions.Keys.Contains(Item))
+                            {
+                                suggestions[Item] = new List<string>();
+                            }
+                            suggestions[Item].Add(relevant);
+                        }
+                    }
+                
+                }
+            }
+            return suggestions;
+
         }
 
         public Item GetItemByQR(string Path)
